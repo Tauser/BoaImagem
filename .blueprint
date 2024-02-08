@@ -1,0 +1,19 @@
+created:
+    - database/factories/PostFactory.php
+    - database/factories/CategoryFactory.php
+    - database/factories/MemberFactory.php
+    - database/factories/CustomerFactory.php
+    - database/migrations/2024_02_06_023611_create_posts_table.php
+    - database/migrations/2024_02_06_023612_create_categories_table.php
+    - database/migrations/2024_02_06_023613_create_members_table.php
+    - database/migrations/2024_02_06_023614_create_customers_table.php
+    - database/migrations/2024_02_06_023615_create_category_post_table.php
+    - app/Models/Post.php
+    - app/Models/Category.php
+    - app/Models/Member.php
+    - app/Models/Customer.php
+models:
+    Post: { title: 'string:100', slug: 'string:150', content: longtext, thumbnail: 'nullable string:255', user_id: 'id unsigned foreign ondelete:cascade', category_id: 'id unsigned foreign nullable', published_at: 'nullable timestamp', created_at: timestamp, updated_at: 'timestamp onupdate:current_timestamp', timestamps: false, relationships: { belongsTo: User, hasMany: Category } }
+    Category: { name: 'string:150', created_at: timestamp, updated_at: 'timestamp onupdate:current_timestamp', timestamps: false, relationships: { belongsToMany: Post } }
+    Member: { name: 'string:150', role: text, thumbnail: 'nullable string:255', social1: 'nullable string:150', social2: 'nullable string:150', social3: 'nullable string:150', created_at: timestamp, updated_at: 'timestamp onupdate:current_timestamp', timestamps: false }
+    Customer: { name: 'string:150', thumbnail: 'nullable string:255', descritpion: string, created_at: timestamp, updated_at: 'timestamp onupdate:current_timestamp', timestamps: false }

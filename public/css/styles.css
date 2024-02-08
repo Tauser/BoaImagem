@@ -1,0 +1,1252 @@
+body {
+    --bs-body-font-family: var(--bs-font-monospace);
+    --bs-body-line-height: 1.4;
+    --bs-body-bg: var(--bs-gray-100);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.table {
+    --bs-table-color: var(--bs-gray-600);
+    --bs-table-bg: var(--bs-gray-100);
+    --bs-table-border-color: transparent;
+}
+
+.h1,
+h1 {
+    font-size: 5.5rem !important;
+}
+header#header {
+    position: absolute;
+    z-index: 9;
+    padding: 20px 0;
+    width: 100%;
+}
+header#header .container {
+    display: flex;
+}
+header img {
+    max-width: 240px;
+}
+header nav ul li {
+    display: inline-block;
+    padding: 12px;
+    list-style: none;
+}
+header nav a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+.container.flex .btn-astro.col {
+    text-align: right;
+    color: #FFF;
+    font-size: 18px;
+}
+main {
+    margin-top: 150px;
+    /* add some margin to the top of the main content */
+}
+
+slides {
+    float: left;
+    width: 100%;
+    margin: -100px 0 0 0;
+    z-index: 0;
+}
+
+slides .img {
+    float: left;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+subtitlePrincipal {
+    font-size: 21px;
+    font-weight: bold;
+    padding: 40px 0;
+    display: inline-block;
+}
+
+bluearea,
+blackarea {
+    background: rgb(0, 220, 255);
+    background: linear-gradient(158deg, rgba(0, 220, 255, 1) 0%, rgba(0, 161, 255, 1) 79%);
+
+    border-radius: 50px 50px 0 0;
+    float: left;
+    width: 100%;
+    color: #FFF;
+    padding: 30px 0;
+    color: #FFF;
+}
+
+blackarea {
+    background: #000;
+    margin: -40px 0 0 0;
+    padding: 50px 0 0 0;
+}
+
+bluearea h2,
+blackarea h2 {
+    font-size: 3.5rem;
+    line-height: 80px;
+    text-align: left;
+    padding: 0 6rem 3rem;
+    float: left;
+    width: 100%;
+}
+
+bluearea h3,
+blackarea h3 {
+    text-align: left;
+    padding: 20px 0 10px 0;
+    border-bottom: 3px solid;
+    display: inline-block;
+    float: left;
+    margin: 0 0 40px;
+}
+
+bluearea p,
+blackarea p {
+    float: left;
+    width: 100%;
+    padding: 0 6.3rem 40px;
+    text-align: left;
+}
+
+blackarea {
+    border-radius: 50px;
+    padding-bottom: 80px;
+    margin-bottom: 60px;
+}
+
+lista {
+    float: left;
+    width: 100%;
+}
+
+lista ul {
+    justify-content: center;
+}
+
+lista ul.equipe li {
+    background: #000;
+    border-radius: 40px;
+    padding: 19px 0px;
+    margin: 0 30px 40px;
+    list-style: none;
+}
+
+lista ul li.col-3 img {
+    width: 84%;
+}
+
+lista subtitle {
+    color: #FFF;
+    float: left;
+    width: 100%;
+    padding: 0 0 20px;
+}
+
+lista ul li.col-3 h4 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 0 10px;
+}
+
+socialslinks a {
+    padding: 0 9px;
+    text-decoration: none;
+}
+
+newsletter {
+    float: left;
+    width: 100%;
+    padding: 30px 0 60px 0;
+}
+
+newsletter center {
+    margin: 0 auto;
+    max-width: 56% !important;
+}
+
+newsletter .col {
+    text-align: left !important;
+}
+
+newsletter h3 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+newsletter input[type="text"] {
+    font-size: 23px;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 10px;
+    width: 100%;
+    background: transparent;
+}
+
+newsletter button,
+blog button,
+.readmore {
+    background: rgb(0, 220, 255);
+    background: linear-gradient(158deg, rgba(0, 220, 255, 1) 0%, rgba(0, 161, 255, 1) 79%);
+    padding: 20px 20px;
+    border: none;
+    margin: 20px auto;
+    width: 50%;
+    display: block;
+    border-radius: 40px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+footer center ul {
+    float: left;
+    list-style: none;
+    text-align: left;
+}
+
+footer center ul,
+footer center ul a {
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+ul.copy {
+    float: right;
+}
+
+
+form.pesquisa {
+    padding: 40px 0;
+}
+
+footer {
+
+    background: url('/img/footerRepeat.jpg') repeat-x 0 0;
+    display: flex;
+    width: 100%;
+
+    padding: 80px 0 0 0;
+}
+
+h1.clientes {
+    font-size: 62px !important;
+}
+
+ul#pillNav2 {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* header button {
+    color: #000 !important;
+    font-size: 22px !important;
+} */
+
+button#profile-tab2 {
+    color: blue !important;
+}
+
+form.pesquisa input {
+    font-size: 18px;
+    padding: 10px;
+    width: 39%;
+    text-align: center;
+}
+
+bloglist h5 {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 0 10px;
+}
+
+bloglist img {
+    width: 100%;
+}
+
+bloglist {
+    display: block;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+bloglist.container li {
+    text-align: center;
+}
+
+mainHome {
+    background: #000;
+    float: left;
+    width: 100%;
+    margin: -150px 0 0 0;
+}
+
+subarea {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    background: #FFF;
+    padding: 70px 20px;
+    margin: 0 0 0;
+    float: left;
+}
+
+li.col.principal img {
+    width: 30%;
+}
+
+
+
+slides sectiontext.slider .col.icons img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+slides {
+    z-index: 1;
+    position: relative;
+}
+
+slides sectiontext.slider .col.icons {
+    position: relative;
+}
+
+sectiontext.container {
+    float: left;
+    width: 100%;
+}
+
+slides sectiontext.slider .col.icons img:nth-child(1) {
+    top: 20%;
+    right: 20%;
+}
+
+slides sectiontext.slider .col.icons img:nth-child(2) {
+    top: 50%;
+    right: 10%;
+}
+
+slides sectiontext.slider .col.icons img:nth-child(3) {
+    top: 20%;
+    right: 60%;
+}
+
+sectiontext.container {
+    float: left;
+    width: 100%;
+    position: relative;
+    display: block;
+    max-width: 100% !important;
+}
+
+/* container.containerHeader {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 10px;
+} */
+
+sectiontext.container.centerslide ul {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* .headerHome header.d-flex.flex-wrap.align-items-center.justify-content-center.justify-content-md-between.py-3.mb-4.border-bottom {
+    position: fixed;
+    z-index: 10;
+    background: transparent;
+    border: none !important;
+    margin: 0px 0 0 0;
+    width: 100%;
+} */
+
+.textoslide h1 {
+    font-size: 52px !important;
+    color: #FFF;
+    padding: 60% 12%;
+}
+
+.col-md-3.mb-2.mb-md-0.logo img {
+    max-width: 230px;
+}
+
+/* .headerHome ul li button {
+    color: #FFF !important;
+}
+
+.headerHome ul li button:hover {
+    background-color: #FFF;
+    color: #000 !important;
+} */
+
+
+
+li.col.principal {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 60px;
+    padding: 50px 31% 50px 30px;
+    margin: 0 70px 0 0px;
+}
+
+
+
+li.col.principal img {
+    width: 45%;
+    position: absolute;
+    right: 6%;
+    bottom: -40%;
+}
+
+li.col.principal textsslide {
+    font-size: 42px !important;
+    color: #FFF;
+}
+
+li.col.principal textsslide h1 {
+    font-size: 42px !important;
+    color: #FFF;
+}
+
+li.col.principal textsslide h1 {
+    font-size: 56px !important;
+    color: #009CFF;
+    font-weight: bold;
+}
+
+li.col.principal textsslide span {
+    font-size: 30px;
+}
+
+arealeft {
+    float: left;
+    max-width: 900px;
+    padding: 0 0% 0 5%;
+}
+
+arealeft button.readmore {
+    float: left;
+}
+
+arealeft h1 {
+    font-size: 67px !important;
+}
+
+arealeft p {
+    font-size: 28px;
+}
+
+servicoshome container.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 50px 0;
+    display: block;
+}
+
+servicoshome {
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+}
+
+servicoshome ul li {
+    background: rgb(0, 151, 255);
+    background: linear-gradient(79deg, rgba(0, 151, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color: #FFF;
+}
+
+servicoshome container.container ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+servicoshome ul li:nth-child(2n + 1) {
+    background: #FFF;
+    color: #000;
+}
+
+servicoshome ul.row2 li {
+    background: #FFF;
+    color: #000;
+}
+
+servicoshome ul.row2 li:nth-child(2n + 1) {
+    background: rgb(0, 151, 255);
+    background: linear-gradient(79deg, rgba(0, 151, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    color: #FFF;
+}
+
+servicoshome container.container ul li h4 {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+servicoshome container.container ul li h4 b {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+servicoshome container.container ul li {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 40px;
+    align-content: flex-end;
+    padding: 20px 50px;
+    margin: 20px;
+    text-align: center;
+}
+
+ultimostrabalhos {
+    float: left;
+    width: 100%;
+}
+
+ultimostrabalhos .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: block;
+}
+
+ultimostrabalhos .container ul.slides li {
+    background: rgb(0, 151, 255);
+    background: linear-gradient(79deg, rgba(0, 151, 255, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    padding: 0;
+
+    border-radius: 50px;
+    margin: 0 0;
+    transition: background-color 2s ease-out 100ms
+}
+
+ultimostrabalhos p {
+    color: #FFF;
+    padding: 0 40px 30px;
+}
+
+ultimostrabalhos h4 {
+    padding: 22% 40px 0;
+    color: #FFF;
+}
+
+button.readmore.vermais {
+    margin: 60px auto;
+    max-width: 200px;
+}
+
+.flex-control-nav {
+    display: none;
+}
+
+/* .headerHome header.d-flex.flex-wrap.align-items-center.justify-content-center.justify-content-md-between.py-3.mb-4.border-bottom {
+    position: fixed;
+    z-index: 1000;
+    height: 100px;
+    width: 100%;
+    padding: 18px;
+    -webkit-transition: all ease-out .5s;
+    -moz-transition: all ease-out .5s;
+    -o-transition: all ease-out .5s;
+    transition: all ease-out .5s;
+}
+
+.headerHome header.d-flex.flex-wrap.align-items-center.justify-content-center.justify-content-md-between.py-3.mb-4.border-bottom.active {
+    background-color: rgba(34, 34, 34, 0.8);
+} */
+
+ultimostrabalhos {
+    float: left;
+    background: #FFF;
+    padding: 20px 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.flex-viewport {
+    overflow: visible !important;
+}
+
+ultimostrabalhos h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 62px !important;
+    padding: 20px 0;
+}
+
+mainhome newsletter {
+    background: #000;
+    color: #FFF;
+    padding: 6% 0 3%;
+}
+
+mainhome newsletter input[type="text"] {
+    border-bottom: 2px solid #FFF;
+}
+
+ultimostrabalhos .container {
+    margin: 0 auto;
+    max-width: 1270px !important;
+    display: block;
+}
+
+footer.footerHome center ul,
+footer.footerHome center ul a {
+    color: #FFF;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+header .text-end button {
+    background: transparent;
+    border: none;
+}
+
+header .text-end button i {
+    color: #FFF;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+li.col.principal {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+li.col.principal img {
+    width: 65%;
+    position: absolute;
+    right: -20%;
+    bottom: -30%;
+}
+
+.col-md-3.mb-2.mb-md-0.logo img {
+    max-width: 230px;
+    filter: invert(1);
+}
+
+.headerhome .col-md-3.mb-2.mb-md-0.logo img {
+    max-width: 230px;
+    filter: invert(0);
+}
+
+footer center.container {
+    max-width: 1161px;
+    margin: 0 auto 30px;
+}
+
+.parent {
+    height: 345px;
+    display: flex;
+    width: 100%;
+}
+
+figure {
+    height: 100%;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.parent figure img {
+    height: 100%;
+    width: auto;
+    margin: 0;
+}
+
+ul.row {
+    list-style: none !important;
+}
+
+.post article.flex.flex-col.shadow.my-4 {
+    box-shadow: none !important;
+}
+
+.post .flex.container {
+    max-width: 980px;
+}
+
+.flex.container.post {
+    max-width: 980px;
+}
+
+h1.text-3xl.font-bold.hover\:text-gray-700.pb-4 {
+    font-size: 35px !important;
+    font-weight: bold;
+}
+
+.image {
+    margin: 20px 0;
+    display: inline-block;
+}
+
+contentpost {
+    display: inline-block;
+    width: 100%;
+    line-height: 31px;
+    font-size: 17px;
+}
+
+.navFooter .col a p {
+    margin: 0 !important;
+}
+
+
+.navFooter .col a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    font-weight: normal;
+    border-radius: 0;
+    background: #FFF;
+    display: inline-block;
+    padding: 20px;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.post .flex.gap-4 {
+    font-size: 17px;
+    padding: 0 0 10px;
+}
+
+/**/
+/**/
+servicoshome container.container ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+
+servicoshome container.container ul li {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    background: #FFF;
+    width: 29%;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.2) inset;
+    border: 3px solid transparent;
+}
+servicoshome container.container ul li:nth-child(2n) {
+    background: rgb(0, 220, 255);
+    background: linear-gradient(158deg, rgba(0, 220, 255, 1) 0%, rgba(0, 161, 255, 1) 79%);
+}
+servicoshome container.container ul li h4,
+servicoshome container.container ul li p {
+    z-index: 4;
+}
+
+servicoshome container.container ul li:hover img,
+servicoshome container.container ul li:hover b,
+servicoshome container.container ul li:hover p {
+    color: #FFF;
+}
+servicoshome container.container ul li:hover {
+    border: 2px solid #FEF;
+}
+servicoshome container.container ul li:before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    content: "";
+    z-index: -1;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    background: var(--linear, linear-gradient(135deg, #000 0%, #001e35 45.72%, #003d6c 100%));
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(27, 28, 53, 0.65) inset;
+    box-shadow: 0px 0px 30px 0px rgba(27, 28, 53, 0.65) inset;
+}
+
+servicoshome container.container ul li:hover img {
+    width: 30%;
+}
+
+servicoshome container.container ul li:hover:before {
+    z-index: 2;
+    opacity: 1;
+}
+
+.image {
+    margin: 20px 0;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+}
+
+servicoshome container.container ul li img {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.bi-team-item-4 .team-text h3 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+servicoshome container.container ul li b {
+    font-weight: 500;
+    color: var(--base-color);
+    font-family: var(--heading);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+servicoshome container.container ul li:hover {
+
+}
+
+/**/
+/**/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.flex-viewport {
+    max-width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav.navbar.navbar-expand-lg.bg-light {
+    background: transparent !important;
+}
+
+.nav-link {
+    color: #FFF !important;
+    font-size: 29px !important;
+}
+
+.row.navFooter .col:first-child a {
+    float: right;
+}
+
+.row.navFooter .col:last-child a {
+    float: left;
+}
+
+blogList .blog a {
+    color: #333 !important;
+    text-decoration: none !important;
+    line-height: auto !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow-y: auto;
+}
+div#mySidenav .cart_item {
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+div#mySidenav .cart_item img {
+    width: 40%;
+    float: left;
+    padding: 0 10px 0 0;
+}
+div#mySidenav .cart_item {
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+div#mySidenav .cart_item span.item_price {
+    font-size: 10px;
+    color: #FFF;
+    font-weight: bold;
+}
+div#mySidenav .cart_item h4.item_title {
+    font-size: 12px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+.swiper {
+    width: 100%;
+    height: 370px;
+    background: #000;
+    border-radius: 20px;
+    overflow: hidden;
+}
+swiper-slide.swiper-slide-active {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+.subtitle {
+    color: #FFF !important;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    padding: 0 17% 0;
+}
+overlay {
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background: rgb(0,0,0,0.6);
+    color: #FFF;
+    justify-content: center;
+}
+p.text-sm.pb-8.publicaaco {
+    color: #777;
+    padding: 10px 0;
+    font-size: 12px;
+    font-style: italic;
+}
+socialslinks a {
+    padding: 0 9px;
+    text-decoration: none;
+    color: #FFF;
+}
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 15px;}
+.sidenav a {font-size: 18px;}
+}
+@media (max-width: 680px) {
+
+    bluearea h3,
+    blackarea h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .col-md-3.mb-2.mb-md-0.logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    ul.row {
+        display: inline-block;
+    }
+
+    .textoslide h1 {
+        font-size: 23px !important;
+        color: #FFF;
+        padding: 60% 0% 10%;
+        text-align: center;
+    }
+
+    sectiontext.slider ul {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    slides sectiontext.slider .col.icons img:nth-child(1) {
+        top: 20%;
+        width: 70%;
+        right: 20%;
+    }
+
+    slides sectiontext.slider .col.icons img:nth-child(2) {
+        top: -130%;
+        right: 0%;
+        width: 40%;
+    }
+
+    slides sectiontext.slider .col.icons img:nth-child(3) {
+        top: -240%;
+        right: 50%;
+    }
+
+    slides .img {
+        float: none;
+        width: 100%;
+        position: absolute;
+        z-index: 0;
+        top: 12%;
+    }
+
+    sectiontext.container {
+        float: left;
+        width: 100%;
+        position: relative;
+        display: block;
+        max-width: 100% !important;
+        z-index: 9;
+    }
+
+    li.col.principal {
+        border-radius: 60px;
+        padding: 10%;
+        margin: 0;
+        text-align: center;
+    }
+
+    li.col.principal {
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+    }
+
+    mainHome {
+        width: auto !important;
+    }
+
+    li.col.principal textsslide h1 {
+        font-size: 26px !important;
+        color: #009CFF;
+        font-weight: bold;
+    }
+
+    li.col.principal textsslide span {
+        font-size: 13px;
+    }
+
+    li.col.principal img {
+        width: 65%;
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin: 10px 0 -120px;
+    }
+
+    sectiontext.container.centerslide ul {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 6%;
+    }
+
+    header.d-flex.headerHome.flex-wrap.align-items-center.justify-content-center.justify-content-md-between.py-3.mb-4.border-bottom {
+        padding: 20px 0 !important;
+    }
+
+    .col-md-3.mb-2.mb-md-0.logo img {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .col-md-3.text-end {
+        position: absolute;
+        right: 0;
+    }
+
+    nav.navbar.navbar-expand-lg.bg-light {
+        position: absolute;
+        left: 0;
+        top: 20px;
+        left: 0;
+        background: transparent !important;
+    }
+
+    button.navbar-toggler {
+        border-color: #FFF !important;
+        padding: 10px 10px;
+    }
+
+    span.navbar-toggler-icon {
+        /* color: #FFF !important; */
+        /* border-color: #FFF !important; */
+        filter: invert(1);
+        font-size: 12px;
+        ;
+    }
+
+    div#navbarTogglerDemo02 a {
+        color: #FFF;
+        font-size: 12px;
+    }
+
+    div#navbarTogglerDemo02 {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        padding: 6px 14px;
+        -webkit-backdrop-filter: blur(2px);
+        backdrop-filter: blur(2px);
+    }
+
+    arealeft h1 {
+        font-size: 30px !important;
+    }
+
+    arealeft p {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    arealeft button.readmore {
+        float: left;
+        width: 100%;
+    }
+
+    subarea {
+        width: 100%;
+        position: relative;
+        z-index: 0;
+        background: #FFF;
+        padding: 70px 20px 0;
+        margin: 0 0 0;
+        float: left;
+    }
+
+    servicoshome container.container ul li {
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        border-radius: 40px;
+        /* align-content: flex-end; */
+        padding: 20px 50px;
+        margin: 20px auto;
+        text-align: center;
+        float: none;
+        width: 80%;
+    }
+
+    servicoshome container.container {
+        margin: 0 auto;
+        max-width: 1200px;
+        display: block;
+        padding: 0px 0;
+    }
+
+    ultimostrabalhos h1 {
+        width: 100%;
+        text-align: center;
+        font-size: 32px !important;
+        padding: 20px 0;
+    }
+
+    ultimostrabalhos ul {
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style-type: none;
+    }
+
+    newsletter h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    newsletter .row {
+        display: inline-block;
+    }
+
+    newsletter input[type="text"] {
+        font-size: 13px;
+        border: none;
+        border-bottom: 2px solid #000;
+        padding: 10px;
+        width: 100%;
+        background: transparent;
+    }
+
+    ultimostrabalhos .container {
+        margin: 0 auto;
+        max-width: 1270px !important;
+        display: block;
+        padding: 20px !important;
+    }
+
+    servicoshome ul {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    footer.footerHome center ul,
+    footer.footerHome center ul a {
+        color: #FFF;
+        font-size: 13px;
+        text-decoration: none;
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    footer.footerHome {
+        background: #000;
+        color: #FFF;
+        margin: -30px 0 0 0;
+        float: left;
+        width: 100%;
+        padding: 0;
+    }
+
+
+}
