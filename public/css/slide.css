@@ -47,7 +47,7 @@ header li.active, header li:hover{
     position: relative;
     width: 100%;
     height: 105vh;
-    z-index: 99999;
+    z-index: 10;
     overflow: hidden;
     padding: 0px 0 110px;
 }
@@ -58,7 +58,7 @@ slides {
     z-index: 10;
 }
 sectiontext.slider {
-    min-height: 68rem;
+    min-height: 58rem;
 }
 .title{
     position: absolute;

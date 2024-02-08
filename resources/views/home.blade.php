@@ -1,6 +1,6 @@
 <x-app-layout>
 <mainHome>
-    <divContainer>
+    <divContainer id="slider">
         <img class="img" src="img/xadrezbase.png">
         <sectionText class="slider">
             <ul class="row">

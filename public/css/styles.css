@@ -18,33 +18,7 @@ body {
 h1 {
     font-size: 5.5rem !important;
 }
-header#header {
-    position: absolute;
-    z-index: 9;
-    padding: 20px 0;
-    width: 100%;
-}
-header#header .container {
-    display: flex;
-}
-header img {
-    max-width: 240px;
-}
-header nav ul li {
-    display: inline-block;
-    padding: 12px;
-    list-style: none;
-}
-header nav a {
-    color: #FFF;
-    text-decoration: none;
-    font-size: 20px;
-}
-.container.flex .btn-astro.col {
-    text-align: right;
-    color: #FFF;
-    font-size: 18px;
-}
+
 main {
     margin-top: 150px;
     /* add some margin to the top of the main content */

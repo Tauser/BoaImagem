@@ -32,7 +32,8 @@ function show(){
     })
 }
 
-window.onscroll = prevSlider;
+
+
 next.onclick = nextSlider;
 prev.onclick = prevSlider;
 const autoNext = setInterval(nextSlider, 6000);

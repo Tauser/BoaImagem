@@ -26,17 +26,17 @@
     <lista>
         <center class="container">
             <ul class="row align-items-center equipe">
-                @foreach ($staffs as $staff)
+                @foreach ($members as $member)
                     <li class="col-3">
-                        <img src="{{$staff->avatar}}">
-                        <h4>{{$staff->name}}</h4>
+                        <img src="{{$member->avatar}}">
+                        <h4>{{$member->name}}</h4>
                         <subtitle>
-                            {{$staff->role}}
+                            {{$member->role}}
                         </subtitle>
                         <socialsLinks>
-                            <a href="#">{{$staff->social1}}</a>
-                            <a href="#">{{$staff->social2}}</a>
-                            <a href="#">{{$staff->social3}}</a>
+                            <a href="#">{{$member->social1}}</a>
+                            <a href="#">{{$member->social2}}</a>
+                            <a href="#">{{$member->social3}}</a>
                         </socialsLinks>
                     </li>
                 @endforeach

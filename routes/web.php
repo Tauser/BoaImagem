@@ -1,9 +1,12 @@
 <?php
 
+use App\Models\Customer;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SobreController;
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ContatoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +26,8 @@ use App\Http\Controllers\SobreController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/sobre', [SobreController::class, 'index'])->name('sobre');
+Route::get('/cliente', [ClienteController::class, 'index'])->name('cliente');
+Route::get('/contato', [ContatoController::class, 'index'])->name('contato');
 Route::get('/post', [PostController::class, 'index'])->name('post.index');
 Route::get('/search', [PostController::class, 'search'])->name('post.search');
 Route::get('/post/{post:slug}', [PostController::class, 'show'])->name('post.view');

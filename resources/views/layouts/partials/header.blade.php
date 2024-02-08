@@ -3,10 +3,10 @@
             <a href="{{route('home')}}" class="col"><img src="img/logoHome.png"></a>
             <nav class="col">
                 <ul>
-                    <li><a href="">Clientes</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="{{route('cliente')}}">Clientes</a></li>
+                    <li><a href="{{route('sobre')}}">Sobre</a></li>
+                    <li><a href="{{route('post.index')}}">Blog</a></li>
+                    <li><a href="{{route('contato')}}">Contato</a></li>
                 </ul>
             </nav>
             <div class="btn-astro col">

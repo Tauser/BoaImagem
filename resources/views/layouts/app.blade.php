@@ -29,7 +29,7 @@
             @if (Route::currentRouteName()==='home')
                 @include('layouts.partials.header')
             @else
-                @include('layouts.partials.headerInternal')
+                @include('layouts.partials.header')
             @endif
 
 
@@ -41,11 +41,8 @@
             </main>
 
             <!-- Page Footer -->
-            @if (Route::currentRouteName()==='home')
-                @include('layouts.partials.footer')
-            @else
-                @include('layouts.partials.footerBranco')
-            @endif
+            @include('layouts.partials.footer')
+
 
         </div>
 
