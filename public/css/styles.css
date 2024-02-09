@@ -20,7 +20,7 @@ h1 {
 }
 
 main {
-    margin-top: 150px;
+    margin-top: 120px;
     /* add some margin to the top of the main content */
 }
 
@@ -987,6 +987,67 @@ socialslinks a {
     padding: 0 9px;
     text-decoration: none;
     color: #FFF;
+}
+areapreta.blacktitle {
+    background: #000;
+    display: flex;
+    color: #FFF;
+}
+titlearea {
+    padding: 5% 0 10%;
+    display: block;
+    text-align: center;
+}
+titlearea subtitle {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 40px 0 60px;
+    font-size: 30px;
+}
+itlearea h2 {
+    font-size: 52px;
+    padding: 20px 0 0 0;
+}
+imagemfullwidth {
+    display: flex;
+}
+imagemfullwidth .image {
+    margin: 0 !important;
+}
+areapreta.blacktitle.midtitle h1 {
+    font-size: 65px !important;
+    text-align: center;
+    padding: 8% 0;
+}
+areapreta.blacktitle.midtitle.comimagens ul {padding: 0;}
+areapreta.blacktitle.midtitle.comimagens li {
+    width: 48%;
+    margin:  10px;
+    padding: 0 !important;
+    list-style: none;
+    border-radius: 35px;
+    overflow: hidden;
+}
+areapreta.blacktitle.midtitle.comimagens h3 {
+    text-align: center;
+    font-size: 21px;
+    padding: 0 0 65px;
+}
+areapreta.blacktitle button {
+    border: none;
+    background: none;
+    color: #FFF;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 83px 0 0;
+}
+areapreta.blacktitle.midtitle.comimagens {
+    padding: 8% 30px;
+    text-align: -webkit-match-parent;
+}
+areapreta.blacktitle.midtitle.comimagens li img {
+    width: 100%;
 }
 @media screen and (max-height: 450px) {
 .sidenav {padding-top: 15px;}
