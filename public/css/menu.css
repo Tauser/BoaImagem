@@ -8,7 +8,7 @@ container-menu {
     display: flex;
     justify-content: center;
 }
-.btn-astro.col-2{  
+.btn-astro.col-2{
     display: flex;
     justify-content: flex-end;
 }
@@ -22,7 +22,7 @@ menufixo {
     width: 100%;
     padding: 30px 4%;
     position: fixed;
-    top: 0; 
+    top: 0;
     left: 0;
     transition: .5s;
     z-index: 10;
@@ -30,7 +30,7 @@ menufixo {
 
 menufixo img {
     width: 200px;
-}   
+}
 
 menufixo.rolagem {
     background-color: #fff;
@@ -76,6 +76,48 @@ menufixo ul li {
 
 menufixo ul li a {
     color: #fff;
+    font-size: 29px !important;
+    text-decoration: none;
+}
+
+
+/* Menu branco */
+
+menufixobranco {
+    width: 100%;
+    padding: 30px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 10;
+    background-color: #fff;
+
+}
+
+menufixobranco img {
+    width: 200px;
+    filter: invert(100%);
+
+}
+
+menufixobranco i {
+    font-size: 49px;
+    color: #000;
+    align-items: center;
+}
+
+menufixobranco ul {
+    list-style-type: none;
+}
+
+menufixobranco ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+menufixobranco ul li a {
+    color: #000;
     font-size: 29px !important;
     text-decoration: none;
 }

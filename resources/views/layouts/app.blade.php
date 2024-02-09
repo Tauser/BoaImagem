@@ -30,7 +30,7 @@
             @if (Route::currentRouteName()==='home')
                 @include('layouts.partials.header')
             @else
-                @include('layouts.partials.header')
+                @include('layouts.partials.headerInternal')
             @endif
 
 
