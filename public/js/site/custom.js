@@ -1,5 +1,5 @@
 window.addEventListener("scroll", function () {
-    let menufixo = document.querySelector('#menufixoid')
+    let menufixo = document.querySelector('#menufixo')
     menufixo.classList.toggle('rolagem', window.scrollY > 100)
 })
 

@@ -32,7 +32,7 @@ menufixo img {
     width: 200px;
 }   
 
-menufixo .rolagem {
+menufixo.rolagem {
     background-color: #fff;
     padding: 25px 4%;
 }
@@ -44,16 +44,16 @@ menufixo #menufixo.rolagem {
     background: rgb(0, 0, 0, 0.7);
 }
 
-menufixo .rolagem img {
+menufixo.rolagem img {
     filter: invert(100%);
 }
 
-menufixo .rolagem a
+menufixo.rolagem a
 {
     color: #000 !important;
     font-size: 29px !important;
 }
-menufixo .rolagem i {
+menufixo.rolagem i {
     font-size: 49px;
     color: #000;
     align-items: center;
