@@ -854,7 +854,24 @@ blogList .blog a {
     text-decoration: none !important;
     line-height: auto !important;
 }
-
+.container.contato h1 {
+    font-size: 42px !important;
+    font-weight: normal;
+    text-align: center;
+}
+.container.contato h1 {
+    font-size: 60px !important;
+    padding: 0 0 40px;
+}
+subtitle {
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: -10px 0 20px;
+}
+.container.contato form {
+    text-align: center;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -867,6 +884,20 @@ blogList .blog a {
     transition: 0.5s;
     padding-top: 60px;
     overflow-y: auto;
+}
+input[type="text"] {
+    width: 100%;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid #888;
+    background: transparent;
+    padding: 30px 0px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.container.contato form {
+    max-width: 680px;
+    margin: 0 auto;
 }
 div#mySidenav .cart_item {
     padding: 10px;
