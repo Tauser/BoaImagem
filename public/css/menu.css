@@ -1,0 +1,72 @@
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 10;
+}
+
+header img {
+    width: 200px;
+}
+
+header.rolagem {
+    background-color: #fff;
+    padding: 25px 4%;
+}
+
+header#header.rolagem {
+    position: fixed;
+    background: #ffffff;
+    box-shadow: 0 0 10px #000;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+header.rolagem img {
+    filter: invert(100%);
+}
+
+header.rolagem a
+{
+    color: #000 !important;
+    font-size: 29px !important;
+}
+header.rolagem i {
+    font-size: 49px;
+    color: #000;
+    align-items: center;
+}
+
+header i {
+    font-size: 49px;
+    color: #fff;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a {
+    color: #fff;
+    font-size: 29px !important;
+    text-decoration: none;
+}
