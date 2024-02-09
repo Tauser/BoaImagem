@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function () {
-    let header = document.querySelector('#header')
-    header.classList.toggle('rolagem', window.scrollY > 100)
+    let menufixo = document.querySelector('#menufixoid')
+    menufixo.classList.toggle('rolagem', window.scrollY > 100)
 })
 
 // Esse Script ativa a função de rolagem que pus em alguns itens, deixar pois irei adicionar em outros pelo site ex: Peça e texto abaixo do slide da peça

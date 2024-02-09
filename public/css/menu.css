@@ -1,17 +1,17 @@
-.container {
-    max-width: 1280px;
+container-menu {
+    width: 100%;
     margin: auto;
 }
 
-.flex {
+flex-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header {
+menufixo {
     width: 100%;
-    padding: 60px 4%;
+    padding: 30px 4%;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,53 +19,53 @@ header {
     z-index: 10;
 }
 
-header img {
+menufixo img {
     width: 200px;
 }
 
-header.rolagem {
+menufixo .rolagem {
     background-color: #fff;
     padding: 25px 4%;
 }
 
-header#header.rolagem {
+menufixo #menufixo.rolagem {
     position: fixed;
     background: #ffffff;
     box-shadow: 0 0 10px #000;
     background: rgb(0, 0, 0, 0.7);
 }
 
-header.rolagem img {
+menufixo .rolagem img {
     filter: invert(100%);
 }
 
-header.rolagem a
+menufixo .rolagem a
 {
     color: #000 !important;
     font-size: 29px !important;
 }
-header.rolagem i {
+menufixo .rolagem i {
     font-size: 49px;
     color: #000;
     align-items: center;
 }
 
-header i {
+menufixo i {
     font-size: 49px;
     color: #fff;
     align-items: center;
 }
 
-header ul {
+menufixo ul {
     list-style-type: none;
 }
 
-header ul li {
+menufixo ul li {
     display: inline-block;
     margin: 0 40px;
 }
 
-header ul li a {
+menufixo ul li a {
     color: #fff;
     font-size: 29px !important;
     text-decoration: none;

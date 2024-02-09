@@ -1,5 +1,5 @@
-<header id="header">
-    <div class="container flex">
+<menufixo id="menufixo">
+    <div class="container-menu flex-menu">
             <a href="{{route('home')}}" class="col"><img src="img/logoHome.png"></a>
             <nav class="col">
                 <ul>
@@ -13,7 +13,7 @@
               <span onclick="openNav()"><i class="fa fa-grav" aria-hidden="true"></i></span>
             </div>
     </div><!--container-->
-</header>
+</menufixo>
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
