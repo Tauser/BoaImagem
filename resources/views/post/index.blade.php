@@ -15,8 +15,11 @@
                 @endforeach
             </ul>
             {{-- {{ $posts->links() }} --}}
-            {!! $posts->links('pagination::bootstrap-5') !!}
 
+
+            <div class="mt-5 mb-5">
+                {{ $posts->links() }}
+            </div>
         </blogList>
 
 
