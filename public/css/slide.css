@@ -20,29 +20,7 @@ sectiontext.slider {
     width: 100%;
     float: left;
 }
-
-header{
-    position: absolute;
-    width: 100%;
-    z-index: 100;
-    border-bottom: 1px solid #fff4;
-}
-header ul{
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    list-style: none;
-}
-header li{
-    padding: 30px 40px;
-    color: #fff;
-}
-header li.active, header li:hover{
-    border-bottom: 2px solid #fff;
-}
+ 
 .slider {
     position: relative;
     width: 100%;
@@ -59,20 +37,7 @@ slides {
 }
 sectiontext.slider {
     min-height: 58rem;
-}
-.title{
-    position: absolute;
-    top: 10%;
-    right: 60%;
-    text-align: right;
-    color: #fff;
-    font-size: 150px;
-    width: 40%;
-    font-family: 'Pacifico', cursive;
-    text-shadow: 3px 5px 0px #478860;
-    line-height: .9em;
-    transform: rotate(-5deg);
-}
+} 
 .images{
     position: absolute;
 
@@ -124,6 +89,9 @@ slides .content {
 }
 .content .item.active{
     display: block;
+}
+ultimostrabalhos button.readmore {
+    margin: 3% auto;
 }
 @keyframes showContent{
     from{

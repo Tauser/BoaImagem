@@ -4,15 +4,12 @@
 
 swiper-container {
     width: 100%;
-    height: 400px;
+    height: 680px;
 }
 
 swiper-slide {
     text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 18px; 
     background: rgb(0, 220, 255);
     background: linear-gradient(158deg, rgba(0, 220, 255, 1) 0%, rgba(0, 161, 255, 1) 79%);
     border-radius: 50px;
@@ -26,8 +23,19 @@ swiper-slide img {
 }
 
 swiper-slide .title {
-    font-size: 41px;
-    font-weight: 300;
+    font-size: 28px;
+    text-align: left;
+    font-weight: bold;
+    color: #FFF;
+    padding: 40% 4% 0;
+}
+slidervertical.container h1 {
+    padding: 4% 0 10%;
+}
+swiper-slide .subtitle {
+    font-size: 21px;
+    text-align: left;
+    padding: 0 4%;
 }
 
 swiper-slide .subtitle {
