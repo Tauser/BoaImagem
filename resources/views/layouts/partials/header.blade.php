@@ -1,7 +1,7 @@
 <menufixo id="menufixo">
     <div class="container-menu flex-menu">
-            <a href="{{route('home')}}" class="col"><img src="img/logoHome.png"></a>
-            <nav class="col">
+            <a href="{{route('home')}}" class="col-3"><img src="img/logoHome.png"></a>
+            <nav class="col-6">
                 <ul>
                     <li><a href="{{route('cliente')}}">Clientes</a></li>
                     <li><a href="{{route('sobre')}}">Sobre</a></li>
@@ -9,7 +9,7 @@
                     <li><a href="{{route('contato')}}">Contato</a></li>
                 </ul>
             </nav>
-            <div class="btn-astro col">
+            <div class="btn-astro col-2">
               <span onclick="openNav()"><i class="fa fa-grav" aria-hidden="true"></i></span>
             </div>
     </div><!--container-->

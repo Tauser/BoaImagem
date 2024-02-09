@@ -1,8 +1,17 @@
 container-menu {
     width: 100%;
     margin: auto;
+    display: flex;
+    justify-content: center;
 }
-
+.container-menu.flex-menu {
+    display: flex;
+    justify-content: center;
+}
+.btn-astro.col-2{  
+    display: flex;
+    justify-content: flex-end;
+}
 flex-menu {
     display: flex;
     align-items: center;
