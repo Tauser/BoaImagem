@@ -14,7 +14,8 @@
                 </x-post-item>
                 @endforeach
             </ul>
-            {{ $posts->links() }}
+            {{-- {{ $posts->links() }} --}}
+            {!! $posts->links('pagination::bootstrap-5') !!}
 
         </blogList>
 
