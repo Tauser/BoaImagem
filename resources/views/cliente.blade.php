@@ -1,39 +1,32 @@
 <x-app-layout>
-    <AreaPreta class="blacktitle">
-        <container class="container">
-        <button>< voltar</button>
-        <titleArea>
-            <h1>Cliente X</h1>
-            <subtitle>Contar um pouco sobre o trabalho que foi realizado para o cliente</subtitle>
-
-            <h2>Trabalhos Realizados</h2>
-        </titleArea>
-    </container>
-    </AreaPreta>
-    
-        <ImagemFullWidth>
-            <div class="image"><img src="img/bg.png"></div>
-        </ImagemFullWidth>
-
-    <AreaPreta class="blacktitle midtitle">
-        <container class="container">
-            <h1>Nam sodales ligula id diam sodales gravida. curabitur aliquet quam sem, a pretium nibh mollis eget</h1> 
-         </container>
-    </AreaPreta>
-        
-    <ImagemFullWidth>
-            <div class="image"><img src="img/bg.png"></div>
-        </ImagemFullWidth>
-
-       
-
-    <AreaPreta class="blacktitle midtitle comimagens">
-        <container class="container">
-                <h3>Nam sodales ligula id diam sodales gravida. curabitur aliquet quam sem, a pretium nibh mollis eget</h3>
-                <ul class="row">
-                    <li class="col"><img src="img/bgslides.png"></li>
-                    <li class="col"><img src="img/bgslides.png"></li>
-                </ul>
-            </container>
-        </AreaPreta>
+    <section id="gallery">
+        <div class="galleryfilter"> 
+            <ul class="filter-menu">
+                <li data-target="all">All</li>
+                <li data-target="men">MEN</li>
+                <li data-target="kid">KID</li>
+                <li data-target="female">FEMALE</li>
+            </ul>
+            <ul class="filter-item">
+                <li data-item="men">
+                <img src="https://www.myprograming.com/wp-content/uploads/2021/10/mr-khushal.jpg">
+                </li>
+                <li data-item="men">
+                <img src="https://www.myprograming.com/wp-content/uploads/2021/10/khushal.jpg">
+                </li>
+                <li data-item="kid">
+                <img src="https://www.myprograming.com/wp-content/uploads/2021/10/cute-baby-boy.jpg">
+                </li>
+                <li data-item="kid">
+                <img src="https://www.myprograming.com/wp-content/uploads/2021/10/cute-smile-baby-boy.jpg">
+                </li>
+                <li data-item="female">
+                <img src="https://www.myprograming.com/wp-content/uploads/2021/10/cute-smile-girl.jpg">
+                </li>
+                <li data-item="female">
+                <img src="https://www.myprograming.com/wp-content/uploads/2021/10/cute-girl.jpg">
+            </li>
+            </ul>
+        </div>
+    </section>
 </x-app-layout>
