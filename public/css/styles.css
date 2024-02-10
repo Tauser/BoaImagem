@@ -1049,7 +1049,13 @@ titleclients p {
 ul.filter-item {
     display: inline;
 }
-
+TitleCLients .col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
 @media screen and (max-height: 450px) { 
 }
 
