@@ -15,14 +15,10 @@
                 @endforeach
             </ul>
             {{-- {{ $posts->links() }} --}}
-
-
             <div class="mt-5 mb-5">
                 {{ $posts->links() }}
             </div>
         </blogList>
-
-
 
 
 </x-app-layout>
