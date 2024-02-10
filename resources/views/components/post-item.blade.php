@@ -1,4 +1,4 @@
-<li class="col-4">
+<li class="col-4 mb-5">
     <div class="parent">
         <figure>
             <a href="{{route('post.view', $post)}}" class="hover:opacity-75">
