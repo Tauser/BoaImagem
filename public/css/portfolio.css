@@ -43,11 +43,13 @@
     .filter-item li.active{ 
     padding: 2px;
     transition: all 0.5s ease;
+    opacity: 1;
     }
-    .filter-item li.delete{
-    width: 0%;
-    padding: 0;
-    transition: all 0.5s ease;
+    .filter-item li.delete {
+        width: 0%;
+        padding: 0;
+        transition: all 0.5s ease;
+        opacity: 0;
     }
     .filter-item img{
     display: block;
