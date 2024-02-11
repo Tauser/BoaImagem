@@ -53,7 +53,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c23503b397.js" crossorigin="anonymous"></script>
 
-    {{-- <script src="{{ asset('js/site/jquery.min.js') }}"></script> --}}
+    <script src="{{ asset('js/site/jquery.min.js') }}"></script>
 
     {{-- <script src="{{ asset('js/site/swup.min.js') }}"></script>
 
