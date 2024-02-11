@@ -7,7 +7,7 @@
                 <li class="col icons"><img class="floating" src="img/xadreztorre.png"><img class="floating2" src="img/xadrezpeao.png"><img class="floating3" src="img/xadrezpeao2.png"></li>
             </ul>
         </sectionText>
-        <slides>
+        <!--<slides>
             <div class="slider">
                 <div class="images sectiontext.slider">
                     <div class="item" style="--i: 1">
@@ -59,7 +59,7 @@
                     < </button>
                         <button id="next">></button>
             </div>
-        </slides>
+        </slides>-->
     </divContainer>
 
 

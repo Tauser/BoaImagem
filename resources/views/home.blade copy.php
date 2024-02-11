@@ -1,5 +1,6 @@
 <x-app-layout>
 <mainHome>
+    <!--
     <slides>
         <img class="img" src="img/xadrezbase.png">
         <sectionText class="slider">
@@ -20,7 +21,7 @@
                 </ul>
         </sectionText>
     </slides>
-
+-->
     <subarea>
             <arealeft>
                 <h1 class="slide-in-right">Tudo começa com estratégia</h1>
