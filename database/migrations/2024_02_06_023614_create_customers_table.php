@@ -18,7 +18,8 @@ return new class extends Migration
             $table->id();
             $table->string('name', 150);
             $table->string('thumbnail', 255)->nullable();
-            $table->string('descritpion');
+            $table->text('content');
+            $table->foreignId('category_id')->nullable()->constrained()->unsigned();
             $table->timestamp('created_at')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
         });

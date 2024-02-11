@@ -3,7 +3,7 @@
             <a href="{{route('home')}}" class="col-3"><img src="img/logoHome.png"></a>
             <nav class="col-6">
                 <ul>
-                    <li><a href="{{route('cliente')}}">Clientes</a></li>
+                    <li><a href="{{route('cliente.index')}}">Clientes</a></li>
                     <li><a href="{{route('sobre')}}">Sobre</a></li>
                     <li><a href="{{route('post.index')}}">Blog</a></li>
                     <li><a href="{{route('contato')}}">Contato</a></li>

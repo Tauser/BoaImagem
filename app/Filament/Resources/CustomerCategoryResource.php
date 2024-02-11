@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\CategoryResource\Pages;
-use App\Filament\Resources\CategoryResource\RelationManagers;
-use App\Models\Category;
+use App\Filament\Resources\CustomerCategoryResource\Pages;
+use App\Filament\Resources\CustomerCategoryResource\RelationManagers;
+use App\Models\CustomerCategory;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,12 +13,14 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class CategoryResource extends Resource
+class CustomerCategoryResource extends Resource
 {
-    protected static ?string $model = Category::class;
+    protected static ?string $model = CustomerCategory::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?string $modelLabel = 'Categoria de posts';
+    protected static ?string $modelLabel = 'Categoria de Clientes';
+    protected static ?string $navigationGroup = 'Clientes';
+
     public static function form(Form $form): Form
     {
         return $form
@@ -26,7 +28,7 @@ class CategoryResource extends Resource
                 Forms\Components\TextInput::make('name')
                     ->label('Nome')
                     ->required()
-                    ->maxLength(150),
+                    ->maxLength(255),
             ]);
     }
 
@@ -35,15 +37,15 @@ class CategoryResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->label('Nome')
+                ->label('Nome')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->label('Criado')
+                ->label('Criado')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->label('Atualizado')
+                ->label('Editado')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
@@ -71,9 +73,9 @@ class CategoryResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListCategories::route('/'),
-            'create' => Pages\CreateCategory::route('/create'),
-            'edit' => Pages\EditCategory::route('/{record}/edit'),
+            'index' => Pages\ListCustomerCategories::route('/'),
+            'create' => Pages\CreateCustomerCategory::route('/create'),
+            'edit' => Pages\EditCustomerCategory::route('/{record}/edit'),
         ];
     }
 }

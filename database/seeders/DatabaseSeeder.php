@@ -3,6 +3,9 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Customer;
+use App\Models\CustomerCategory;
 use Illuminate\Database\Seeder;
 use App\Models\User;
 
@@ -15,6 +18,8 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\Post::factory(10)->create();
         \App\Models\Category::factory(10)->create();
+        CustomerCategory::factory(10)->create();
+        Customer::factory(10)->create();
 
         $adminUser = User::factory()->create([
             'email' => 'tauser@gmail.com',

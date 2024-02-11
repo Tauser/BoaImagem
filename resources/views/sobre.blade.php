@@ -42,8 +42,23 @@
                 @endforeach
             </ul>
 
-
         </center>
+
+        {{-- <div class="mil-team-card mil-up mil-mb-30">
+            <img src="img/faces/4.jpg" alt="Team member">
+            <div class="mil-description">
+                <div class="mil-secrc-text">
+                    <h5 class="mil-muted mil-mb-5"><a href="home-2.html">Lisa Trueman</a></h5>
+                    <p class="mil-link mil-light-soft mil-mb-10">UI/UX Designer</p>
+                    <ul class="mil-social-icons mil-center">
+                        <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-behance"></i></a></li>
+                        <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-dribbble"></i></a></li>
+                        <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#." target="_blank" class="social-icon"> <i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> --}}
     </lista>
 
 

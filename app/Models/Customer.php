@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Customer extends Model
 {
@@ -24,7 +25,7 @@ class Customer extends Model
     protected $fillable = [
         'name',
         'thumbnail',
-        'descritpion',
+        'content',
     ];
 
     /**
@@ -37,4 +38,18 @@ class Customer extends Model
         'created_at' => 'timestamp',
         'updated_at' => 'timestamp',
     ];
+
+    public function category(): BelongsTo
+    {
+      return $this->belongsTo(CustomerCategory::class);
+    }
+
+    public function getThumbnail()
+    {
+        if (str_starts_with($this->thumbnail, 'http')) {
+            return $this->thumbnail;
+        }
+
+        return '/storage/' . $this->thumbnail;
+    }
 }

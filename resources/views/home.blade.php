@@ -1,4 +1,22 @@
 <x-app-layout>
+<!-- preloader -->
+<div class="bi-preloader">
+    <div class="bi-preloader-animation">
+        <div class="bi-pos-abs bi-animation-1">
+            <p class="bi-h3 bi-muted bi-thin">Pioneira</p>
+            <p class="bi-h3 bi-muted bi-bold">Criativa</p>
+            <p class="bi-h3 bi-muted bi-thin">Excelencia</p>
+        </div>
+        <div class="bi-pos-abs bi-animation-2">
+            <div class="bi-reveal-frame">
+                <p class="bi-reveal-box"></p>
+                <p class="bi-h3 bi-muted bi-thin">boaimagem.org</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- preloader end -->
+
 <mainHome>
     <divContainer id="slider">
         <img class="img" src="img/xadrezbase.png">
@@ -7,7 +25,7 @@
                 <li class="col icons"><img class="floating" src="img/xadreztorre.png"><img class="floating2" src="img/xadrezpeao.png"><img class="floating3" src="img/xadrezpeao2.png"></li>
             </ul>
         </sectionText>
-        <slides>
+        {{-- <slides>
             <div class="slider">
                 <div class="images sectiontext.slider">
                     <div class="item" style="--i: 1">
@@ -59,12 +77,14 @@
                     < </button>
                         <button id="next">></button>
             </div>
-        </slides>
+        </slides> --}}
     </divContainer>
 
 
 
-    <subarea>
+
+
+        <subarea>
             <arealeft>
                 <h1 class="slide-in-right">Tudo começa com estratégia</h1>
                 <p class="slide-in-right-dlay">nós transformamos visões em realidade. Descubra quem somos, o como impulsionamos o seu sucesso para novos patamares</p>
@@ -72,7 +92,7 @@
             </arealeft>
         </subarea>
 
-        <ServicosHome>
+        {{-- <ServicosHome>
             <container class="container">
                 <ul class="row">
                     <li class="col-3 slide-fwd-center slide-in-blurred-right">
@@ -101,13 +121,15 @@
                     </li>
                 </ul>
             </container>
-        </ServicosHome>
+        </ServicosHome> --}}
 
-    <UltimosTrabalhos>
+    {{-- <UltimosTrabalhos>
         <container class="container">
             <x-slider-vertical />
         </container>
-    </UltimosTrabalhos>
+    </UltimosTrabalhos> --}}
+
+
     <newsletter>
         <center class="container">
             <div class="row">
