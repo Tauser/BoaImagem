@@ -290,8 +290,8 @@ servicoshome {
     float: left;
     width: 100%;
     padding: 20px 0;
-}
-
+}  
+ 
 
 servicoshome container.container ul li h4 {
     width: 100%;
@@ -464,7 +464,7 @@ servicoshome container.container ul li:hover {
 }
 
 servicoshome container.container ul li:before {
-    top: 0;    left: 0;    width: 100%;    content: "";    z-index: -1;    opacity: 0;    height: 100%;    position: absolute;    -webkit-transition: all 500ms ease;    transition: all 500ms ease;
+    top: 0;    left: 0;    width: 100%;    content: "";    z-index: -1;    opacity: 0;    height: 100%;    position: absolute;    -webkit-transition: all 500ms ease;    transition: all 500ms ease;    
     background: var(--linear, linear-gradient(135deg, #000 0%, #001e35 45.72%, #003d6c 100%));
     -webkit-box-shadow: 0px 0px 30px 0px rgba(27, 28, 53, 0.65) inset;    box-shadow: 0px 0px 30px 0px rgba(27, 28, 53, 0.65) inset;
 }
@@ -513,7 +513,7 @@ servicoshome container.container ul li b {
     font-family: var(--heading);
     -webkit-transition: all 500ms ease;
     transition: all 500ms ease;
-}
+}   
 
 blogList .blog a {
     color: #333 !important;
@@ -623,7 +623,7 @@ div#mySidenav .cart_item h4.item_title {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
+}  
 
 .text {
     width: 100%;
@@ -639,7 +639,7 @@ div#mySidenav .cart_item h4.item_title {
     font-size: 21px;
     padding: 0 17% 0;
 }
-
+ 
 p.text-sm.pb-8.publicaaco {
     color: #777;
     padding: 10px 0;
