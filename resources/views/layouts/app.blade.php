@@ -15,17 +15,21 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="{{asset("css/custom.css")}}" />
         <link rel="stylesheet" href="{{asset("css/styles.css")}}" />
-        <link rel="stylesheet" href="{{asset("css/animations.css")}}" />
+
 
         <!-- BEGIN: CSS -->
+        <link rel="stylesheet" href="css/site/animate.css">
+        <link rel="stylesheet" href="css/site/fontawesome-all.css">
         <link rel="stylesheet" href="css/site/boozy-icons.css">
+        <link rel="stylesheet" href="css/site/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/site/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/site/settings.css">
+        <link rel="stylesheet" href="css/site/slick.css">
         <link rel="stylesheet" href="css/site/aos.css">
+        <link rel="stylesheet" href="css/site/ignore_for_wp.css">
         <link rel="stylesheet" href="css/site/preset.css">
         <link rel="stylesheet" href="css/site/theme.css">
         <link rel="stylesheet" href="css/site/responsive.css">
-        <link rel="stylesheet" href="css/site/lightslider.css">
-
         <!-- END: CSS -->
 
         <!-- swiper css -->
@@ -39,7 +43,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body id="magicCursor">
-        <div class="main">
+        <div class="main myScroller">
 
             <!-- Page Header -->
             @if (Route::currentRouteName()==='home')
@@ -76,15 +80,26 @@
 
 
     <!-- BEGIN: JS -->
+
     <script src="js/site/jquery.js"></script>
-    <script src="js/site/jquery.appear.js"></script>
+    <script src="js/site/shuffle.min.js"></script>
     <script src="js/site/owl.carousel.min.js"></script>
+    <script src="js/site/jquery.appear.js"></script>
+    <script src="js/site/jquery.themepunch.tools.min.js"></script>
+    <script src="js/site/jquery.themepunch.revolution.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.auctions.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.migration.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="js/site/extensions/revolution.extension.video.min.js"></script>
     <script src="js/site/gsap.min.js"></script>
     <script src="js/site/ScrollTrigger.min.js"></script>
     <script src="js/site/aos.js"></script>
-    <script src="js/site/shuffle.min.js"></script>
     <script src="js/site/common.js"></script>
     <script src="js/site/theme.js"></script>
-    <script src="js/site/lightslider.min.js"></script>
     <!-- END: JS -->
 </html>
