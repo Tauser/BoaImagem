@@ -40,13 +40,15 @@
                                 </filter>
                             </svg>
                             <div class="row">
+                                {{-- BEGIN DATA --}}
+                                @foreach ($posts as $post)
                                 <div class="col-md-6">
                                     <div class="blogGridRow">
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <div class="blogImgThumbnail" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800">
+                                                <div class="blogImgThumbnail" data-aos="fade-up" data-aos-offset="300" data-aos-easing="" data-aos-duration="800">
                                                     <div class="animateThumb">
-                                                        <img src="img/blog/10.jpg" alt="blogimage">
+                                                        <img src="{{$post->getThumbnail()}}" alt="{{$post->title}}" >
                                                     </div>
                                                     <span class="blPostDate">
                                                         <span class="blPostDay strokeText">12</span>
@@ -58,17 +60,15 @@
                                                 <div class="blogContent02">
                                                     <div class="blogMata no-cursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
                                                         <span class="blogCcat ">
-                                                            <a href="blog-grid-rsb.html">Agency</a>
-                                                            <span>/</span>
-                                                            <a href="blog-list-rsb.html">Business</a>
+                                                            <a href="blog-grid-rsb.html">{{$post->category->name}}</a>
                                                         </span>
-                                                        <span class="blogAuth">by&nbsp;<a href="javascript:void(0);">Robert Helen</a></span>
+                                                        <span class="blogAuth">por&nbsp;<a href="javascript:void(0);">{{$post->user->name}}</a></span>
                                                     </div>
-                                                    <h2 class="dfCursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750"><a href="blog-details-lsb.html">worldwide annual spend on digital advertising surpassing $325 billion</a></h2>
-                                                    <p class="blogDesc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">We can help you channel your potential implementing your idea. We take  care of our needs, crafting specific.</p>
+                                                    <h2 class="dfCursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750"><a href="blog-details-lsb.html">{{$post->title}}</a></h2>
+                                                    <p class="blogDesc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900"></p>
                                                     <div class="button-wrap right">
                                                         <a class="boozyLinkBTN" href="blog-details-rsb.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="950">
-                                                            <div class="button-text sticky right btnWrapper_sm"><span>Read Full Article</span></div>
+                                                            <div class="button-text sticky right btnWrapper_sm"><span>Ler artigo completo</span></div>
                                                             <div class="iconWrapper parallax-wrap iconWrapper_sm" style="transform: translate(0px, 0px);">
                                                                 <div class="button-icon parallax-element" style="transform: translate(0px, 0px);">
                                                                     <i class="boozy-long-r-arrow"></i>
@@ -81,129 +81,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="blogGridRow" data-aos="fade-up" data-aos-easing="linear">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="blogImgThumbnail" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="900">
-                                                    <div class="animateThumb">
-                                                        <img src="img/blog/8.jpg" alt="blogimage">
-                                                    </div>
-                                                    <span class="blPostDate">
-                                                        <span class="blPostDay strokeText">12</span>
-                                                        <span class="blPostMonth">Jun <br> 2022</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="blogContent02">
-                                                    <div class="blogMata no-cursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
-                                                        <span class="blogCcat ">
-                                                            <a href="blog-grid-rsb.html">Agency</a>
-                                                            <span>/</span>
-                                                            <a href="blog-list-rsb.html">Business</a>
-                                                        </span>
-                                                        <span class="blogAuth">by&nbsp;<a href="javascript:void(0);">Robert Helen</a></span>
-                                                    </div>
-                                                    <h2 class="dfCursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750"><a href="blog-details-rsb.html">Business Card, small but the most important</a></h2>
-                                                    <p class="blogDesc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">We can help you channel your potential implementing your idea. We take  care of our needs, crafting specific.</p>
-                                                    <div class="button-wrap right">
-                                                        <a class="boozyLinkBTN" href="blog-details-lsb.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="950">
-                                                            <div class="button-text sticky right btnWrapper_sm"><span>Read Full Article</span></div>
-                                                            <div class="iconWrapper parallax-wrap iconWrapper_sm" style="transform: translate(0px, 0px);">
-                                                                <div class="button-icon parallax-element" style="transform: translate(0px, 0px);">
-                                                                    <i class="boozy-long-r-arrow"></i>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="blogGridRow">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="blogImgThumbnail" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000">
-                                                    <div class="animateThumb">
-                                                        <img src="img/blog/6.jpg" alt="blogimage">
-                                                    </div>
-                                                    <span class="blPostDate">
-                                                        <span class="blPostDay strokeText">12</span>
-                                                        <span class="blPostMonth">Jun <br> 2022</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="blogContent02" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
-                                                    <div class="blogMata">
-                                                        <span class="blogCcat ">
-                                                            <a href="blog-grid-rsb.html">Agency</a>
-                                                            <span>/</span>
-                                                            <a href="blog-list-rsb.html">Business</a>
-                                                        </span>
-                                                        <span class="blogAuth">by&nbsp;<a href="javascript:void(0);">Robert Helen</a></span>
-                                                    </div>
-                                                    <h2 class="dfCursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750"><a href="blog-details-nsb.html">Business Card, small but the most important</a></h2>
-                                                    <p class="blogDesc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">We can help you channel your potential implementing your idea. We take  care of our needs, crafting specific.</p>
-                                                    <div class="button-wrap right">
-                                                        <a class="boozyLinkBTN" href="blog-details-nsb.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="950">
-                                                            <div class="button-text sticky right btnWrapper_sm"><span>Read Full Article</span></div>
-                                                            <div class="iconWrapper parallax-wrap iconWrapper_sm" style="transform: translate(0px, 0px);">
-                                                                <div class="button-icon parallax-element" style="transform: translate(0px, 0px);">
-                                                                    <i class="boozy-long-r-arrow"></i>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="blogGridRow">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="blogImgThumbnail" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1100">
-                                                    <div class="animateThumb">
-                                                        <img src="img/blog/9.jpg" alt="blogimage">
-                                                    </div>
-                                                    <span class="blPostDate">
-                                                        <span class="blPostDay strokeText">12</span>
-                                                        <span class="blPostMonth">Jun <br> 2022</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="blogContent02" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
-                                                    <div class="blogMata">
-                                                        <span class="blogCcat ">
-                                                            <a href="blog-grid-rsb.html">Agency</a>
-                                                            <span>/</span>
-                                                            <a href="blog-list-rsb.html">Business</a>
-                                                        </span>
-                                                        <span class="blogAuth">by&nbsp;<a href="javascript:void(0);">Robert Helen</a></span>
-                                                    </div>
-                                                    <h2 class="dfCursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750"><a href="blog-details-rsb.html">THE SECRET OF CHANGE IS TO FOCUS ALL YOUR ENERGY NOT ON FIGHTING</a></h2>
-                                                    <p class="blogDesc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">We can help you channel your potential implementing your idea. We take  care of our needs, crafting specific.</p>
-                                                    <div class="button-wrap right">
-                                                        <a class="boozyLinkBTN" href="blog-details-rsb.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="950">
-                                                            <div class="button-text sticky right btnWrapper_sm"><span>Read Full Article</span></div>
-                                                            <div class="iconWrapper parallax-wrap iconWrapper_sm" style="transform: translate(0px, 0px);">
-                                                                <div class="button-icon parallax-element" style="transform: translate(0px, 0px);">
-                                                                    <i class="boozy-long-r-arrow"></i>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
+                                {{-- END Data --}}
+
                             </div>
                         </div>
 

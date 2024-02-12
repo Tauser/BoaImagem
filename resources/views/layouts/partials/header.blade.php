@@ -29,8 +29,7 @@
                         <a href="javascript:void(0)" class="menu_btn menuBTN02"></a>
                         <div class="boozyGridMenu">
                             <a href="javascript:void(0);">
-                                <span></span>
-                                <span></span>
+                                <i class="fa fa-grav" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
