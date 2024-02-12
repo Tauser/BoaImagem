@@ -1,22 +1,4 @@
 <x-app-layout>
-<!-- preloader -->
-<div class="bi-preloader">
-    <div class="bi-preloader-animation">
-        <div class="bi-pos-abs bi-animation-1">
-            <p class="bi-h3 bi-muted bi-thin">Pioneira</p>
-            <p class="bi-h3 bi-muted bi-bold">Criativa</p>
-            <p class="bi-h3 bi-muted bi-thin">Excelencia</p>
-        </div>
-        <div class="bi-pos-abs bi-animation-2">
-            <div class="bi-reveal-frame">
-                <p class="bi-reveal-box"></p>
-                <p class="bi-h3 bi-muted bi-thin">boaimagem.org</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- preloader end -->
-
 <mainHome>
     <divContainer id="slider">
         <img class="img" src="img/xadrezbase.png">
@@ -25,72 +7,16 @@
                 <li class="col icons"><img class="floating" src="img/xadreztorre.png"><img class="floating2" src="img/xadrezpeao.png"><img class="floating3" src="img/xadrezpeao2.png"></li>
             </ul>
         </sectionText>
-        <!--<slides>
-            <div class="slider">
-                <div class="images sectiontext.slider">
-                    <div class="item" style="--i: 1">
-                        <img src="img/Rei.png">
-                    </div>
-                    <div class="item" style="--i: 2">
-                        <img src="img/Cavalo.png">
-                    </div>
-                    <div class="item" style="--i: 3">
-                        <img src="img/Torre.png">
-                    </div>
-                    <div class="item" style="--i: 4">
-                        <img src="img/Rei.png">
-                    </div>
-                </div>
-                <div class="content">
-                    <div class="item active">
-                        <h1>PRODUCT NAME 1</h1>
-                        <div class="des">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita tenetur consectetur. Ipsum, quibusdam recusandae impedit molestiae libero nobis nemo possimus perspiciatis. Debitis aliquam cum nemo aspernatur expedita ea? Et officia asperiores est aliquam? Doloribus, tenetur non? Minima vero aperiam corporis magni. Officiis, blanditiis. Iusto sint distinctio eaque non culpa.
-                        </div>
-                        <button>See more</button>
-                    </div>
-                    <div class="item">
-                        <h1>PRODUCT NAME 2</h1>
-                        <div class="des">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita tenetur consectetur. Ipsum, quibusdam recusandae impedit molestiae libero nobis nemo possimus perspiciatis. Debitis aliquam cum nemo aspernatur expedita ea? Et officia asperiores est aliquam? Doloribus, tenetur non? Minima vero aperiam corporis magni. Officiis, blanditiis. Iusto sint distinctio eaque non culpa.
-                        </div>
-                        <button>See more</button>
-                    </div>
-                    <div class="item">
-                        <h1>PRODUCT NAME 3</h1>
-                        <div class="des">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita tenetur consectetur. Ipsum, quibusdam recusandae impedit molestiae libero nobis nemo possimus perspiciatis. Debitis aliquam cum nemo aspernatur expedita ea? Et officia asperiores est aliquam? Doloribus, tenetur non? Minima vero aperiam corporis magni. Officiis, blanditiis. Iusto sint distinctio eaque non culpa.
-                        </div>
-                        <button>See more</button>
-                    </div>
-                    <div class="item">
-                        <h1>PRODUCT NAME 4</h1>
-                        <div class="des">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita tenetur consectetur. Ipsum, quibusdam recusandae impedit molestiae libero nobis nemo possimus perspiciatis. Debitis aliquam cum nemo aspernatur expedita ea? Et officia asperiores est aliquam? Doloribus, tenetur non? Minima vero aperiam corporis magni. Officiis, blanditiis. Iusto sint distinctio eaque non culpa.
-                        </div>
-                        <button>See more</button>
-                    </div>
 
-
-                </div>
-                <button id="prev">
-                    < </button>
-                        <button id="next">></button>
-            </div>
-        </slides>-->
     </divContainer>
 
-
-
-
-
-        <subarea>
-            <arealeft>
-                <h1 class="slide-in-right">Tudo começa com estratégia</h1>
-                <p class="slide-in-right-dlay">nós transformamos visões em realidade. Descubra quem somos, o como impulsionamos o seu sucesso para novos patamares</p>
-                <button class="readmore slide-in-right-ddlay">Ler Sobre</button>
-            </arealeft>
-        </subarea>
+    <subarea>
+        <arealeft data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
+            <h1>Tudo começa com estratégia</h1>
+            <p>nós transformamos visões em realidade. Descubra quem somos, o como impulsionamos o seu sucesso para novos patamares</p>
+            <button>Ler Sobre</button>
+        </arealeft>
+    </subarea>
 
         {{-- <ServicosHome>
             <container class="container">
@@ -129,6 +55,89 @@
         </container>
     </UltimosTrabalhos> --}}
 
+    <section class="portfolioCarouselSEc_01">
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="protfolioCarousel01 owl-carousel owl-theme">
+                        <div class="portfolioCarItam projectItemView" data-firstline="Mais" data-secondline="Detalhes">
+                            <img src="img/1.jpg" alt="portfolio">
+                            <a href="case-studies.html" class="portfolioInfoPP_item">
+                                <div class="portFolioInfo">
+                                    <i class="boozy-down-rrt-arrow"></i><br>
+                                    <h3 class="ps_item_name">cREATIVE bRCOHURE</h3><br>
+                                    <h4 class="ps_auth_name">Brochure Design</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolioCarItam projectItemView" data-firstline="View" data-secondline="Details">
+                            <img src="img/2.jpg" alt="portfolio">
+                            <a href="case-studies.html" class="portfolioInfoPP_item">
+                                <div class="portFolioInfo">
+                                    <i class="boozy-down-rrt-arrow"></i><br>
+                                    <h3 class="ps_item_name">Photography Camera</h3><br>
+                                    <h4 class="ps_auth_name">Canon</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolioCarItam projectItemView" data-firstline="View" data-secondline="Details">
+                            <img src="img/3.jpg" alt="portfolio">
+                            <a href="case-studies.html" class="portfolioInfoPP_item">
+                                <div class="portFolioInfo">
+                                    <i class="boozy-down-rrt-arrow"></i><br>
+                                    <h3 class="ps_item_name">Brand Identity</h3><br>
+                                    <h4 class="ps_auth_name">Chanel Perfumes</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolioCarItam projectItemView" data-firstline="View" data-secondline="Details">
+                            <img src="img/4.jpg" alt="portfolio">
+                            <a href="case-studies.html" class="portfolioInfoPP_item">
+                                <div class="portFolioInfo">
+                                    <i class="boozy-down-rrt-arrow"></i><br>
+                                    <h3 class="ps_item_name">cREATIVE bRCOHURE</h3><br>
+                                    <h4 class="ps_auth_name">Brochure Design</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolioCarItam projectItemView" data-firstline="View" data-secondline="Details">
+                            <img src="img/5.jpg" alt="portfolio">
+                            <a href="case-studies.html" class="portfolioInfoPP_item">
+                                <div class="portFolioInfo">
+                                    <i class="boozy-down-rrt-arrow"></i><br>
+                                    <h3 class="ps_item_name">Aps Development</h3><br>
+                                    <h4 class="ps_auth_name">Development</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolioCarItam projectItemView " data-firstline="View" data-secondline="Details">
+                            <img src="img/6.jpg" alt="portfolio">
+                            <a href="case-studies.html" class="portfolioInfoPP_item">
+                                <div class="portFolioInfo">
+                                    <i class="boozy-down-rrt-arrow"></i><br>
+                                    <h3 class="ps_item_name">Brand Identity</h3><br>
+                                    <h4 class="ps_auth_name">Brochure Design</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolioCarItam projectItemView " data-firstline="View" data-secondline="Details">
+                            <img src="img/7.jpg" alt="portfolio">
+                            <a href="case-studies.html" class="portfolioInfoPP_item">
+                                <div class="portFolioInfo">
+                                    <i class="boozy-down-rrt-arrow"></i><br>
+                                    <h3 class="ps_item_name">Photography Camera</h3><br>
+                                    <h4 class="ps_auth_name">Canon</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
     <newsletter>
         <center class="container">
@@ -146,5 +155,6 @@
             </div>
         </center>
     </newsletter>
+
 </mainHome>
 </x-app-layout>

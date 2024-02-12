@@ -1,103 +1,41 @@
-<menufixo id="menufixo">
-    <div class="container-menu flex-menu">
-            <a href="{{route('home')}}" class="col-3"><img src="img/logoHome.png"></a>
-            <nav class="col-6">
-                <ul>
-                    <li><a href="{{route('cliente.index')}}">Clientes</a></li>
-                    <li><a href="{{route('sobre')}}">Sobre</a></li>
-                    <li><a href="{{route('post.index')}}">Blog</a></li>
-                    <li><a href="{{route('contato')}}">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="btn-astro col-2">
-              <span onclick="openNav()"><i class="fa fa-grav" aria-hidden="true"></i></span>
+  <header class="header01 isSticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="headerInner01">
+                    <div class="logo">
+                        <a class="dfCursor" href="index.html">
+                            <img src="img/logoHome.png" width="120px">
+                        </a>
+                    </div>
+                    <nav class="mainMenu">
+                        <ul>
+                            <li>
+                                <a data-title="Clientes" href="{{route('cliente.index')}}"><span>Clientes</span></a>
+                            </li>
+                            <li>
+                                <a data-title="Sobre" href="{{route('sobre')}}"><span>Sobre</span></a>
+                            </li>
+                            <li>
+                                <a data-title="Blog" href="{{route('post.index')}}"><span>Blog</span></a>
+                            </li>
+                            <li>
+                                <a data-title="Contato" href="{{route('contato')}}"><span>Contato</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="headerOniAccess02">
+                        <a class="hdSupportBtn" href="contact.html"><i class="boozy-chat"></i> Vamos conversar?</a>
+                        <a href="javascript:void(0)" class="menu_btn menuBTN02"></a>
+                        <div class="boozyGridMenu">
+                            <a href="javascript:void(0);">
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-    </div><!--container-->
-</menufixo>
-
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="cart_items_list">
-              <div class="cart_item">
-                  <div class="item_image">
-                      <img src="https://img.freepik.com/free-photo/international-kissing-day-celebration_23-2151185193.jpg?size=626&ext=jpg" alt="image_not_found">
-                  </div>
-                  <div class="item_content headline">
-                      <span class="item_price">BI UNION</span>
-                      <h4 class="item_title">
-                          Grupo Empresarial
-                      </h4>
-                  </div>
-              </div>
-              <div class="cart_item">
-                  <div class="item_image">
-                      <img src="https://img.freepik.com/free-photo/international-kissing-day-celebration_23-2151185193.jpg?size=626&ext=jpg" alt="image_not_found">
-                  </div>
-                  <div class="item_content headline">
-                      <span class="item_price">Boa Imagem</span>
-                      <h4 class="item_title">
-                          Publicidade e Propaganda
-                      </h4>
-                  </div>
-              </div>
-              <div class="cart_item">
-                  <div class="item_image">
-                      <img src="https://img.freepik.com/free-photo/international-kissing-day-celebration_23-2151185193.jpg?size=626&ext=jpg" alt="image_not_found">
-                  </div>
-                  <div class="item_content headline">
-                      <span class="item_price">BI PROMO</span>
-                      <h4 class="item_title">
-                          EVENTOS E INFLUENCERS
-                      </h4>
-                  </div>
-              </div>
-              <div class="cart_item">
-                  <div class="item_image">
-                      <img src="https://img.freepik.com/free-photo/international-kissing-day-celebration_23-2151185193.jpg?size=626&ext=jpg" alt="image_not_found">
-                  </div>
-                  <div class="item_content headline">
-                      <span class="item_price">BI GOOD</span>
-                      <h4 class="item_title">
-                          Mídia e Produção Audiovisual
-                      </h4>
-                  </div>
-              </div>
-              <div class="cart_item">
-                  <div class="item_image">
-                      <img src="https://img.freepik.com/free-photo/international-kissing-day-celebration_23-2151185193.jpg?size=626&ext=jpg" alt="image_not_found">
-                  </div>
-                  <div class="item_content headline">
-                      <span class="item_price">BI PLUS</span>
-                      <h4 class="item_title">
-                          CLOUD SERVICES
-                      </h4>
-                  </div>
-              </div>
-
-              <div class="cart_item">
-                  <div class="item_image">
-                      <img src="https://img.freepik.com/free-photo/international-kissing-day-celebration_23-2151185193.jpg?size=626&ext=jpg" alt="image_not_found">
-                  </div>
-                  <div class="item_content headline">
-                      <span class="item_price">APPOLIS</span>
-                      <h4 class="item_title">
-                          FÁBRICA DE APPS
-                      </h4>
-                  </div>
-              </div>
-
-
-              <div class="cart_item">
-                  <div class="item_image">
-                      <img src="https://img.freepik.com/free-photo/international-kissing-day-celebration_23-2151185193.jpg?size=626&ext=jpg" alt="image_not_found">
-                  </div>
-                  <div class="item_content headline">
-                      <span class="item_price">PROTECT DATA</span>
-                      <h4 class="item_title">
-                          LGPD E CIBERSEGURANÇA
-                      </h4>
-                  </div>
-              </div>
-          </div>
-  </div>
-  <!-- FIM  MENU SIDEBAR -->
+        </div>
+    </div>
+</header>

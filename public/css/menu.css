@@ -1,4 +1,4 @@
-container-menu {
+/* container-menu {
     width: 100%;
     margin: auto;
     display: flex;
@@ -80,9 +80,6 @@ menufixo ul li a {
     text-decoration: none;
 }
 
-
-/* Menu branco */
-
 menufixobranco {
     width: 100%;
     padding: 30px 4%;
@@ -120,4 +117,574 @@ menufixobranco ul li a {
     color: #000;
     font-size: 29px !important;
     text-decoration: none;
+} */
+
+
+/*------------------------------------------------------
+/  01. Home One
+/------------------------------------------------------*/
+.header01,
+.header02,
+.header03{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+.headerInner01,
+.headerInner02,
+.headerInner03 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.header01.isSticky.fixedHeader,
+.header02.isSticky.fixedHeader,
+.header03.isSticky.fixedHeader {
+    position:fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    background: #ff5100;
+    z-index: 99991;
+    border: none;
+}
+.header02.isSticky.fixedHeader{
+    background: #111111;
+}
+.header03.isSticky.fixedHeader{
+    background: #070707;
+}
+.logo{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 13%;
+    padding: 34px 0 35px;
+    margin-right: 57px;
+}
+.logo a{
+    display: inline-block;
+    line-height: 1;
+}
+.mainMenu{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 38px 0 0;
+}
+.mainMenu ul{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+.mainMenu ul li {
+    position: relative;
+    list-style-type: none;
+    padding: 0 0 44px;
+    margin-right: 49px;
+}
+.mainMenu ul li:last-child{
+    margin-right: 0;
+}
+.mainMenu ul li a {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    display: block;
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+    position: relative;
+    overflow: hidden;
+}
+.mainMenu > ul > li > a{
+    line-height: 1;
+}
+.mainMenu ul li a span{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: all ease 250ms;
+    -moz-transition: all ease 250ms;
+    -webkit-transition: all ease 250ms;
+    transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+}
+.mainMenu > ul > li > a:before{
+    content: attr(data-title);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    color: var(--dark-color);
+    transition: all ease 250ms;
+    -moz-transition: all ease 250ms;
+    -webkit-transition: all ease 250ms;
+
+    transform: translateY(-110%);
+    -moz-transform: translateY(-110%);
+    -webkit-transform: translateY(-110%);
+}
+.mainMenu > ul > li:hover > a:before,
+.mainMenu > ul > li.current-menu-item > a:before{
+    transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+}
+.mainMenu > ul > li:hover > a span,
+.mainMenu > ul > li.current-menu-item > a span{
+    transform: translateY(110%);
+    -moz-transform: translateY(110%);
+    -webkit-transform: translateY(110%);
+}
+.mainMenu ul li.menu-item-has-children > a:after {
+    content: '\f078';
+    font-family: 'Font Awesome 6 Free';
+    color: inherit;
+    font-weight: 900;
+    font-size: 8px;
+    margin-left: 5px;
+    position: relative;
+    top: -2.5px;
+    display: inline-block;
+
+    transition: all ease 250ms;
+    -moz-transition: all ease 250ms;
+    -webkit-transition: all ease 250ms;
+}
+.mainMenu ul li.menu-item-has-children:hover > a:after,
+.mainMenu ul li.menu-item-has-children.current-menu-item > a:after {
+    color: var(--dark-color);
+    transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    top: -2.5px;
+}
+.headerInner02 .mainMenu ul li.menu-item-has-children:hover > a:after,
+.headerInner02 .mainMenu ul li.menu-item-has-children.current-menu-item > a:after {
+    color: var(--primary-color);
+}
+
+.page-404 .mainMenu > ul > li:hover > a:before,
+.page-404 .mainMenu > ul > li.current-menu-item > a:before,
+.page-404 .mainMenu ul li.menu-item-has-children:hover > a:after,
+.page-404 .mainMenu ul li.menu-item-has-children.current-menu-item > a:after {
+    color: var(--primary-color);
+}
+/* Sub Menu */
+.mainMenu > ul > li > ul,
+.mainMenu > ul > li > ul > li > ul,
+.mainMenu > ul > li > ul > li > ul >li > ul{
+    padding: 17px 0 17px;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: -30px;
+    pointer-events: none;
+    display: block;
+    min-width: 220px;
+    border-radius: 0;
+    margin: 0;
+    background: #111111;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 30px 60px 0px rgb(2 24 93 / 8%);
+    z-index: 10;
+    -webkit-transform: rotateX(-75deg);
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.mainMenu > ul > li > ul > li > ul >li > ul{
+    left: 30px;
+    border:1px solid rgba(255,255,255,0.1);
+}
+.mainMenu > ul > li > ul:before {
+    content: '';
+    width: 10px;
+    height: 7px;
+    border-style: solid;
+    border-width: 0 5px 7px 5px;
+    border-color: transparent transparent #111111 transparent;
+    position: absolute;
+    left: 30px;
+    top: -7px;
+}
+.mainMenu > ul li:hover > ul{
+    pointer-events: inherit;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: rotatex(0deg);
+    transform: rotatex(0deg);
+}
+.mainMenu > ul > li > ul li,
+.mainMenu> ul > li > ul li > ul li{
+    margin: 0;
+    padding: 0px 30px 0px;
+    width: 100%;
+
+    transition: all ease 250ms;
+    -moz-transition: all ease 250ms;
+    -webkit-transition: all ease 250ms;
+}
+
+.mainMenu > ul > li > ul li a,
+.mainMenu > ul > li > ul li > ul li a{
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    display: inline;
+    padding-bottom: 3px;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), color-stop(98%, #FFFFFF));
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 98%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 98%);
+    background-size: 0 1px;
+    background-repeat: no-repeat;
+    background-position: left 100%;
+}
+.mainMenu > ul > li > ul li:hover,
+.mainMenu > ul > li > ul li.current-menu-item{
+    padding-left: 37px;
+}
+.mainMenu > ul > li > ul li:hover > a,
+.mainMenu > ul > li > ul li.current-menu-item > a{
+    background-size: 100% 1px;
+    background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #FFFFFF 98%);
+    background-image: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 98%);
+}
+.mainMenu ul li ul li.menu-item-has-children > a:after{
+    display: none;
+}
+.mainMenu ul li ul li.menu-item-has-children:after,
+.mainMenu ul li ul li ul li.menu-item-has-children:after{
+    content: '\f054';
+    font-family: 'Font Awesome 6 Free';
+    color: inherit;
+    font-weight: 900;
+    font-size: 8px;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    display: inline-block;
+    transition: all ease 250ms;
+    -moz-transition: all ease 250ms;
+    -webkit-transition: all ease 250ms;
+}
+.mainMenu > ul > li > ul > li > ul{
+    left: calc(100% + 1px);
+    top: 0;
+    margin: 0;
+}
+.headerOniAccess{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.hdOniSocial{
+    position: relative;
+}
+.hdOniSocial ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.hdOniSocial ul li{
+    list-style: none;
+}
+
+.menu_btn{
+    display: none;
+}
+.headerOniAccess{
+    position: relative;
+}
+.hdOniSocial {
+    position: relative;
+}
+.hdOniSocial ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding:0;
+    margin:0;
+}
+.hdOniSocial ul li:not(:first-child){
+    margin-left: 14px;
+}
+.hdOniSocial ul li a{
+    font-size: 14px;
+    color: #FFF;
+    display: inline-block;
+}
+.hdOniSocial ul li a:hover{
+    color: var(--dark-color);
+}
+.page-404 .oniSearch a:hover i,
+.page-404 .oniCart > a:hover i,
+.page-404 .hdOniSocial ul li a:hover{
+    color: var(--primary-color);
+}
+
+.oniSearch {
+    margin-left: 40px;
+    margin-right: 21px;
+    padding: 34px 0 31px;
+}
+.oniSearch a{
+    font-size: 19px;
+    color: #FFF;
+    display: inline-block;
+}
+.oniSearch a i,
+.oniCart > a i{
+    transition: 0.2s ease-in;
+    -webkit-transition: 0.2s ease-in;
+    position: relative;
+    display:inline-block;
+    top:3px
+}
+.oniCart > a i{
+    top:2px
+}
+.oniSearch a:hover i{
+    color: var(--dark-color);
+}
+.oniCart {
+    padding: 0px 0 28px;
+    margin: 33px 0 0;
+}
+.oniCart > a {
+    color: #FFF;
+    font-size: 20px;
+    padding: 2px 9px 2px 19px;
+    position: relative;
+    display: inline-block;
+    border-left: 1px solid rgba(255,255,255,0.3);
+}
+.oniCart > a:hover i{
+    color: var(--dark-color);
+}
+.oniCart > a span {
+    position: absolute;
+    top: -12px;
+    right: 1px;
+    color: #FFF;
+    font-size: 12px;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    transition: all ease 350ms;
+    -moz-transition: all ease 350ms;
+    -webkit-transition: all ease 350ms;
+}
+
+.oniCart:hover .cartWidgetArea{
+    pointer-events: inherit;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: rotatex(0deg);
+    transform: rotatex(0deg);
+}
+.cartWidgetArea {
+    position: absolute;
+    display: block;
+    top: 100%;
+    right: 0px;
+    width: 300px;
+    background: #fff;
+    text-align: left;
+    box-shadow: 0 0 50px 0 rgba(29, 35, 58, .08);
+    padding: 30px 30px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    border-radius: 10px;
+    -webkit-transform: rotateX(-75deg);
+    transform: rotateX(-75deg);
+    transform-origin: 0% 0%;
+    -webkit-transform-origin: 0% 0%;
+    -moz-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    -o-transform-origin: 0% 0%;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.cartWidgetProduct{
+    position: relative;
+    min-height: 60px;
+    text-align: left;
+    padding-left: 74px;
+    margin-bottom: 25px;
+    padding-right: 15px;
+}
+.cartWidgetArea .cartWidgetProduct:last-of-type{
+    margin-bottom: 19px;
+}
+.cartWidgetProduct img{
+    width: 60px;
+    height: 70px;
+    position: absolute;
+    border-radius: 3px;
+    left: 0;
+    top: 0;
+}
+.cartWidgetProduct a{
+    font-family: var(--primary-font);
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    bottom: auto;
+    color: var(--dark-color);
+    margin: 0 0 6px;
+    top: -2px;
+    text-transform: capitalize;
+    opacity: .8;
+}
+.cartWidgetProduct a:hover{
+    color: var(--primary-color);
+}
+.cartWidgetProduct .cartProductPrice{
+    font-family: var(--primary-font);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-color);
+    line-height: 1;
+}
+.cartWidgetProduct .cartRemoveProducts{
+    font-size: 10px;
+    color: var(--dark-color);
+    position: absolute;
+    right: -8px;
+    top: 0px;
+    margin: 0;
+    width: 19px;
+    height: 19px;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    padding: 0px 0 0 1px;
+}
+.cartWidgetProduct .cartRemoveProducts:hover{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    background: transparent;
+}
+
+.headerOniAccess02 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+.boozyGridMenu {
+    position: relative;
+    display: inline-block;
+    margin: 29px 0 29px;
+}
+.boozyGridMenu a {
+    position: relative;
+    width: 63px;
+    height: 63px;
+    background: #212125;
+    border-radius: 50%;
+    border: unset;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+.boozyGridMenu a span{
+    position: relative;
+    display: block;
+    width: 26px;
+    height: 1px;
+    background: #FFF;
+    border-radius: unset;
+    outline:unset;
+}
+.boozyGridMenu a span:nth-child(1) {
+    width: 18px;
+    top: -5px;
+    margin-right: -8px;
+}
+.boozyGridMenu a span:nth-child(2){
+    top: 5px;
+}
+.boozyGridMenu a:hover span{
+    background: var(--primary-color);
 }

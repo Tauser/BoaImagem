@@ -14,11 +14,20 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="{{asset("css/custom.css")}}" />
-        <link rel="stylesheet" href="{{asset("css/portfolio.css")}}" />
         <link rel="stylesheet" href="{{asset("css/styles.css")}}" />
         <link rel="stylesheet" href="{{asset("css/animations.css")}}" />
-        <link rel="stylesheet" href="{{asset("css/slide.css")}}" />
-        <link rel="stylesheet" href="{{asset("css/menu.css")}}" />
+
+        <!-- BEGIN: CSS -->
+        <link rel="stylesheet" href="css/site/boozy-icons.css">
+        <link rel="stylesheet" href="css/site/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/site/aos.css">
+        <link rel="stylesheet" href="css/site/preset.css">
+        <link rel="stylesheet" href="css/site/theme.css">
+        <link rel="stylesheet" href="css/site/responsive.css">
+        <link rel="stylesheet" href="css/site/lightslider.css">
+
+        <!-- END: CSS -->
+
         <!-- swiper css -->
         {{-- <link rel="stylesheet" href="{{asset("css/swiper.min.css")}}"> --}}
 
@@ -29,13 +38,14 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body>
+    <body id="magicCursor">
+        <div class="main">
 
             <!-- Page Header -->
             @if (Route::currentRouteName()==='home')
                 @include('layouts.partials.header')
             @else
-                @include('layouts.partials.headerInternal')
+                @include('layouts.partials.header')
             @endif
             <!-- Page Content -->
             <main>
@@ -44,7 +54,17 @@
             <!-- Page Footer -->
             @include('layouts.partials.footer')
 
-
+        </div>
+        <!-- BEGIN: Back To Top -->
+        <a class="magic-hover" data-radius="50%" data-border-color="#009cff" href="javascript:void(0);" id="backtotop"><i class="boozy-long-up-arrow"></i></a>
+        <!-- END: Back To Top -->
+        <!-- BEGIN: magicMouse -->
+        <div id="magic-mouse"><div id="ball"></div></div>
+        <!-- END: magicMouse -->
+        <!-- BEGIN: Right Sidebar -->
+        <x-right-sidebar>
+        </x-right-sidebar>
+        <!-- END: Right Sidebar -->
 
 
 
@@ -53,25 +73,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c23503b397.js" crossorigin="anonymous"></script>
 
-    <script src="{{ asset('js/site/jquery.min.js') }}"></script>
 
-    {{-- <script src="{{ asset('js/site/swup.min.js') }}"></script>
 
-    <script src="{{ asset('js/site/swiper.min.js') }}"></script>
-
-    <script src="{{ asset('js/site/fancybox.min.js') }}"></script> --}}
-
-    <script src="{{ asset('js/site/gsap.min.js') }}"></script>
-
-    {{-- <script src="{{ asset('js/site/smooth-scroll.js') }}"></script>
-
-    <script src="{{ asset('js/site/ScrollTrigger.min.js') }}"></script>
-
-    <script src="{{ asset('js/site/ScrollTo.min.js') }}"></script> --}}
-
-    <script src="{{ asset('js/site/custom.js') }}"></script>
-    {{-- <script src="{{ asset('js/site/slide.js') }}"></script> --}}
-
-    @livewireScripts
-
+    <!-- BEGIN: JS -->
+    <script src="js/site/jquery.js"></script>
+    <script src="js/site/jquery.appear.js"></script>
+    <script src="js/site/owl.carousel.min.js"></script>
+    <script src="js/site/gsap.min.js"></script>
+    <script src="js/site/ScrollTrigger.min.js"></script>
+    <script src="js/site/aos.js"></script>
+    <script src="js/site/shuffle.min.js"></script>
+    <script src="js/site/common.js"></script>
+    <script src="js/site/theme.js"></script>
+    <script src="js/site/lightslider.min.js"></script>
+    <!-- END: JS -->
 </html>
