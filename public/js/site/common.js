@@ -155,7 +155,7 @@
                         backgroundColor:'rgba(0,0,0)',
                     });
                     if($('.portfolioCarItam').hasClass('projectItemView')){var Linecolor = '#FFF';}
-                    if($('.portfolioCarItam02').hasClass('projectItemView')){var Linecolor = '#ff5100';}
+                    if($('.portfolioCarItam02').hasClass('projectItemView')){var Linecolor = '#009cff';}
                     $("#ball").append( '<p class="firstLine" style="color:'+Linecolor +';">' + $this.data("firstline") + '</p>' + '<p class="secondLine" style="color: '+Linecolor +';">' + $this.data("secondline") + '</p>');
 
 
@@ -177,7 +177,7 @@
                         backgroundColor:'rgba(0,0,0)',
                     });
                     if($('.portfolioCarItam, .project_thumb03').hasClass('projectItemView')){var Linecolor = '#FFF';}
-                    if($('.portfolioCarItam02').hasClass('projectItemView')){var Linecolor = '#ff5100';}
+                    if($('.portfolioCarItam02').hasClass('projectItemView')){var Linecolor = '#009cff';}
                     $("#ball").append( '<p class="firstLine" style="color:'+Linecolor +';">' + $this.data("firstline") + '</p>' + '<p class="secondLine" style="color: '+Linecolor +';">' + $this.data("secondline") + '</p>');
 
 
@@ -204,7 +204,7 @@
                 var rcBounds = $(this)[0].getBoundingClientRect();
                 var positionX = rcBounds.left - offsetX + 14;
                 var positionY = rcBounds.top + rcBounds.height/2;
-                gsap.to(ball, { duration: 0.5, x: positionX, y: positionY, scale:0.45, opacity:1, borderWidth: '4px', borderColor:'#ff5100'});
+                gsap.to(ball, { duration: 0.5, x: positionX, y: positionY, scale:0.45, opacity:1, borderWidth: '4px', borderColor:'#009cff'});
                 gsap.ticker.remove(updatePosition);
             })
 
@@ -212,14 +212,14 @@
                 var rcBounds = $(this)[0].getBoundingClientRect();
                 var positionX = rcBounds.right + offsetX - 14;
                 var positionY = rcBounds.top + rcBounds.height/2;
-                gsap.to(ball, { duration: 0.5, x: positionX, y: positionY, scale:0.45, opacity:1, borderWidth: '4px', borderColor:'#ff5100'});
+                gsap.to(ball, { duration: 0.5, x: positionX, y: positionY, scale:0.45, opacity:1, borderWidth: '4px', borderColor:'#009cff'});
                 gsap.ticker.remove(updatePosition);
             })
             $(".btnWrapper_sm.sticky.right").mouseenter(function(e) {
                 var rcBounds = $(this)[0].getBoundingClientRect();
                 var positionX = rcBounds.right + offsetX - 16;
                 var positionY = rcBounds.top + rcBounds.height/2 + 1;
-                gsap.to(ball, { duration: 0.5, x: positionX, y: positionY, scale:0.40, opacity:1, borderWidth: '4px', borderColor:'#ff5100'});
+                gsap.to(ball, { duration: 0.5, x: positionX, y: positionY, scale:0.40, opacity:1, borderWidth: '4px', borderColor:'#009cff'});
                 gsap.ticker.remove(updatePosition);
             })
 
@@ -229,12 +229,12 @@
             })
 
             $(".parallax-wrap.iconWrapper").mouseenter(function(e) {
-                gsap.to(ball, { duration: 0.3, scale: 0.45, borderWidth: '4px', opacity:1, borderColor:'#ff5100' });
-                gsap.to($( this ).children(), {duration: 0.3, scale:1, color: '#ff5100'});
+                gsap.to(ball, { duration: 0.3, scale: 0.45, borderWidth: '4px', opacity:1, borderColor:'#009cff' });
+                gsap.to($( this ).children(), {duration: 0.3, scale:1, color: '#009cff'});
             });
             $(".iconWrapper_sm.parallax-wrap.iconWrapper").mouseenter(function(e) {
-                gsap.to(ball, { duration: 0.3, scale: 0.40, borderWidth: '4px', opacity:1, borderColor:'#ff5100' });
-                gsap.to($( this ).children(), {duration: 0.3, scale:1, color: '#ff5100'});
+                gsap.to(ball, { duration: 0.3, scale: 0.40, borderWidth: '4px', opacity:1, borderColor:'#009cff' });
+                gsap.to($( this ).children(), {duration: 0.3, scale:1, color: '#009cff'});
             });
             $(".parallax-wrap").mouseleave(function(e) {
                 gsap.to(this, { duration: 0.3, scale: 1 , color: '#FFF'});

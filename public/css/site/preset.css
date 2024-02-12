@@ -1,32 +1,28 @@
-
-
-
-
 /*------------------------------------------------------
-/  Theme Fonts
+/  01. Theme Fonts
 /------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 
 
 /*-----------------------------------------
-/  Variables
+/  02. Variables
 /-----------------------------------------*/
 :root {
-    --primary-font: 'Montserrat', sans-serif;
-    --secondary-font: 'Montserrat', sans-serif;
+    --primary-font: 'Jost', sans-serif;
+    --secondary-font: 'Antonio', sans-serif;
     --body-font-size: 18px;
     --body-line-height: 36px;
     --body-font-weight: 400;
     --secondary-font-weight: 700;
     --body-color: #d0d0d0;
     --heading-color: #FFFFFF;
-    --primary-color: #009CFF;
+    --primary-color: #009cff;
     --secondary-color: #FFFFFF;
     --dark-color: #000000;
 }
 /*------------------------------------------------------
-/  Basic Typography
+/  03. Basic Typography
 /------------------------------------------------------*/
 body, html{
     margin: 0;
@@ -103,7 +99,7 @@ body::-webkit-scrollbar-thumb {
     background-clip: content-box;
 }
 /*------------------------------------------------------
-/  Section Presets & Custom padding, margin, width
+/  04. Section Presets & Custom padding, margin, width
 /------------------------------------------------------*/
 .secSubTitle{
     font-family: var(--secondary-font);
@@ -259,7 +255,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
 }
 /*------------------------------------------------------
-/  Links & Buttons
+/  05. Links & Buttons
 /------------------------------------------------------*/
 .boozyBTN{
     width: 198px;
@@ -455,7 +451,7 @@ body::-webkit-scrollbar-thumb {
     color: #FFF;
 }
 /*------------------------------------------------------
-/  Page Banner
+/  06. Page Banner
 ------------------------------------------------------*/
 .pageBannerContent {
     position: relative;
@@ -495,7 +491,7 @@ body::-webkit-scrollbar-thumb {
 
 
 /*------------------------------------------------------------------------------
-/ Preloader
+/ 07. Preloader
 ------------------------------------------------------------------------------*/
 .preloader-wrap {
     width: 100%;

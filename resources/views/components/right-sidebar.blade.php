@@ -2,7 +2,7 @@
 <section class="rightsidebar">
     <div class="rightsidebarOverlay"></div>
     <div class="rightsidebarContent">
-        <a href="javascript:void(0);" class="rightsidebarCloser magic-hover" data-radius="50%" data-border-color="#ff5100"><span></span></a>
+        <a href="javascript:void(0);" class="rightsidebarCloser magic-hover" data-radius="50%" data-border-color="#009cff"><span></span></a>
         <div class="widget_area">
             <a href="javascript:void(0);" class="widget_closer"><i class="la la-times"></i></a>
             <div class="center_align">

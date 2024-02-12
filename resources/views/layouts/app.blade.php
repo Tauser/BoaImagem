@@ -11,36 +11,32 @@
 
 
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="{{asset("css/custom.css")}}" />
         <link rel="stylesheet" href="{{asset("css/styles.css")}}" />
 
 
         <!-- BEGIN: CSS -->
+        <link rel="stylesheet" href="css/site/bootstrap.css">
         <link rel="stylesheet" href="css/site/animate.css">
         <link rel="stylesheet" href="css/site/fontawesome-all.css">
         <link rel="stylesheet" href="css/site/boozy-icons.css">
         <link rel="stylesheet" href="css/site/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/site/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/site/lightslider.css">
+        <link rel="stylesheet" href="css/site/lightcase.css">
+        <link rel="stylesheet" href="css/site/nice-select.css">
         <link rel="stylesheet" href="css/site/settings.css">
         <link rel="stylesheet" href="css/site/slick.css">
         <link rel="stylesheet" href="css/site/aos.css">
+
         <link rel="stylesheet" href="css/site/ignore_for_wp.css">
         <link rel="stylesheet" href="css/site/preset.css">
         <link rel="stylesheet" href="css/site/theme.css">
         <link rel="stylesheet" href="css/site/responsive.css">
         <!-- END: CSS -->
 
-        <!-- swiper css -->
-        {{-- <link rel="stylesheet" href="{{asset("css/swiper.min.css")}}"> --}}
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-        @livewireStyles
+        {{-- @livewireStyles
         <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
     </head>
     <body id="magicCursor">
         <div class="main myScroller">
@@ -81,7 +77,7 @@
 
     <!-- BEGIN: JS -->
 
-    <script src="js/site/jquery.js"></script>
+    {{-- <script src="js/site/jquery.js"></script>
     <script src="js/site/shuffle.min.js"></script>
     <script src="js/site/owl.carousel.min.js"></script>
     <script src="js/site/jquery.appear.js"></script>
@@ -100,6 +96,42 @@
     <script src="js/site/ScrollTrigger.min.js"></script>
     <script src="js/site/aos.js"></script>
     <script src="js/site/common.js"></script>
-    <script src="js/site/theme.js"></script>
+    <script src="js/site/theme.js"></script> --}}
+    <script src="js/site/jquery.js"></script>
+        <script src="js/site/popper.min.js"></script>
+        <script src="js/site/bootstrap.min.js"></script>
+        <script src="js/site/shuffle.min.js"></script>
+        <script src="js/site/owl.carousel.min.js"></script>
+        <script src="js/site/owl.carousel.filter.js"></script>
+        <script src="js/site/jquery.appear.js"></script>
+        <script src="js/site/jquery.nice-select.js"></script>
+        <script src="js/site/lightcase.js"></script>
+        <script src="js/site/lightslider.min.js"></script>
+        <script src="js/site/parallax.js"></script>
+        <script src="js/site/gmaps.js"></script>
+        <script src="js/site/slick.js"></script>
+        <script src="https://maps.google.com/maps/api/js?key=AIzaSyCA_EDGVQleQtHIp2fZ-V56QFRbRL8cXT8"></script>
+
+        <script src="js/site/jquery.themepunch.tools.min.js"></script>
+        <script src="js/site/jquery.themepunch.revolution.min.js"></script>
+
+        <script src="js/site/extensions/revolution.extension.auctions.min.js"></script>
+        <script src="js/site/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="js/site/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="js/site/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="js/site/extensions/revolution.extension.migration.min.js"></script>
+        <script src="js/site/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="js/site/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="js/site/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="js/site/extensions/revolution.extension.video.min.js"></script>
+
+        <script src="js/site/gsap.min.js"></script>
+        <script src="js/site/ScrollTrigger.min.js"></script>
+        <script src="js/site/TweenMax.min.js"></script>
+        <script src="js/site/aos.js"></script>
+        <script src="js/site/core.js"></script>
+
+        <script src="js/site/common.js"></script>
+        <script src="js/site/theme.js"></script>
     <!-- END: JS -->
 </html>

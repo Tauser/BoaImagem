@@ -4,8 +4,8 @@
             <div class="col-md-12">
                 <div class="headerInner01">
                     <div class="logo">
-                        <a class="dfCursor" href="index.html">
-                            <img src="img/logoHome.png" width="120px">
+                        <a class="dfCursor" href="{{route('home')}}">
+                            <img src="img/logoHome.png" width="160px">
                         </a>
                     </div>
                     <nav class="mainMenu">

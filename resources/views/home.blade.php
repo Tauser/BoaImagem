@@ -98,14 +98,25 @@
         </sectionText> --}}
 
     </divContainer>
+    <!-- BEGIN: AboutProggress Bar  -->
+    <section class="aboutProggress_bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7" data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
+                    <h2 class="abProggressHeading">Tudo começa com estratégia nós transformamos visões em realidade. Descubra quem somos, o como impulsionamos o seu sucesso para novos patamares</h2>
+                </div>
 
-    <subarea>
+            </div>
+        </div>
+    </section>
+    <!-- END: AboutProggress Bar  -->
+    {{-- <subarea>
         <arealeft data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
             <h1 >Tudo começa com estratégia</h1>
             <p>nós transformamos visões em realidade. Descubra quem somos, o como impulsionamos o seu sucesso para novos patamares</p>
             <button>Ler Sobre</button>
         </arealeft>
-    </subarea>
+    </subarea> --}}
 
         {{-- <ServicosHome>
             <container class="container">
@@ -231,12 +242,12 @@
     <newsletter>
         <center class="container">
             <div class="row">
-                <div class="col">
+                <div class="col" data-aos="fade-right" data-aos-duration="1800" data-aos-easing="linear">
                     <h3>Não deixe para amanhã o que você pode fazer hoje</h3>
                     <subtitle>deixe que entramos em contato com você e iniciamos um papo
                         para dar o <b>START</b> necessário na sua marca
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
                     <input type="text" placeholder="Nome">
                     <input type="text" placeholder="Telefone (WhatsApp)">
                     <button>Enviar</button>
