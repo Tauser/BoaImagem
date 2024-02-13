@@ -286,23 +286,23 @@
                         <div class="testimonial01 owl-carousel">
                             <div class="testimonial_items">
                                 <span class="testimonialQuoat1"><i class="boozy-quotes"></i></span>
-                                <h2>Creative and ingenious, TBP has a way of <br> making a simple idea/brand <br>come to full bloom</h2>
+                                <h2>Criativos e engenhosos, a Boa Imagem tem um jeito de fazer uma simples ideia/marca florescer</h2>
                                 <div class="testimonialAuthor">
-                                    <h3>David malan</h3>
+                                    <h3>Tauser Carneiro</h3>
                                 </div>
                             </div>
                             <div class="testimonial_items">
                                 <span class="testimonialQuoat1"><i class="boozy-quotes"></i></span>
-                                <h2>Creative and ingenious, TBP has a way of <br> making a simple idea/brand <br>come to full bloom</h2>
+                                <h2>Criativos e engenhosos, a Boa Imagem tem um jeito de fazer uma simples ideia/marca florescer</h2>
                                 <div class="testimonialAuthor">
-                                    <h3>David malan</h3>
+                                    <h3>Augusto Carrara</h3>
                                 </div>
                             </div>
                             <div class="testimonial_items">
                                 <span class="testimonialQuoat1"><i class="boozy-quotes"></i></span>
-                                <h2>Creative and ingenious, TBP has a way of <br> making a simple idea/brand <br>come to full bloom</h2>
+                                <h2>Criativos e engenhosos, a Boa Imagem tem um jeito de fazer uma simples ideia/marca florescer</h2>
                                 <div class="testimonialAuthor">
-                                    <h3>David malan</h3>
+                                    <h3>Lula</h3>
                                 </div>
                             </div>
                             <div class="testimonial_items">

@@ -39,6 +39,12 @@
         @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
     </head>
     <body id="magicCursor">
+        <!-- Preloader Start -->
+        <div class="preloader-wrap">
+            <div class="loader_bar"></div>
+            <div id="precent"></div>
+        </div>
+        <!-- Preloader End -->
         <div class="main myScroller">
 
             <!-- Page Header -->
