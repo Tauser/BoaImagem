@@ -1,17 +1,19 @@
 <x-app-layout >
-    <TitleCLients>
-        <container class="container">
+    <section class="banner" >
+        <div class="container">
             <div class="row">
-                <div class="col-6">
-                    <h1>Clientes</h1>
-                    <subtitle>Instigar a pessoa a conhecer nossos antigos trabalhos.</subtitle>
-                </div>
-                <div class="col-6">
-                    <p>  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div class="col-lg-12 col-xl-8 offset-xl-2">
+                    <div class="pageBannerContent text-center">
+                        <h2>CLIENTES</h2>
+                        <div class="pageBannerPath">
+                            <a href="{{route('sobre')}}">HOME</a>
+                            <span class="brdSeparator">&nbsp;/&nbsp;</span>
+                            <span>CLIENTES</span></div>
+                      </div>
                 </div>
             </div>
-        </container>
-    </TitleCLients>
+        </div>
+    </section>
 
     <customerList class="container text-center" style="display: block; margin: 0 auto; ">
 

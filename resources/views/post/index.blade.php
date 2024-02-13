@@ -1,11 +1,25 @@
 <x-app-layout >
+    <section class="banner" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xl-8 offset-xl-2">
+                    <div class="pageBannerContent text-center">
+                        <h2>As principais notícias sobre a nossa agência e de nossos parceiros</h2>
+                        <div class="pageBannerPath">
+                            <a href="{{route('sobre')}}">HOME</a>
+                            <span class="brdSeparator">&nbsp;/&nbsp;</span>
+                            <span>SOBRE</span></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        {{-- <center class="container">
 
-        <center class="container">
-            <h1 class="clientes">As principais notícias sobre a nossa agência e de nossos parceiros.</h1>
             <form method="get" class="pesquisa"  action="{{route('post.search')}}">
                 <input name="q" value="{{request()->get('q')}}" placeholder="pesquise a palavra-chave"/>
             </form>
-        </center>
+        </center> --}}
 
         {{-- <blogList class="container">
             <ul class="row blog">

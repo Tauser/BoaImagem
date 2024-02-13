@@ -6,7 +6,7 @@
                     <div class="pageBannerContent text-center">
                         <h2>Nossa História</h2>
                         <div class="pageBannerPath">
-                            <a href="index.html">HOME</a>
+                            <a href="{{route('sobre')}}">HOME</a>
                             <span class="brdSeparator">&nbsp;/&nbsp;</span>
                             <span>SOBRE</span></div>
                       </div>

@@ -1,19 +1,8 @@
 <x-app-layout>
-    <TitleCLients>
-        <container class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h1>Clientes</h1>
-                    <subtitle>Instigar a pessoa a conhecer nossos antigos trabalhos.</subtitle>
-                </div>
-                <div class="col-6">
-                    <p>  It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-            </div>
-        </container>
-    </TitleCLients>
+
+
     <section id="gallery">
-        <div class="galleryfilter"> 
+        <div class="galleryfilter">
             <ul class="filter-menu">
                 <li data-target="all">Todos</li>
                 <li data-target="servicos">Serviços</li>
