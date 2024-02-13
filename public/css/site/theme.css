@@ -2476,8 +2476,7 @@ aside.newslatter {
 .boozyGridMenu a {
     position: relative;
     width: 63px;
-    height: 63px;
-    background: #ffffff;
+    height: 63px; 
     border-radius: 50%;
     border: unset;
     display: -webkit-inline-box;
@@ -3699,6 +3698,7 @@ a.srv_globaLinks{
     z-index:-1;
     opacity: 0;
 }
+
 @-webkit-keyframes BzrotateIn {
     0%{
         -webkit-transform-origin: center;
@@ -5810,3 +5810,18 @@ body #magicMouseCursor.is-hover{
     visibility: hidden;
     pointer-events: none;
   }
+  /*areas brancas home*/
+  .aboutProggress_bar, .testimonial02_section {background-color: #FFF; }
+
+  .testimonial02_section h1, .testimonial02_section h2, .testimonial02_section h3, .testimonial02_section i, .testimonial02_section p,
+  .aboutProggress_bar h1, .aboutProggress_bar h2, .aboutProggress_bar h3, .aboutProggress_bar h4, .aboutProggress_bar p{color: #000;}
+
+  section.aboutProggress_bar:last-child {background: #000;} section.aboutProggress_bar:last-child h2 {color: #fff;}
+  /*BOTAO ASTRONAUTA*/ 
+    .boozyGridMenu i {
+        font-size: 52px !important;
+        color: #FFF;
+    }
+    .boozyGridMenu i:hover {
+        color: #009cff;
+    }
