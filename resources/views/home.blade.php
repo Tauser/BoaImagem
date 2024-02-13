@@ -58,7 +58,8 @@
                                 data-paddingleft="['0','0','0','0']"
                                 data-marginleft="['0','0','0','0']"
                                 >
-                                <a class="boozyBTN magic-hover" href="javascript:void(0)" data-radius="50%" data-border-color="#009cff"> <i class="boozy-long-r-arrow"></i><span>Tem uma ideia?</span></a>
+                                <a class="boozyBTN magic-hover" href="javascript:void(0)" data-radius="50%" data-border-color="#009cff"> <i class="boozy-long-r-arrow"></i>
+                                    <span>Tem uma ideia?</span></a>
                             </div>
                             <div
                                 class="tp-caption textPLayer jost"
@@ -85,8 +86,8 @@
                                 >Podemos ajudá-lo a canalizar o seu potencial implementando a sua ideia. Cuidamos de todas as suas necessidades, elaborando soluções específicas e direcionadas.
                             </div>
                         </li>
-                        <li class="defaultBg_overlay" data-index="rs-3052" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" >
-                            {{-- <img src="img/slider/banner2.1.jpg" alt="Boozy Slider" class="rev-slidebg"> --}}
+                        {{-- <li class="defaultBg_overlay" data-index="rs-3052" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" >
+
                             <video autoplay muted  loop preload="auto">
                                 <source src="img/slider/Black-And-White-Video.mp4" type="video/mp4">
                             </video>
@@ -113,7 +114,7 @@
                                 data-paddingbottom="['0','0','0','0']"
                                 data-paddingleft="['0','0','0','0']"
                                 data-marginleft="['0','0','0','0']"
-                                >We create top <br> brands that grow
+                                >Transformando ideias <br> em resultados
                             </div>
                             <div
                                 class="tp-caption ws_nowrap antonio textLayer theBTNS bn_btnORdesc"
@@ -137,7 +138,7 @@
                                 data-paddingbottom="['0','0','0','0']"
                                 data-paddingleft="['0','0','0','0']"
                                 data-marginleft="['0','0','0','0']"
-                                ><a class="boozyBTN magic-hover" href="javascript:void(0)"><i class="boozy-long-r-arrow"></i><span>Have An Idea ?</span></a>
+                                ><a class="boozyBTN magic-hover" href="javascript:void(0)"><i class="boozy-long-r-arrow"></i><span>Tem uma ideia?</span></a>
                             </div>
                             <div
                                 class="tp-caption textPLayer jost"
@@ -161,7 +162,7 @@
                                 data-paddingbottom="['0','0','0','0']"
                                 data-paddingleft="['0','0','0','0']"
                                 data-marginleft="['0','0','0','0']"
-                                >We can help you channel your potential implementing your idea. We take care of all your needs, crafting specific and targeted solutions.
+                                >Podemos ajudá-lo a canalizar o seu potencial implementando a sua ideia. Cuidamos de todas as suas necessidades, elaborando soluções específicas e direcionadas.
                             </div>
                             <div
                                 class="tp-caption antonio typeHeading"
@@ -187,33 +188,138 @@
                                 data-marginleft="['0','0','0','0']"
                                 >
                             </div>
-                        </li>
+                        </li> --}}
 
                     </ul>
                 </div>
             </div>
         </section>
         <!-- END: Banner Section  -->
-{{--
-        <sectionText class="slider">
-            <ul class="row">
-                <li class="col icons"><img class="floating" src="img/xadreztorre.png"><img class="floating2" src="img/xadrezpeao.png"><img class="floating3" src="img/xadrezpeao2.png"></li>
-            </ul>
-        </sectionText> --}}
-
     </divContainer>
-    <!-- BEGIN: AboutProggress Bar  -->
+
+    <!-- BEGIN: MENSAGEM  -->
     <section class="aboutProggress_bar">
         <div class="container">
             <div class="row">
-                <div class="col-xl-7" data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
-                    <h2 class="abProggressHeading">Tudo começa com estratégia nós transformamos visões em realidade. Descubra quem somos, o como impulsionamos o seu sucesso para novos patamares</h2>
+                <div class="col-xl-8" data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
+                    <h3 class="abProggressHeading">Tudo começa com estratégia nós transformamos visões em realidade. Descubra quem somos, o como impulsionamos o seu sucesso para novos patamares</h3>
                 </div>
-
             </div>
         </div>
     </section>
-    <!-- END: AboutProggress Bar  -->
+    <!-- END: MENSAGEM  -->
+
+    <!-- BEGIN: SERVIÇOS -->
+    <section class="serviceSection02">
+        <div class="container">
+            <div class="row serviceHd02Row">
+                <div class="cl-md-12">
+                    <div class="secHeading">
+                        <h3>Nossos Serviços</h3>
+                        <div class="button-wrap right">
+                            <a href="service.html">
+                                <div class="button-text sticky right"><span>Mais serviços</span></div>
+                                <div class="iconWrapper parallax-wrap" style="transform: translate(0px, 0px);">
+                                    <div class="button-icon parallax-element" style="transform: translate(0px, 0px);">
+                                        <i class="boozy-long-r-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceItem02" data-aos="fade-right" data-aos-duration="2000" >
+                        <div class="serviceThumb02" >
+                            <div class="serThumbIim">
+                                <img src="img/icon/cube.png" alt="cube">
+                            </div>
+                            <span>01</span>
+                        </div>
+                        <div class="serviceContent02">
+                            <h3><a href="service-single.html">Online</a></h3>
+                            <p>We believethat progress only happens when you refused to play things safe. We combine ideas and behaviors</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceItem02" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="serviceThumb02">
+                            <div class="serThumbIim">
+                                <img src="img/icon/pyramid.png" alt="cube">
+                            </div>
+                            <span>02</span>
+                        </div>
+                        <div class="serviceContent02">
+                            <h3><a href="service-single.html">OFFLINE</a></h3>
+                            <p>We believethat progress only happens when you refused to play things safe. We combine ideas and behaviors</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="serviceItem02" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="serviceThumb02">
+                            <div class="serThumbIim">
+                                <img src="img/icon/3dAnimation.png" alt="cube">
+                            </div>
+                            <span>03</span>
+                        </div>
+                        <div class="serviceContent02">
+                            <h3><a href="service-single.html">Estratégias</a></h3>
+                            <p>We believethat progress only happens when you refused to play things safe. We combine ideas and behaviors</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: SERVIÇOS  -->
+
+    <!-- BEGIN: DEPOIMENTOS   -->
+    <section class="testimonial02_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-10 offset-lg-1">
+                    <div class="testimonial01Wrapper">
+                        <div class="testimonial01 owl-carousel">
+                            <div class="testimonial_items">
+                                <span class="testimonialQuoat1"><i class="boozy-quotes"></i></span>
+                                <h2>Creative and ingenious, TBP has a way of <br> making a simple idea/brand <br>come to full bloom</h2>
+                                <div class="testimonialAuthor">
+                                    <h3>David malan</h3>
+                                </div>
+                            </div>
+                            <div class="testimonial_items">
+                                <span class="testimonialQuoat1"><i class="boozy-quotes"></i></span>
+                                <h2>Creative and ingenious, TBP has a way of <br> making a simple idea/brand <br>come to full bloom</h2>
+                                <div class="testimonialAuthor">
+                                    <h3>David malan</h3>
+                                </div>
+                            </div>
+                            <div class="testimonial_items">
+                                <span class="testimonialQuoat1"><i class="boozy-quotes"></i></span>
+                                <h2>Creative and ingenious, TBP has a way of <br> making a simple idea/brand <br>come to full bloom</h2>
+                                <div class="testimonialAuthor">
+                                    <h3>David malan</h3>
+                                </div>
+                            </div>
+                            <div class="testimonial_items">
+                                <span class="testimonialQuoat1"><i class="boozy-quotes"></i></span>
+                                <h2>Creative and ingenious, TBP has a way of <br> making a simple idea/brand <br>come to full bloom</h2>
+                                <div class="testimonialAuthor">
+                                    <h3>David malan</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END: DEPOIMENTOS    -->
+
     {{-- <subarea>
         <arealeft data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
             <h1 >Tudo começa com estratégia</h1>
@@ -259,7 +365,7 @@
         </container>
     </UltimosTrabalhos> --}}
 
-    <section class="portfolioCarouselSEc_01">
+    {{-- <section class="portfolioCarouselSEc_01">
         <div class="container-fluid px-0">
             <div class="row">
                 <div class="col-lg-12">
@@ -338,7 +444,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
 
