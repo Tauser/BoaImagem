@@ -1,7 +1,7 @@
 <x-app-layout>
 <mainHome>
     <divContainer id="slider">
-        <!-- BEGIN: Banner Section  -->
+        <!-- BEGIN: SLIDER  -->
         <section class="slider01">
             <div class="rev_slider_wrapper">
                 <div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display: none" data-version="5.4.1">
@@ -194,7 +194,7 @@
                 </div>
             </div>
         </section>
-        <!-- END: Banner Section  -->
+        <!-- END: SLIDER  -->
     </divContainer>
 
     <!-- BEGIN: MENSAGEM  -->
@@ -240,7 +240,7 @@
                         </div>
                         <div class="serviceContent02">
                             <h3><a href="service-single.html">Online</a></h3>
-                            <p>We believethat progress only happens when you refused to play things safe. We combine ideas and behaviors</p>
+                            <p>Anúncios patrocinados, Automação de marketing, Mídias Sociais, Marketing de Conteúdo, Criação de sites, SEO - Otimização</p>
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@
                         </div>
                         <div class="serviceContent02">
                             <h3><a href="service-single.html">OFFLINE</a></h3>
-                            <p>We believethat progress only happens when you refused to play things safe. We combine ideas and behaviors</p>
+                            <p>Vídeos e animações, ilustraçao 2D e #d, Placas e fachadas, Fotografia Publicitária, Mídia impressa, Design de Produtos</p>
                         </div>
                     </div>
                 </div>
@@ -268,7 +268,7 @@
                         </div>
                         <div class="serviceContent02">
                             <h3><a href="service-single.html">Estratégias</a></h3>
-                            <p>We believethat progress only happens when you refused to play things safe. We combine ideas and behaviors</p>
+                            <p>Acessorias, Consultoria, estratégias de Marketing, Marketing político e eleitoral, Pesquisa de Mercado, Planejamento de Mídia</p>
                         </div>
                     </div>
                 </div>
