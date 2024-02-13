@@ -8,7 +8,7 @@
                     <ul>
                         <li class="defaultBg_overlay" data-index="rs-3048" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" >
                             <video autoplay muted  loop preload="auto">
-                                <source src="img/Black-And-White-Video.mp4" type="video/mp4">
+                                <source src="img/slider/chess00.mp4" type="video/mp4">
                             </video>
                             <div
                                 class="tp-caption boozyBH1 antonio textLayer"
@@ -85,6 +85,110 @@
                                 >Podemos ajudá-lo a canalizar o seu potencial implementando a sua ideia. Cuidamos de todas as suas necessidades, elaborando soluções específicas e direcionadas.
                             </div>
                         </li>
+                        <li class="defaultBg_overlay" data-index="rs-3052" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" >
+                            {{-- <img src="img/slider/banner2.1.jpg" alt="Boozy Slider" class="rev-slidebg"> --}}
+                            <video autoplay muted  loop preload="auto">
+                                <source src="img/slider/Black-And-White-Video.mp4" type="video/mp4">
+                            </video>
+                            <div
+                                class="tp-caption boozyBH1 antonio textLayer"
+                                data-x="['left','left','left','left']"
+                                data-hoffset="['256','130','80','0']"
+                                data-y="['middle','middle','middle','top']"
+                                data-voffset="['-105','-104','-94','180']"
+                                data-fontsize="['100','90','80','55']"
+                                data-fontweight="['700','700','700','700']"
+                                data-lineheight="['120','110','100','75']"
+                                data-width="['850','650','550','100%']"
+                                data-height="none"
+                                data-whitespace="normal"
+                                data-color="['#FFF','#FFF','#FFF','#FFF']"
+                                data-type="text"
+                                data-responsive_offset="off"
+                                data-frames='[{"delay":1200,"speed":500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                                data-textAlign="['left','left','left','left']"
+                                data-texttransform="uppercase"
+                                data-paddingtop="['0','0','0','0']"
+                                data-paddingright="['0','0','0','0']"
+                                data-paddingbottom="['0','0','0','0']"
+                                data-paddingleft="['0','0','0','0']"
+                                data-marginleft="['0','0','0','0']"
+                                >We create top <br> brands that grow
+                            </div>
+                            <div
+                                class="tp-caption ws_nowrap antonio textLayer theBTNS bn_btnORdesc"
+                                data-x="['center','center','center','center']"
+                                data-hoffset="['2','-130','-190','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['117','107','80','135']"
+                                data-fontsize="['18','18','18','18']"
+                                data-fontweight="500"
+                                data-lineheight="['65','65','65','65']"
+                                data-width="['auto','auto','auto','auto']"
+                                data-height="auto"
+                                data-whitesapce="normal"
+                                data-color="#FFFFFF"
+                                data-type="text"
+                                data-responsive_offset="off"
+                                data-frames='[{"delay":1300,"speed":600,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                                data-textAlign="['left','left','left','center']"
+                                data-paddingtop="['0','0','0','0']"
+                                data-paddingright="['0','0','0','0']"
+                                data-paddingbottom="['0','0','0','0']"
+                                data-paddingleft="['0','0','0','0']"
+                                data-marginleft="['0','0','0','0']"
+                                ><a class="boozyBTN magic-hover" href="javascript:void(0)"><i class="boozy-long-r-arrow"></i><span>Have An Idea ?</span></a>
+                            </div>
+                            <div
+                                class="tp-caption textPLayer jost"
+                                data-x="['center','center','center','center']"
+                                data-hoffset="['361','210','125','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['222','214','172','45']"
+                                data-fontsize="['24','24','24','24']"
+                                data-fontweight="400"
+                                data-lineheight="['40','40','40','40']"
+                                data-width="['454','454','405','390']"
+                                data-height="auto"
+                                data-whitesapce="normal"
+                                data-color="#FFFFFF"
+                                data-type="text"
+                                data-responsive_offset="off"
+                                data-frames='[{"delay":1300,"speed":600,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                                data-textAlign="['left','left','left','center']"
+                                data-paddingtop="['0','0','0','0']"
+                                data-paddingright="['0','0','0','0']"
+                                data-paddingbottom="['0','0','0','0']"
+                                data-paddingleft="['0','0','0','0']"
+                                data-marginleft="['0','0','0','0']"
+                                >We can help you channel your potential implementing your idea. We take care of all your needs, crafting specific and targeted solutions.
+                            </div>
+                            <div
+                                class="tp-caption antonio typeHeading"
+                                data-x="['center','center','center','center']"
+                                data-hoffset="['0','0','0','0']"
+                                data-y="['middle','middle','middle','middle']"
+                                data-voffset="['-132','-132','-132','-160']"
+                                data-fontsize="[420','300','250','140']"
+                                data-fontweight="500"
+                                data-lineheight="['420','300','250','140']"
+                                data-width="['100%','100%','100%','100%']"
+                                data-height="auto"
+                                data-whitesapce="normal"
+                                data-color="#FFFFFF"
+                                data-type="text"
+                                data-responsive_offset="off"
+                                data-frames='[{"delay":1300,"speed":600,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power4.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                                data-textAlign="['center','center','center','center']"
+                                data-paddingtop="['0','0','0','0']"
+                                data-paddingright="['0','0','0','0']"
+                                data-paddingbottom="['0','0','0','0']"
+                                data-paddingleft="['0','0','0','0']"
+                                data-marginleft="['0','0','0','0']"
+                                >
+                            </div>
+                        </li>
+
                     </ul>
                 </div>
             </div>

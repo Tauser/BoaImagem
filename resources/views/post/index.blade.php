@@ -47,12 +47,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <div class="blogImgThumbnail" data-aos="fade-up" data-aos-offset="300" data-aos-easing="" data-aos-duration="800">
-                                                    <div class="animateThumb">
+                                                    <div class="">
                                                         <img src="{{$post->getThumbnail()}}" alt="{{$post->title}}" >
                                                     </div>
                                                     <span class="blPostDate">
-                                                        <span class="blPostDay strokeText">12</span>
-                                                        <span class="blPostMonth">Jun <br> 2022</span>
+                                                        <span class="blPostDay strokeText">{{$post->getFormattedDate()}}</span>
+                                                        <span class="blPostMonth">Jun <br> </span>
                                                     </span>
                                                 </div>
                                             </div>

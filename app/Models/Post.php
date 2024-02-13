@@ -66,7 +66,7 @@ class Post extends Model
 
     public function getFormattedDate()
     {
-        return $this->published_at->format('F jS Y');
+        return $this->published_at->toDateString()->format('d/m/Y \a\s g:i');
     }
 
     public function getThumbnail()
