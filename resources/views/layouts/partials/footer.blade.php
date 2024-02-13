@@ -47,11 +47,11 @@
                 <aside class="widget newslatter">
                     <h3 class="widgetTitle">Não deixe para amanhã o que você pode fazer hoje</h3>
                     <p>Deixe que entramos em contato com você<br> e iniciamos um papo</p>
-                    <form action="#" method="post" class="footer_newslatter">
+                    {{-- <form action="#" method="post" class="footer_newslatter">
                         <i class="boozy-envelope"></i>
                         <input type="email" name="y_email" id="y_email" placeholder="Your Email">
                         <button type="submit" class="magic-hover" data-radius="0" data-border-color="#ff5100"><i class="boozy-paper-plane"></i></button>
-                    </form>
+                    </form> --}}
                 </aside>
             </div>
         </div>

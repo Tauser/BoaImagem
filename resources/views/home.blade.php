@@ -320,50 +320,6 @@
     </section>
     <!-- END: DEPOIMENTOS    -->
 
-    {{-- <subarea>
-        <arealeft data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
-            <h1 >Tudo começa com estratégia</h1>
-            <p>nós transformamos visões em realidade. Descubra quem somos, o como impulsionamos o seu sucesso para novos patamares</p>
-            <button>Ler Sobre</button>
-        </arealeft>
-    </subarea> --}}
-
-        {{-- <ServicosHome>
-            <container class="container">
-                <ul class="row">
-                    <li class="col-3 slide-fwd-center slide-in-blurred-right">
-                        <h4><img src="img/exclamacao.png"><b>Online</b></h4>
-                        <p>Anúncios patrocinados, Automação de marketing, Mídias Sociais, Marketing de Conteúdo, Criação de sites, SEO - Otimização
-                    </li>
-                    <li class="col-3 slide-fwd-center slide-in-blurred-right">
-                        <h4><img src="img/nuvem.png"><b>Offline</b></h4>
-                        <p>Anúncios patrocinados, Automação de marketing, Mídias Sociais, Marketing de Conteúdo, Criação de sites, SEO - Otimização
-                    </li>
-                    <li class="col-3 slide-fwd-center slide-in-blurred-right">
-                        <h4><img src="img/estrategia.png"><b>Estratégia</b></h4>
-                        <p>Anúncios patrocinados, Automação de marketing, Mídias Sociais, Marketing de Conteúdo, Criação de sites, SEO - Otimização
-                    </li>
-                    <li class="col-3 slide-fwd-center slide-in-blurred-right">
-                        <h4><img src="img/pessoa.png"><b>Marketing Pessoal</b></h4>
-                        <p>Anúncios patrocinados, Automação de marketing, Mídias Sociais, Marketing de Conteúdo, Criação de sites, SEO - Otimização
-                    </li>
-                    <li class="col-3 slide-fwd-center slide-in-blurred-right">
-                        <h4><img src="img/lupa.png"><b>Pesquisar de mercado</b></h4>
-                        <p>Anúncios patrocinados, Automação de marketing, Mídias Sociais, Marketing de Conteúdo, Criação de sites, SEO - Otimização
-                    </li>
-                    <li class="col-3 slide-fwd-center slide-in-blurred-right">
-                        <h4><b>Loprem Ipsum</b></h4>
-                        <p>Anúncios patrocinados, Automação de marketing, Mídias Sociais, Marketing de Conteúdo, Criação de sites, SEO - Otimização
-                    </li>
-                </ul>
-            </container>
-        </ServicosHome> --}}
-
-    {{-- <UltimosTrabalhos>
-        <container class="container">
-            <x-slider-vertical />
-        </container>
-    </UltimosTrabalhos> --}}
 
     {{-- <section class="portfolioCarouselSEc_01">
         <div class="container-fluid px-0">
@@ -446,25 +402,35 @@
         </div>
     </section> --}}
 
-
-
-
-    <newsletter>
-        <center class="container">
+     <!-- BEGIN: NEWSLETTER  -->
+     <section class="aboutProggress_bar">
+        <div class="container">
             <div class="row">
-                <div class="col" data-aos="fade-right" data-aos-duration="1800" data-aos-easing="linear">
-                    <h3>Não deixe para amanhã o que você pode fazer hoje</h3>
-                    <subtitle>deixe que entramos em contato com você e iniciamos um papo
-                        para dar o <b>START</b> necessário na sua marca
+                <div class="col-xl-6">
+                    <h2 class="abProggressHeading">Não deixe para amanhã o que você pode fazer hoje</h2>
+                    <h3>deixe que entramos em contato com você e iniciamos um papo
+                        para dar o START necessário na sua marca</h3>
                 </div>
-                <div class="col" data-aos="fade-left" data-aos-duration="1800" data-aos-easing="linear">
-                    <input type="text" placeholder="Nome">
-                    <input type="text" placeholder="Telefone (WhatsApp)">
-                    <button>Enviar</button>
+                <div class="col-xl-6 mt-6">
+
+                    <form action="#" method="post" id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6"  data-aos="fade-up">
+                                <input type="text" name="yname" id="yname" placeholder="Seu nome">
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up">
+                                <input type="text" name="ywhatsapp" id="ywhatsapp" placeholder="Telefone (WhatsApp)">
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up">
+                                <button class="solidBTn ContactSubmit magic-hover" type="submit" value="Enviar Agora" data-radius="0" data-border-color="#FFF"><span>Enviar Agora</span></button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </center>
-    </newsletter>
+        </div>
+    </section>
+    <!-- END: NEWSLETTER  -->
 
 </mainHome>
 </x-app-layout>
