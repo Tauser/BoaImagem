@@ -1,9 +1,19 @@
 <x-app-layout>
-    <center class="container">
-        <h1>Nossa História</h1>
-        <subtitlePrincipal>Breve resumo e terminar falando quem são os <br> rastos que fazem isso tudo acontecer
-        </subtitlePrincipal>
-    </center>
+    <section class="banner" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xl-8 offset-xl-2">
+                    <div class="pageBannerContent text-center">
+                        <h2>Nossa História</h2>
+                        <div class="pageBannerPath">
+                            <a href="index.html">HOME</a>
+                            <span class="brdSeparator">&nbsp;/&nbsp;</span>
+                            <span>SOBRE</span></div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     {{-- <blueArea>
         <center class="container">
@@ -53,8 +63,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="secHeading">
-                        <h3>Our experience Team</h3>
-                        <div class="button-wrap right">
+                        <h3>NOSSOS EXPERTS</h3>
+                        {{-- <div class="button-wrap right">
                             <a href="javascript:void(0);">
                                 <div class="button-text sticky right"><span>More members</span></div>
                                 <div class="iconWrapper parallax-wrap" style="transform: translate(0px, 0px);">
@@ -63,7 +73,7 @@
                                     </div>
                                 </div>
                             </a>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -78,13 +88,13 @@
                                     <i class="fa-brands fa-facebook-f"></i>
                                     </a>
                                     <a href="javascript:void(0);">
-                                    <i class="fab fa-dribbble"></i>
+                                    <i class="fab fa-instagram"></i>
                                     </a>
                                     <a href="javascript:void(0);">
                                     <i class="fab fa-github"></i>
                                     </a>
                                     <a href="javascript:void(0);">
-                                    <i class="fab fa-behance"></i>
+                                    <i class="fab fa-youtube"></i>
                                     </a>
                                 </div>
                             </div>
@@ -160,7 +170,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="client_content">
-                        <h3 data-aos="fade-up" data-aos-duration="800">We worked with global largest brands</h3>
+                        <h3 data-aos="fade-up" data-aos-duration="800">TRABALHAMOS COM AS MAIORES MARCAS</h3>
                         <div class="clientTestimonial02 owl-carousel" data-aos="fade-up" data-aos-duration="1100">
                             <a class="cleintLogo">
                                 <img src="img/clientLogo/7.png" alt="clogo">

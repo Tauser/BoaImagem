@@ -110,7 +110,7 @@
     padding: 0px;
 }
 .projectSection02{
-    padding:147px 0 117px; 
+    padding:147px 0 117px;
     background: #111111;
 }
 .projectSection02 .projectCat_area{
@@ -273,7 +273,14 @@
     z-index:9;
 }
 .aboutBanner{
-    background: url(../images/page-bn/abPb.jpg)no-repeat scroll;
+    background: url(../../img/abPb.jpg)no-repeat scroll;
+    background-size: cover;
+    background-position: center center;
+    background-color: #111111;
+}
+
+.banner{
+    background: url(../../img/abPb.jpg)no-repeat scroll;
     background-size: cover;
     background-position: center center;
     background-color: #111111;
@@ -392,7 +399,7 @@
 .srvProjectSection{
     padding: 152px 0 120px;
     background: #111111;
-} 
+}
 .projectSection_sliderWrapper {
     padding: 101px 0 0;
 }

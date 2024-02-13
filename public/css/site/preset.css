@@ -455,7 +455,7 @@ body::-webkit-scrollbar-thumb {
 ------------------------------------------------------*/
 .pageBannerContent {
     position: relative;
-    padding: 318px 0 260px;
+    padding: 200px 0 100px;
 }
 .pageBannerContent h2 {
     font-size: 72px;
