@@ -5839,3 +5839,7 @@ section.aboutProggress_bar:last-child h2 {
     .boozyGridMenu i:hover {
         color: #009cff;
     }
+    /*BOTAO ASTRONAUTA fixo*/
+    header.header01.isSticky.fixedHeader.animated.slideInDown .boozyGridMenu i:hover {
+        color: #000;
+    }
