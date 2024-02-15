@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\SobreController;
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ContatoController;
+use App\Http\Controllers\CustomerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,6 @@ Route::get('/post', [PostController::class, 'index'])->name('post.index');
 Route::get('/search', [PostController::class, 'search'])->name('post.search');
 Route::get('/post/{post:slug}', [PostController::class, 'show'])->name('post.view');
 Route::get('/post/{category:slug}', [PostController::class, 'byCategory'])->name('post.category');
-Route::get('/cliente', [ClienteController::class, 'index'])->name('cliente.index');
-// Route::get('/cliente/{cliente:id}', [ClienteController::class, 'show'])->name('cliente.view');
+Route::get('/cliente', [CustomerController::class, 'index'])->name('cliente.index');
+Route::get('/cliente/{customer:slug}', [CustomerController::class, 'show'])->name('cliente.view');
 // Route::get('/cliente/{category:id}', [ClienteController::class, 'byCategory'])->name('cliente.category');

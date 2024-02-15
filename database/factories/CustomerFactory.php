@@ -25,7 +25,11 @@ class CustomerFactory extends Factory
             'name' => $this->faker->name(),
             'thumbnail' => $this->faker->imageUrl(640, 480),
             'content' => $this->faker->text(),
+            'results' => $this->faker->text(),
+            'slug' => $this->faker->slug(),
+            'url' => $this->faker->url(),
             'category_id' => CustomerCategory::factory(),
+            'since' => $this->faker->dateTime(),
             'created_at' => $this->faker->dateTime(),
             'updated_at' => $this->faker->dateTime(),
         ];

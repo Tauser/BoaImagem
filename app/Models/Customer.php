@@ -35,6 +35,7 @@ class Customer extends Model
      */
     protected $casts = [
         'id' => 'integer',
+        'category_id' => 'integer',
         'created_at' => 'timestamp',
         'updated_at' => 'timestamp',
     ];
@@ -42,6 +43,11 @@ class Customer extends Model
     public function category(): BelongsTo
     {
       return $this->belongsTo(CustomerCategory::class);
+    }
+
+    public function getFormattedDateYear()
+    {
+        return $this->created_at->format('Y');
     }
 
     public function getThumbnail()

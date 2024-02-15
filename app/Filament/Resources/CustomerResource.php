@@ -37,8 +37,18 @@ class CustomerResource extends Resource
                     ->label('Thumb')
                     ->directory('clientes')
                     ->image(),
+                Forms\Components\DateTimePicker::make('since')
+                    ->label('Cliente desde'),
+                    Forms\Components\TextInput::make('url')
+                    ->label('URL')
+                    ->maxLength(150),
                 Forms\Components\RichEditor::make('content')
                     ->label('Descrição')
+                    ->required()
+                    ->maxLength(65535)
+                    ->columnSpanFull(),
+                Forms\Components\RichEditor::make('results')
+                    ->label('Resultados')
                     ->required()
                     ->maxLength(65535)
                     ->columnSpanFull(),
