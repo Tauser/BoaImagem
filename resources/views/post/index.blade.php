@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-12 col-xl-8 offset-xl-2">
                     <div class="pageBannerContent text-center">
-                        <h2>As principais notícias sobre a nossa agência e de nossos parceiros</h2>
+                        <h2>Blog</h2>
                         <div class="pageBannerPath">
                             <a href="{{route('sobre')}}">HOME</a>
                             <span class="brdSeparator">&nbsp;/&nbsp;</span>
@@ -14,26 +14,6 @@
             </div>
         </div>
     </section>
-        {{-- <center class="container">
-
-            <form method="get" class="pesquisa"  action="{{route('post.search')}}">
-                <input name="q" value="{{request()->get('q')}}" placeholder="pesquise a palavra-chave"/>
-            </form>
-        </center> --}}
-
-        {{-- <blogList class="container">
-            <ul class="row blog">
-            @foreach ($posts as $post)
-                <x-post-item :post="$post">
-                </x-post-item>
-                @endforeach
-            </ul>
-
-            <div class="mt-5 mb-5">
-                {{ $posts->links() }}
-            </div>
-        </blogList> --}}
-        <!-- BEGIN: Service Section  -->
         <section class="blogPageSection">
             <div class="container">
                 <div class="row">
@@ -65,8 +45,8 @@
                                                         <img src="{{$post->getThumbnail()}}" alt="{{$post->title}}" >
                                                     </div>
                                                     <span class="blPostDate">
-                                                        <span class="blPostDay strokeText">{{$post->getFormattedDate()}}</span>
-                                                        <span class="blPostMonth">Jun <br> </span>
+                                                        <span class="blPostDay strokeText">{{$post->getFormattedDateDay()}}</span>
+                                                        <span class="blPostMonth">{{$post->getFormattedDateMonth()}} <br> {{$post->getFormattedDateYear()}}</span>
                                                     </span>
                                                 </div>
                                             </div>
@@ -74,14 +54,15 @@
                                                 <div class="blogContent02">
                                                     <div class="blogMata no-cursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
                                                         <span class="blogCcat ">
-                                                            <a href="blog-grid-rsb.html">{{$post->category->name}}</a>
+                                                            <a href="#">{{$post->category->name}}</a>
                                                         </span>
                                                         <span class="blogAuth">por&nbsp;<a href="javascript:void(0);">{{$post->user->name}}</a></span>
+                                                        <span class="blogAuth">&nbsp;{{$post->published_at->diffForHumans() }}</span>
                                                     </div>
-                                                    <h2 class="dfCursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750"><a href="blog-details-lsb.html">{{$post->title}}</a></h2>
+                                                    <h2 class="dfCursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="750"><a href="{{route('post.view', $post)}}">{{$post->title}}</a></h2>
                                                     <p class="blogDesc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900"></p>
                                                     <div class="button-wrap right">
-                                                        <a class="boozyLinkBTN" href="blog-details-rsb.html" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="950">
+                                                        <a class="boozyLinkBTN" href="{{route('post.view', $post)}}" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="950">
                                                             <div class="button-text sticky right btnWrapper_sm"><span>Ler artigo completo</span></div>
                                                             <div class="iconWrapper parallax-wrap iconWrapper_sm" style="transform: translate(0px, 0px);">
                                                                 <div class="button-icon parallax-element" style="transform: translate(0px, 0px);">
@@ -119,6 +100,4 @@
             </div>
         </section>
         <!-- END: Service FAQ  -->
-
-
 </x-app-layout>

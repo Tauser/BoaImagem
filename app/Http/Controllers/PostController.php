@@ -41,12 +41,13 @@ class PostController extends Controller
 
     public function show(Post $post, Request $request)
     {
-        if ( $post->published_at > Carbon::now()) {
+        if ($post->published_at > Carbon::now()) {
             throw new NotFoundHttpException();
         }
 
         $next = Post::query()
-
+            ->whereDate('published_at', '<=', Carbon::now())
+            ->whereDate('published_at', '<', $post->published_at)
             ->orderBy('published_at', 'desc')
             ->limit(1)
             ->first();
@@ -57,6 +58,8 @@ class PostController extends Controller
             ->orderBy('published_at', 'asc')
             ->limit(1)
             ->first();
+
+        $user = $request->user();
 
 
         return view('post.view', compact('post', 'prev', 'next'));

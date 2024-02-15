@@ -8,7 +8,7 @@
             <div class="center_align">
                 <div class="about_widget_area">
                     <div class="wd_logo">
-                        <a href="index.html" class="dfCursor"><img src="img/logoHome.png" width="100px"></a>
+                        <a href="index.html" class="dfCursor"><img src="{{asset("img/logoHome.png")}}"" width="100px"></a>
                     </div>
                     <p>
                     teste

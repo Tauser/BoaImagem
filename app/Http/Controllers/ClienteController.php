@@ -9,9 +9,10 @@ class ClienteController extends Controller
 {
     public function index()
     {
-        $customers = Customer::paginate(9);
-        $categories = Customer::all();
-        return view('cliente.index', compact('customers','categories'));
+        // $customers = Customer::paginate(9);
+        // $categories = Customer::all();
+        // return view('clientes', compact('customers','categories'));
+        return view('cliente.index');
     }
 
     public function show()

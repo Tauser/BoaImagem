@@ -5,7 +5,7 @@
                 <div class="headerInner01">
                     <div class="logo">
                         <a class="dfCursor" href="{{route('home')}}">
-                            <img src="img/logoHome.png" width="160px">
+                            <img src="{{asset("img/logoHome.png")}}" width="160px">
                         </a>
                     </div>
                     <nav class="mainMenu">

@@ -19,11 +19,6 @@ use App\Http\Controllers\ContatoController;
 |
 */
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-
-
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/sobre', [SobreController::class, 'index'])->name('sobre');
@@ -33,5 +28,5 @@ Route::get('/search', [PostController::class, 'search'])->name('post.search');
 Route::get('/post/{post:slug}', [PostController::class, 'show'])->name('post.view');
 Route::get('/post/{category:slug}', [PostController::class, 'byCategory'])->name('post.category');
 Route::get('/cliente', [ClienteController::class, 'index'])->name('cliente.index');
-Route::get('/cliente/{cliente:id}', [ClienteController::class, 'show'])->name('cliente.view');
-Route::get('/cliente/{category:id}', [ClienteController::class, 'byCategory'])->name('cliente.category');
+// Route::get('/cliente/{cliente:id}', [ClienteController::class, 'show'])->name('cliente.view');
+// Route::get('/cliente/{category:id}', [ClienteController::class, 'byCategory'])->name('cliente.category');

@@ -2534,7 +2534,7 @@ aside.newslatter {
     opacity: 0;
     background: rgba(28, 32, 53, 0.7);
     z-index: 9994;
-    cursor: url(../images/close.png), auto;
+    cursor: url(../../img/close.png), auto;
     -webkit-transition: all 0.3s ease-in 0.6s;
     -webkit-transition: all 0.3s ease-in 0.86s;
     transition: all 0.3s ease-in 0.86s;
@@ -5828,14 +5828,18 @@ body #magicMouseCursor.is-hover{
  section.aboutProggress_bar:last-child {
     background: #000;
 }
-section.aboutProggress_bar:last-child h2 {
+section.aboutProggress_bar:last-child h2{
     color: #fff;
 }
+section.aboutProggress_bar:last-child h3{
+    color: #009cff;
+}
+
   /*BOTAO ASTRONAUTA*/
     .boozyGridMenu i {
         font-size: 52px !important;
         color: #FFF;
     }
     .boozyGridMenu i:hover {
-        color: #009cff;
+        color: #ffffff;
     }

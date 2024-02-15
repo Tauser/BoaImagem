@@ -305,13 +305,6 @@
                                     <h3>Lula</h3>
                                 </div>
                             </div>
-                            <div class="testimonial_items">
-                                <span class="testimonialQuoat1"><i class="boozy-quotes"></i></span>
-                                <h2>Creative and ingenious, TBP has a way of <br> making a simple idea/brand <br>come to full bloom</h2>
-                                <div class="testimonialAuthor">
-                                    <h3>David malan</h3>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -408,7 +401,7 @@
             <div class="row">
                 <div class="col-xl-6">
                     <h2 class="abProggressHeading">Não deixe para amanhã o que você pode fazer hoje</h2>
-                    <h3>deixe que entramos em contato com você e iniciamos um papo
+                    <h3>deixe que entramos em contato com você e iniciamos <br>um papo
                         para dar o START necessário na sua marca</h3>
                 </div>
                 <div class="col-xl-6 mt-6">
@@ -422,7 +415,7 @@
                                 <input type="text" name="ywhatsapp" id="ywhatsapp" placeholder="Telefone (WhatsApp)">
                             </div>
                             <div class="col-md-6" data-aos="fade-up">
-                                <button class="solidBTn ContactSubmit magic-hover" type="submit" value="Enviar Agora" data-radius="0" data-border-color="#FFF"><span>Enviar Agora</span></button>
+                                <button class="solidBTn ContactSubmit magic-hover" type="submit" value="Enviar Agora"  data-radius="5" data-border-color="#FFF"><span>Enviar Agora</span></button>
                             </div>
                         </div>
                     </form>

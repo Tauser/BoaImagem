@@ -44,7 +44,7 @@ class Post extends Model
         'id' => 'integer',
         'user_id' => 'integer',
         'category_id' => 'integer',
-        'published_at' => 'timestamp',
+        'published_at' => 'datetime',
         'created_at' => 'timestamp',
         'updated_at' => 'timestamp',
     ];
@@ -66,7 +66,22 @@ class Post extends Model
 
     public function getFormattedDate()
     {
-        return $this->published_at->toDateString()->format('d/m/Y \a\s g:i');
+        return $this->published_at->format('d F y');
+    }
+
+    public function getFormattedDateYear()
+    {
+        return $this->published_at->format('Y');
+    }
+
+    public function getFormattedDateMonth()
+    {
+        return $this->published_at->format('F');
+    }
+
+    public function getFormattedDateDay()
+    {
+        return $this->published_at->format('d');
     }
 
     public function getThumbnail()

@@ -15,6 +15,74 @@
         </div>
     </section>
 
+    <section class="aboutSection02">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="boozyabHd text-center" data-aos="fade-down" data-aos-duration="1800" data-aos-easing="linear">
+                        <p>We are a digital agency, focused in making good and useful product for clients and <strong>corporations</strong>. Our main <strong>mission</strong> or a description about us is placed here. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="aboutThumb_imges">
+                        <div class="row">
+                            <div class="col-md-5 abThumbImgcol01">
+                                <div class="abThumbImg01 bzImageFlash" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
+                                    <img  src="assets/images/about/1.jpg" alt="about">
+                                </div>
+                            </div>
+                            <div class="col-md-7 abThumbImgcol02">
+                                <div class="abThumbImg02 bzImageFlash" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+                                    <img src="assets/images/about/2.jpg" alt="about">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 aboutContentColR">
+                    <div class="aboutContent">
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1600" data-aos-delay="500">We are leading <span class="abMark">digital</span> marketing <span class="abMark">agency</span> new york based</h2>
+                        <div class="boozyAcordion" id="boozy_accordion">
+                            <div class="accordion-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
+                                <h2 class="accordion-header" id="boozy_acc_head-1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col" aria-expanded="true" aria-controls="boozy_acc_col">UI/UX dESIGN</button>
+                                </h2>
+                                <div id="boozy_acc_col" class="accordion-collapse collapse show" aria-labelledby="boozy_acc_head-1" data-bs-parent="#boozy_accordion">
+                                    <div class="accordion-body">
+                                        We can help you channel your potential implementing your idea. We take care of all your needs, crafting specific and targeted solutions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
+                                <h2 class="accordion-header" id="boozy_acc_head-2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col-2" aria-expanded="true" aria-controls="boozy_acc_col-2">Braanding</button>
+                                </h2>
+                                <div id="boozy_acc_col-2" class="accordion-collapse collapse" aria-labelledby="boozy_acc_head-2" data-bs-parent="#boozy_accordion">
+                                    <div class="accordion-body">
+                                        We can help you channel your potential implementing your idea. We take care of all your needs, crafting specific and targeted solutions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
+                                <h2 class="accordion-header" id="boozy_acc_head-3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col-3" aria-expanded="true" aria-controls="boozy_acc_col-3">development</button>
+                                </h2>
+                                <div id="boozy_acc_col-3" class="accordion-collapse collapse" aria-labelledby="boozy_acc_head-3" data-bs-parent="#boozy_accordion">
+                                    <div class="accordion-body">
+                                        We can help you channel your potential implementing your idea. We take care of all your needs, crafting specific and targeted solutions.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {{-- <blueArea>
         <center class="container">
             <h3>2009</h3>
