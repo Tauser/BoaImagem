@@ -26,7 +26,7 @@
                     </nav>
                     <div class="headerOniAccess02">
                         <a class="hdSupportBtn" href="contact.html"><i class="boozy-chat"></i> Vamos conversar?</a>
-                        <a href="javascript:void(0)" class="menu_btn menuBTN02"></a>
+                        <a href="javascript:void(0)" class="menu_btn menuBTN02"><i class="fa-solid fa-bars"></i></a>
                         <div class="boozyGridMenu">
                             <a href="javascript:void(0);">
                                 <i class="fa fa-grav" aria-hidden="true"></i>

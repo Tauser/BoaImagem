@@ -131,6 +131,7 @@
     transform: translateY(0%);
     -moz-transform: translateY(0%);
     -webkit-transform: translateY(0%);
+    font-size: 25px;
 }
 .mainMenu > ul > li > a:before{
     content: attr(data-title);
@@ -138,15 +139,17 @@
     left: 0;
     top: 0;
     z-index: 2;
-    color: var(--dark-color);
+    color: #009cff !important;
     transition: all ease 250ms;
     -moz-transition: all ease 250ms;
     -webkit-transition: all ease 250ms;
+    font-size: 25px;
 
     transform: translateY(-110%);
     -moz-transform: translateY(-110%);
     -webkit-transform: translateY(-110%);
 }
+header.header01.isSticky.fixedHeader.animated.slideInDown .mainMenu > ul > li > a:before {color: #000  !important;}
 .mainMenu > ul > li:hover > a:before,
 .mainMenu > ul > li.current-menu-item > a:before{
     transform: translateY(0%);
@@ -5842,4 +5845,8 @@ section.aboutProggress_bar:last-child h3{
     }
     .boozyGridMenu i:hover {
         color: #ffffff;
+    }
+    /*BOTAO ASTRONAUTA fixo*/
+    header.header01.isSticky.fixedHeader.animated.slideInDown .boozyGridMenu i:hover {
+        color: #000;
     }
