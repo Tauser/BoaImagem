@@ -21,7 +21,7 @@ class PostController extends Controller
         $posts = Post::query()
             ->whereDate('published_at', '!=', 'NULL')
             ->orderBy('published_at', 'desc')
-            ->paginate(9);
+            ->paginate(10);
 
 
          $categories = Category::query()

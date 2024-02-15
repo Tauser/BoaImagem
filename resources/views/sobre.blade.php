@@ -20,8 +20,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="boozyabHd text-center" data-aos="fade-down" data-aos-duration="1800" data-aos-easing="linear">
-                        <p>We are a digital agency, focused in making good and useful product for clients and <strong>corporations</strong>. Our main <strong>mission</strong> or a description about us is placed here. </p>
-                    </div>
+                        <p>Caso o seu objetivo seja gerar cobertura e relacionamentos com os principais títulos de mídia, conduzir leads, aumentar os rankings de pesquisa ou acessar as altas taxas de engajamento em mídias sociais, a <strong>Boa Imagem</strong> tem um posicionamento único para produzir ótimos resultados.</p>
                 </div>
             </div>
             <div class="row">
@@ -30,12 +29,12 @@
                         <div class="row">
                             <div class="col-md-5 abThumbImgcol01">
                                 <div class="abThumbImg01 bzImageFlash" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="150">
-                                    <img  src="assets/images/about/1.jpg" alt="about">
+                                    <img  src="img/sobre/1.jpg" alt="about">
                                 </div>
                             </div>
                             <div class="col-md-7 abThumbImgcol02">
                                 <div class="abThumbImg02 bzImageFlash" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                                    <img src="assets/images/about/2.jpg" alt="about">
+                                    <img src="img/sobre/2.jpg" alt="about">
                                 </div>
                             </div>
                         </div>
@@ -43,35 +42,42 @@
                 </div>
                 <div class="col-lg-5 aboutContentColR">
                     <div class="aboutContent">
-                        <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1600" data-aos-delay="500">We are leading <span class="abMark">digital</span> marketing <span class="abMark">agency</span> new york based</h2>
+                        <h2 data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1600" data-aos-delay="500">
+                            Não buscamos <span class="abMark">inovação</span>, a inovação está no nosso <span class="abMark">DNA</span>
+                        </h2>
                         <div class="boozyAcordion" id="boozy_accordion">
                             <div class="accordion-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
                                 <h2 class="accordion-header" id="boozy_acc_head-1">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col" aria-expanded="true" aria-controls="boozy_acc_col">UI/UX dESIGN</button>
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col" aria-expanded="true" aria-controls="boozy_acc_col">Online</button>
                                 </h2>
                                 <div id="boozy_acc_col" class="accordion-collapse collapse show" aria-labelledby="boozy_acc_head-1" data-bs-parent="#boozy_accordion">
                                     <div class="accordion-body">
-                                        We can help you channel your potential implementing your idea. We take care of all your needs, crafting specific and targeted solutions.
+                                        Anúncios patrocinados<br> Automação de marketing<br> Mídias Sociais<br> Marketing de Conteúdo,<br>Criação de sites<br> SEO - Otimização
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
                                 <h2 class="accordion-header" id="boozy_acc_head-2">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col-2" aria-expanded="true" aria-controls="boozy_acc_col-2">Braanding</button>
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col-2" aria-expanded="true" aria-controls="boozy_acc_col-2">Offline</button>
                                 </h2>
                                 <div id="boozy_acc_col-2" class="accordion-collapse collapse" aria-labelledby="boozy_acc_head-2" data-bs-parent="#boozy_accordion">
                                     <div class="accordion-body">
-                                        We can help you channel your potential implementing your idea. We take care of all your needs, crafting specific and targeted solutions.
+                                        Vídeos e animações<br> ilustraçao 2D e #d<br> Placas e fachadas<br> Fotografia Publicitária<br> Mídia impressa<br> Design de Produtos
                                     </div>
                                 </div>
                             </div>
                             <div class="accordion-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-easing="linear">
                                 <h2 class="accordion-header" id="boozy_acc_head-3">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col-3" aria-expanded="true" aria-controls="boozy_acc_col-3">development</button>
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#boozy_acc_col-3" aria-expanded="true" aria-controls="boozy_acc_col-3">ESTRATÉGIAS</button>
                                 </h2>
                                 <div id="boozy_acc_col-3" class="accordion-collapse collapse" aria-labelledby="boozy_acc_head-3" data-bs-parent="#boozy_accordion">
                                     <div class="accordion-body">
-                                        We can help you channel your potential implementing your idea. We take care of all your needs, crafting specific and targeted solutions.
+                                        Acessorias<br>
+                                        Consultoria<br>
+                                        estratégias de Marketing<br>
+                                        Marketing político e eleitoral<br>
+                                        Pesquisa de Mercado<br>
+                                        Planejamento de Mídia<br>
                                     </div>
                                 </div>
                             </div>
@@ -146,6 +152,88 @@
                 </div>
             </div>
             <div class="row teamGridRow">
+                <div class="col-md-6 col-lg-4 teamItemCol">
+                    <div class="team_Item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="250">
+                        <div class="teamItemInner">
+                            <div class="team_thumbnail">
+                                <img src="img/team/1.jpg" alt="team">
+                                <div class="tm01Social">
+                                    <a href="javascript:void(0);">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_desc">
+                                <h2>Arnold Haron</h2>
+                                <a href="javascript:void(0)">Product manager</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 teamItemCol">
+                    <div class="team_Item" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="300">
+                        <div class="teamItemInner">
+                            <div class="team_thumbnail">
+                                <img src="img/team/2.jpg" alt="team">
+                                <div class="tm01Social">
+                                    <a href="javascript:void(0);">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-behance"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_desc">
+                                <h2>Arnold Haron</h2>
+                                <a href="javascript:void(0)">Product manager</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 teamItemCol">
+                    <div class="team_Item" data-aos="fade-up" data-aos-duration="1600" data-aos-delay="350">
+                        <div class="teamItemInner">
+                            <div class="team_thumbnail">
+                                <img src="img/team/3.jpg" alt="team">
+                                <div class="tm01Social">
+                                    <a href="javascript:void(0);">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-dribbble"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="javascript:void(0);">
+                                    <i class="fab fa-behance"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_desc">
+                                <h2>Arnold Haron</h2>
+                                <a href="javascript:void(0)">Product manager</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-md-6 col-lg-4 teamItemCol">
                     <div class="team_Item" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="250">
                         <div class="teamItemInner">

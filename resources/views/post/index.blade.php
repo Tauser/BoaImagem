@@ -82,18 +82,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-8">
-                            <div class="boozyPagination blogGridPagination" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200">
-                                <nav class="navigation pagination" aria-label="Posts">
-                                    <div class="nav-links">
-                                        <a class="prev page-numbers" href="javascript:void(0);"><i class="fa-solid fa-chevron-left"></i></a>
-                                        <a class="page-numbers" href="javascript:void(0);">1</a>
-                                        <span aria-current="page" class="page-numbers current">2</span>
-                                        <a class="next page-numbers" href="javascript:void(0);"><i class="fa-solid fa-chevron-right"></i></a>
-                                    </div>
-                                </nav>
-                            </div>
-                        </div>
+                        {{$posts->links()}}
 
                     </div>
                 </div>

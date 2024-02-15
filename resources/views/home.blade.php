@@ -394,6 +394,114 @@
             </div>
         </div>
     </section> --}}
+    <!-- BEGIN: Project Section  -->
+    <section class="projectSection02">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="secHeading" id="projectHeading">
+                        <h3>Projetos recentes</h3>
+                    </div>
+                    <div class="projectCat_area">
+                        <ul class="filterBTN_bare openHoverCursor">
+                            <li class="filterBTN" data-group="web"><a href="javascript:void(0);">web design</a></li>
+                            <li class="filterBTN" data-group="brand"><a href="javascript:void(0);">Brand</a></li>
+                            <li class="filterBTN" data-group="dev"><a href="javascript:void(0);">Development</a></li>
+                            <li class="filterBTN" data-group="photography"><a href="javascript:void(0);">Photography</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row shafull_container ">
+                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups='["web","dev"]'>
+                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900" >
+                        <div class="project_item_thumb">
+                            <img src="img/projects/pss-01.jpg" alt="project">
+                        </div>
+                        <a href="case-studies.html" class="project_item_dtls">
+                            <div class="projectInfoContent">
+                                <i class="boozy-down-arrow strokeText"></i><br>
+                                <h3 class="ps_item_name">cREATIVE bRCOHURE</h3><br>
+                                <h4 class="ps_auth_name">Brochure Design</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item"  data-groups='["web","brand"]'>
+                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="project_item_thumb">
+                            <img src="img/projects/pss-02.jpg" alt="project">
+                        </div>
+                        <a href="case-studies.html" class="project_item_dtls">
+                            <div class="projectInfoContent">
+                                <i class="boozy-down-arrow strokeText"></i><br>
+                                <h3 class="ps_item_name">Photography Camera</h3><br>
+                                <h4 class="ps_auth_name">Canon</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item"  data-groups='["photography","dev"]'>
+                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="project_item_thumb">
+                            <img src="img/projects/pss-03.jpg" alt="project">
+                        </div>
+                        <a href="case-studies.html" class="project_item_dtls">
+                            <div class="projectInfoContent">
+                                <i class="boozy-down-arrow strokeText"></i><br>
+                                <h3 class="ps_item_name">Brand Identity</h3><br>
+                                <h4 class="ps_auth_name">Chanel Perfumes</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups='["brand","web"]'>
+                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="project_item_thumb">
+                            <img src="img/projects/pss-04.jpg" alt="project">
+                        </div>
+                        <a href="case-studies.html" class="project_item_dtls">
+                            <div class="projectInfoContent">
+                                <i class="boozy-down-arrow strokeText"></i><br>
+                                <h3 class="ps_item_name">Aps Development</h3><br>
+                                <h4 class="ps_auth_name">Development</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups='["photography","dev"]'>
+                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="project_item_thumb">
+                            <img src="img/projects/pss-05.jpg" alt="project">
+                        </div>
+                        <a href="case-studies.html" class="project_item_dtls">
+                            <div class="projectInfoContent">
+                                <i class="boozy-down-arrow strokeText"></i><br>
+                                <h3 class="ps_item_name">Brand Identity</h3><br>
+                                <h4 class="ps_auth_name">Brochure Design</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups='["photography","brand"]'>
+                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="project_item_thumb">
+                            <img src="img/projects/pss-06.jpg" alt="project">
+                        </div>
+                        <a href="case-studies.html" class="project_item_dtls">
+                            <div class="projectInfoContent">
+                                <i class="boozy-down-arrow strokeText"></i><br>
+                                <h3 class="ps_item_name">cREATIVE bRCOHURE</h3><br>
+                                <h4 class="ps_auth_name">Brochure Design</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1 col-lg-1 col-xl-1 shaf_sizer"></div>
+            </div>
+        </div>
+    </section>
+    <!-- END: Project Section  -->
 
      <!-- BEGIN: NEWSLETTER  -->
      <section class="aboutProggress_bar">
