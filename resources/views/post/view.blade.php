@@ -52,7 +52,7 @@
                                             <img src="{{$prev->getThumbnail()}}" alt="postNavImage">
                                             <div class="postNavTitleDate">
                                                 <h3>{{$prev->title}}</h3>
-                                                <span class="blPDate"><i class="fa-regular fa-calendar-days"></i> 09 Jun , 2022</span>
+                                                <span class="blPDate"><i class="fa-regular fa-calendar-days"></i> {{$post->getFormattedDate()}}</span>
                                             </div>
                                         </a>
                                     </div>
@@ -62,7 +62,7 @@
                                         <a href="{{route('post.view', $next)}}" class="postNavigationItem postNavNextItem">
                                             <div class="postNavTitleDate">
                                                 <h3>{{$next->title}}</h3>
-                                                <span class="blPDate"><i class="fa-regular fa-calendar-days"></i> 09 Jun , 2022</span>
+                                                <span class="blPDate"><i class="fa-regular fa-calendar-days"></i>{{$post->getFormattedDate()}}</span>
                                             </div>
                                             <img src="{{$next->getThumbnail()}}" alt="postNavImage">
                                             <i class="fa-solid fa-chevron-right"></i>

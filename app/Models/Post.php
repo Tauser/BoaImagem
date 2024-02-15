@@ -66,7 +66,7 @@ class Post extends Model
 
     public function getFormattedDate()
     {
-        return $this->published_at->format('d F y');
+        return $this->published_at->format('d/m/Y');
     }
 
     public function getFormattedDateYear()
@@ -76,7 +76,7 @@ class Post extends Model
 
     public function getFormattedDateMonth()
     {
-        return $this->published_at->format('F');
+        return $this->published_at->format('m');
     }
 
     public function getFormattedDateDay()
