@@ -329,7 +329,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="portfolioCarItam projectItemView" data-firstline="View" data-secondline="Details">
+                        <div class="portfolioCarItam projectItemView" data-firstline="Ver" data-secondline="Detalhes">
                             <img src="img/2.jpg" alt="portfolio">
                             <a href="case-studies.html" class="portfolioInfoPP_item">
                                 <div class="portFolioInfo">
@@ -339,7 +339,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="portfolioCarItam projectItemView" data-firstline="View" data-secondline="Details">
+                        <div class="portfolioCarItam projectItemView" data-firstline="Ver" data-secondline="Detalhes">
                             <img src="img/3.jpg" alt="portfolio">
                             <a href="case-studies.html" class="portfolioInfoPP_item">
                                 <div class="portFolioInfo">
@@ -349,7 +349,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="portfolioCarItam projectItemView" data-firstline="View" data-secondline="Details">
+                        <div class="portfolioCarItam projectItemView" data-firstline="Ver" data-secondline="Detalhes">
                             <img src="img/4.jpg" alt="portfolio">
                             <a href="case-studies.html" class="portfolioInfoPP_item">
                                 <div class="portFolioInfo">
@@ -359,7 +359,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="portfolioCarItam projectItemView" data-firstline="View" data-secondline="Details">
+                        <div class="portfolioCarItam projectItemView" data-firstline="Ver" data-secondline="Detalhes">
                             <img src="img/5.jpg" alt="portfolio">
                             <a href="case-studies.html" class="portfolioInfoPP_item">
                                 <div class="portFolioInfo">
@@ -369,7 +369,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="portfolioCarItam projectItemView " data-firstline="View" data-secondline="Details">
+                        <div class="portfolioCarItam projectItemView " data-firstline="Ver" data-secondline="Detalhes">
                             <img src="img/6.jpg" alt="portfolio">
                             <a href="case-studies.html" class="portfolioInfoPP_item">
                                 <div class="portFolioInfo">
@@ -379,7 +379,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="portfolioCarItam projectItemView " data-firstline="View" data-secondline="Details">
+                        <div class="portfolioCarItam projectItemView " data-firstline="Ver" data-secondline="Detalhes">
                             <img src="img/7.jpg" alt="portfolio">
                             <a href="case-studies.html" class="portfolioInfoPP_item">
                                 <div class="portFolioInfo">
@@ -414,7 +414,7 @@
             </div>
             <div class="row shafull_container ">
                 <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups='["web","dev"]'>
-                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900" >
+                    <div class="project_item projectItemView" data-firstline="Ver" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="1900" >
                         <div class="project_item_thumb">
                             <img src="img/projects/pss-01.jpg" alt="project">
                         </div>
@@ -428,7 +428,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 shaf_item"  data-groups='["web","brand"]'>
-                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                    <div class="project_item projectItemView" data-firstline="Ver" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="1900">
                         <div class="project_item_thumb">
                             <img src="img/projects/pss-02.jpg" alt="project">
                         </div>
@@ -442,7 +442,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 shaf_item"  data-groups='["photography","dev"]'>
-                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                    <div class="project_item projectItemView" data-firstline="Ver" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="1900">
                         <div class="project_item_thumb">
                             <img src="img/projects/pss-03.jpg" alt="project">
                         </div>
@@ -456,7 +456,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups='["brand","web"]'>
-                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                    <div class="project_item projectItemView" data-firstline="Ver" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="1900">
                         <div class="project_item_thumb">
                             <img src="img/projects/pss-04.jpg" alt="project">
                         </div>
@@ -470,7 +470,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups='["photography","dev"]'>
-                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                    <div class="project_item projectItemView" data-firstline="Ver" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="1900">
                         <div class="project_item_thumb">
                             <img src="img/projects/pss-05.jpg" alt="project">
                         </div>
@@ -484,7 +484,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups='["photography","brand"]'>
-                    <div class="project_item projectItemView" data-firstline="View" data-secondline="Details" data-aos="fade-up" data-aos-duration="1900">
+                    <div class="project_item projectItemView" data-firstline="Ver" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="1900">
                         <div class="project_item_thumb">
                             <img src="img/projects/pss-06.jpg" alt="project">
                         </div>
