@@ -131,6 +131,7 @@
     transform: translateY(0%);
     -moz-transform: translateY(0%);
     -webkit-transform: translateY(0%);
+    font-size: 25px;
 }
 .mainMenu > ul > li > a:before{
     content: attr(data-title);
@@ -142,6 +143,7 @@
     transition: all ease 250ms;
     -moz-transition: all ease 250ms;
     -webkit-transition: all ease 250ms;
+    font-size: 25px;
 
     transform: translateY(-110%);
     -moz-transform: translateY(-110%);
