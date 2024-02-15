@@ -26,6 +26,9 @@ class Customer extends Model
         'name',
         'thumbnail',
         'content',
+        'results',
+        'url'
+
     ];
 
     /**
@@ -38,16 +41,18 @@ class Customer extends Model
         'category_id' => 'integer',
         'created_at' => 'timestamp',
         'updated_at' => 'timestamp',
+        'since' => 'datetime',
     ];
 
     public function category(): BelongsTo
     {
+
       return $this->belongsTo(CustomerCategory::class);
     }
 
     public function getFormattedDateYear()
     {
-        return $this->created_at->format('Y');
+        return $this->since->format('Y');
     }
 
     public function getThumbnail()

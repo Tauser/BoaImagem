@@ -16,9 +16,6 @@
         </div>
     </section>
 
-
-
-    <!-- BEGIN: CaseSTudyInfo  -->
     <section class="caseStudyInfo">
         <div class="container">
             <div class="row">
@@ -37,21 +34,19 @@
                 <div class="col-md-6 col-lg-3 col-sm-6">
                     <div class="caseStudyInfoItem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="650">
                         <h3>Desde</h3>
-                        <p>2024</p>
+                        <p>{{$customer->getFormattedDateYear()}}</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 col-sm-6">
                     <div class="caseStudyInfoItem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">
                         <h3>URL</h3>
-                        <p>google.com</p>
+                        <p>{{$customer->url}}</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- END: CaseSTudyInfo  -->
 
-    <!-- BEGIN: Case Studyinfo imgThumb -->
     <section class="caseStudyInfoThumbSec">
         <div class="container">
             <div class="row">
@@ -63,9 +58,7 @@
             </div>
         </div>
     </section>
-    <!-- BEGIN: Case Studyinfo imgThumb -->
 
-    <!-- BEGIN: Case Studyinfo Content -->
     <section class="caseStudyInfoContetnsec">
         <div class="container">
             <div class="row">
