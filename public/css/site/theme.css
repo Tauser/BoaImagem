@@ -4406,6 +4406,7 @@ ul.srServiceList li span{
     position: relative;
 }
 .csStuInfoThumb img{
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -5070,6 +5071,7 @@ ul.srServiceList li span{
 .postNavTitleDate {
     position: relative;
     line-height: 1;
+    text-align: left;
 }
 .postNavTitleDate h3 {
     font-size: 16px;
