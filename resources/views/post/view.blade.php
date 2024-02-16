@@ -56,6 +56,8 @@
                                             </div>
                                         </a>
                                     </div>
+                                    @else
+                                    <div class="col-md-6 bzCursroHv"> </div>
                                     @endif
                                     @if (isset($next))
                                     <div class="col-md-6 bzCursroHv">
