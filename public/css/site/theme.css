@@ -2301,10 +2301,10 @@ aside.newslatter {
 }
 @-webkit-keyframes waveBtn {
     0% {
-        box-shadow: 0 0 0 0 rgba(255, 106, 0, 0.3)
+        box-shadow: 0 0 0 0 rgba(0, 156, 255, 0.3)
     }
     25%{
-        box-shadow: 0 0 0 0 rgba(255, 106, 0, 0.6)
+        box-shadow: 0 0 0 0 rgba(0, 81, 255, 0.6)
     }
     50% {
         box-shadow: 0 0 0 40px transparent
@@ -2315,10 +2315,10 @@ aside.newslatter {
 }
 @keyframes waveBtn {
     0% {
-        box-shadow: 0 0 0 0 rgba(255, 106, 0, 0.3)
+        box-shadow: 0 0 0 0 rgba(0, 156, 255, 0.3)
     }
     25%{
-        box-shadow: 0 0 0 0 rgba(255, 106, 0, 0.6)
+        box-shadow: 0 0 0 0 rgba(0, 81, 255, 0.6)
     }
     50% {
         box-shadow: 0 0 0 40px transparent
@@ -2461,6 +2461,7 @@ aside.newslatter {
     margin:-2px 38px 0 0;
     text-transform: uppercase;
 }
+header.header01.isSticky.fixedHeader.animated.slideInDown .hdSupportBtn:hover {color: #000;}
 .hdSupportBtn i{
     margin-right: 11px;
     font-size: 30px;
@@ -5770,7 +5771,8 @@ body #magicMouseCursor.is-hover{
     width: 80px;
     height: 80px;
     background: url(../../img/MouseHover.png) no-repeat;
-    background-size: cover;
+    background-size: cover ;
+    border: 1px solid #999;
     border-radius: 50%;
     pointer-events: none;
     box-sizing: border-box;
