@@ -5858,10 +5858,7 @@ section.aboutProggress_bar:last-child h3{
         text-align: center;
     }
 
-    /*CUSTOM NAVIGATION*/
-    .projectSection02 .projectCat_area {
-        padding-top: 0;
-    } 
+    /*CUSTOM NAVIGATION*/ 
     .col-md-6.bzCursroHv:first-child {
         text-align: right;
     }
