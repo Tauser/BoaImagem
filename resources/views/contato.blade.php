@@ -52,16 +52,17 @@
                 <div class="col-md-12">
                     <h2 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">ENTRAR EM CONTATO <br>
                         CONOSCO</h2>
-                    <form action="#" method="post" id="contactForm">
+                    <form action="{{route('contato.send')}}" method="post" id="contactForm">
+                        @csrf
                         <div class="row">
                             <div class="col-md-6" data-aos="fade-up">
-                                <input type="text" name="yname" id="yname" placeholder="Seu nome">
+                                <input type="text" name="name" id="name" placeholder="Seu nome" required>
                             </div>
                             <div class="col-md-6" data-aos="fade-up">
-                                <input type="text" name="yemail" id="yemail" placeholder="Seu telefone/Whatsapp">
+                                <input type="text" name="whatsapp" id="whatsapp" placeholder="Seu telefone/Whatsapp" required>
                             </div>
                             <div class="col-md-12" data-aos="fade-up">
-                                <textarea name="ymessages" id="ymessages" placeholder="Fale mais sobre seu projeto"></textarea>
+                                <textarea name="message" id="message" placeholder="Fale mais sobre seu projeto" required></textarea>
                             </div>
                             <div class="col-md-12" data-aos="fade-up">
                                 <button class="solidBTn ContactSubmit magic-hover" type="submit" value="Enviar"
