@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-lg-12 col-xl-8 offset-xl-2">
                     <div class="pageBannerContent text-center">
-                        <h2>{{$customer->name}}</h2>
+                        <h2>{{$customer->cus_name}}</h2>
                         <div class="pageBannerPath">
                             <a href="{{route('home')}}">HOME</a>
                             <span class="brdSeparator">&nbsp;/&nbsp;</span>
@@ -22,13 +22,13 @@
                 <div class="col-md-6 col-lg-3 col-sm-6">
                     <div class="caseStudyInfoItem" data-aos="fade-down" data-aos-easing="linear">
                         <h3>Cliente</h3>
-                        <p>{{$customer->name}}</p>
+                        <p>{{$customer->cus_name}}</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 col-sm-6">
                     <div class="caseStudyInfoItem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
                         <h3>Tipo</h3>
-                        <p>{{$customer->category->name}}</p>
+                        <p>{{$customer->service}}</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 col-sm-6">
@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="csStuInfoThumb animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
-                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->name}}">
+                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->cus_name}}">
                     </div>
                 </div>
             </div>
@@ -72,22 +72,22 @@
         </div>
     </section>
 
-    <section class="csStudyThumbItemsSEC">
+    {{-- <section class="csStudyThumbItemsSEC">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="csStuThumbItem animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
-                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->name}}">
+                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->cus_name}}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="csStuThumbItem animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->name}}">
+                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->cus_name}}">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="caseStudyInfoContetnsec02">
         <div class="container">

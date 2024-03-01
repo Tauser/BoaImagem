@@ -2,10 +2,10 @@
 
 namespace Database\Factories;
 
-use App\Models\Customer;
-use Illuminate\Support\Str;
-use App\Models\CustomerCategory;
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
+use App\Models\Customer;
+use App\Models\Service;
 
 class CustomerFactory extends Factory
 {
@@ -22,16 +22,14 @@ class CustomerFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name(),
-            'thumbnail' => $this->faker->imageUrl(640, 480),
-            'content' => $this->faker->text(),
-            'results' => $this->faker->text(),
+            'cus_name' => $this->faker->regexify('[A-Za-z0-9]{150}'),
             'slug' => $this->faker->slug(),
-            'url' => $this->faker->url(),
-            'category_id' => CustomerCategory::factory(),
+            'thumbnail' => $this->faker->regexify('[A-Za-z0-9]{255}'),
             'since' => $this->faker->dateTime(),
-            'created_at' => $this->faker->dateTime(),
-            'updated_at' => $this->faker->dateTime(),
+            'content' => $this->faker->paragraphs(3, true),
+            'results' => $this->faker->text(),
+            'url' => $this->faker->url(),
+            'service_id' => Service::factory(),
         ];
     }
 }

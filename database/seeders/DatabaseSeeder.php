@@ -6,20 +6,26 @@ namespace Database\Seeders;
 
 use App\Models\Customer;
 use App\Models\CustomerCategory;
+use App\Models\Project;
+use App\Models\Team;
 use Illuminate\Database\Seeder;
 use App\Models\User;
+use App\Models\Post;
+use App\Models\Service;
 
 class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
      */
-    public function run(): void
-    {
-        // \App\Models\Category::factory(5)->create();
-        \App\Models\Post::factory(10)->create();
-        // CustomerCategory::factory(5)->create();
+    public function run(): void{
+
+        Post::factory(10)->create();
+        Service::factory(4)->create();
         Customer::factory(10)->create();
+        Project::factory(10)->create();
+        Team::factory(10)->create();
+
 
         $adminUser = User::factory()->create([
             'email' => 'tauser@gmail.com',

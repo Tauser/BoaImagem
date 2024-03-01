@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 use App\Models\CustomerCategory;
+use App\Models\Service;
 
 class CustomerController extends Controller
 {
@@ -14,8 +15,9 @@ class CustomerController extends Controller
     public function index()
     {
         $customers = Customer::query()->paginate(9);
-        $categories = CustomerCategory::all();
-        return view('cliente.index', compact('customers', 'categories'));
+        $services = Service::all();
+        ds($customers);
+        return view('cliente.index', compact('customers','services'));
     }
 
     /**

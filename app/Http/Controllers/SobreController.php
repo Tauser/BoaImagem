@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Member;
+use App\Models\Team;
 use Illuminate\Http\Request;
 
 
@@ -13,11 +14,11 @@ class SobreController extends Controller
      */
     public function index()
     {
-        $members = Member::query()
+        $team = Team::query()
             ->orderBy('id', 'desc')
             ->paginate(10);
 
-        return view('sobre', compact('members'));
+        return view('sobre', compact('team'));
     }
 
     /**

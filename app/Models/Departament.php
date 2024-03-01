@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Category extends Model
+class Departament extends Model
 {
     use HasFactory;
 
@@ -16,8 +16,7 @@ class Category extends Model
      * @var array
      */
     protected $fillable = [
-        'cat_name',
-        'slug',
+        'dep_name',
     ];
 
     /**
@@ -29,8 +28,8 @@ class Category extends Model
         'id' => 'integer',
     ];
 
-    public function posts(): BelongsToMany
+    public function teams(): HasMany
     {
-        return $this->belongsToMany(Post::class);
+        return $this->hasMany(Team::class);
     }
 }

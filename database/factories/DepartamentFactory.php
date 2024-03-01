@@ -4,16 +4,16 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use App\Models\Category;
+use App\Models\Departament;
 
-class CategoryFactory extends Factory
+class DepartamentFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Category::class;
+    protected $model = Departament::class;
 
     /**
      * Define the model's default state.
@@ -21,8 +21,7 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'cat_name' => $this->faker->regexify('[A-Za-z0-9]{150}'),
-            'slug' => $this->faker->slug(),
+            'dep_name' => $this->faker->regexify('[A-Za-z0-9]{150}'),
         ];
     }
 }

@@ -6,9 +6,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Customer extends Model
+class Team extends Model
 {
     use HasFactory;
 
@@ -18,14 +17,12 @@ class Customer extends Model
      * @var array
      */
     protected $fillable = [
-        'cus_name',
-        'slug',
+        'team_name',
         'thumbnail',
-        'since',
-        'content',
-        'results',
-        'url',
-        'service_id',
+        'social1',
+        'social2',
+        'social3',
+        'departament_id',
     ];
 
     /**
@@ -35,22 +32,16 @@ class Customer extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'since' => 'timestamp',
-        'service_id' => 'integer',
+        'departament_id' => 'integer',
     ];
 
-    public function projects(): HasMany
+    public function departaments(): BelongsToMany
     {
-        return $this->hasMany(Project::class);
+        return $this->belongsToMany(Departament::class);
     }
 
-    public function services(): BelongsToMany
+    public function departament(): BelongsTo
     {
-        return $this->belongsToMany(Service::class);
-    }
-
-    public function service(): BelongsTo
-    {
-        return $this->belongsTo(Service::class);
+        return $this->belongsTo(Departament::class);
     }
 }

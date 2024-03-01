@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\PostResource\Pages;
-use App\Filament\Resources\PostResource\RelationManagers;
-use App\Models\Post;
+use App\Filament\Resources\TeamResource\Pages;
+use App\Filament\Resources\TeamResource\RelationManagers;
+use App\Models\Team;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,9 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class PostResource extends Resource
+class TeamResource extends Resource
 {
-    protected static ?string $model = Post::class;
+    protected static ?string $model = Team::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -23,22 +23,19 @@ class PostResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('user_id')
-                    ->relationship('user', 'name'),
-                Forms\Components\Select::make('category_id')
-                    ->relationship('category', 'id'),
-                Forms\Components\TextInput::make('title')
-                    ->required()
-                    ->maxLength(100),
-                Forms\Components\TextInput::make('slug')
+                Forms\Components\Select::make('departament_id')
+                    ->relationship('departament', 'dep_name'),
+                Forms\Components\TextInput::make('team_name')
                     ->required()
                     ->maxLength(150),
-                Forms\Components\Textarea::make('content')
-                    ->required()
-                    ->columnSpanFull(),
                 Forms\Components\TextInput::make('thumbnail')
                     ->maxLength(255),
-                Forms\Components\DateTimePicker::make('published_at'),
+                Forms\Components\TextInput::make('social1')
+                    ->maxLength(150),
+                Forms\Components\TextInput::make('social2')
+                    ->maxLength(150),
+                Forms\Components\TextInput::make('social3')
+                    ->maxLength(150),
             ]);
     }
 
@@ -46,21 +43,19 @@ class PostResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('user.name')
+                Tables\Columns\TextColumn::make('departament.id')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('category.id')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('title')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('slug')
+                Tables\Columns\TextColumn::make('team_name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('thumbnail')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('published_at')
-                    ->dateTime()
-                    ->sortable(),
+                Tables\Columns\TextColumn::make('social1')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('social2')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('social3')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -93,9 +88,9 @@ class PostResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListPosts::route('/'),
-            'create' => Pages\CreatePost::route('/create'),
-            'edit' => Pages\EditPost::route('/{record}/edit'),
+            'index' => Pages\ListTeams::route('/'),
+            'create' => Pages\CreateTeam::route('/create'),
+            'edit' => Pages\EditTeam::route('/{record}/edit'),
         ];
     }
 }

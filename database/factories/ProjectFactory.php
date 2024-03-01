@@ -4,18 +4,18 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use App\Models\Category;
-use App\Models\Post;
-use App\Models\User;
+use App\Models\Customer;
+use App\Models\Project;
+use App\Models\Service;
 
-class PostFactory extends Factory
+class ProjectFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Post::class;
+    protected $model = Project::class;
 
     /**
      * Define the model's default state.
@@ -24,12 +24,13 @@ class PostFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(4),
+            'description' => $this->faker->text(),
             'slug' => $this->faker->slug(),
             'content' => $this->faker->paragraphs(3, true),
             'thumbnail' => $this->faker->regexify('[A-Za-z0-9]{255}'),
-            'user_id' => User::factory(),
-            'category_id' => Category::factory(),
-            'published_at' => $this->faker->dateTime(),
+            'images' => $this->faker->text(),
+            'customer_id' => Customer::factory(),
+            'service_id' => Service::factory(),
         ];
     }
 }

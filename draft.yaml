@@ -5,39 +5,68 @@ models:
     slug: string:150
     content: longtext
     thumbnail: nullable string:255
-    user_id: id unsigned foreign ondelete:cascade
+    user_id: id unsigned foreign nullable
     category_id: id unsigned foreign nullable
     published_at: nullable timestamp
-    created_at: timestamp
-    updated_at: timestamp onupdate:current_timestamp
-    timestamps: false
+    timestamps: true
     relationships:
       belongsTo: User
       hasMany: Category
 
   Category:
-    name: string:150
-    created_at: timestamp
-    updated_at: timestamp onupdate:current_timestamp
-    timestamps: false
+    cat_name: string:150
+    slug: string:150
+    timestamps: true
     relationships:
       belongsToMany: Post
 
-  Member:
-    name: string:150
-    role: text
+  Team:
+    team_name: string:150
     thumbnail: nullable string:255
     social1: nullable string:150
     social2: nullable string:150
     social3: nullable string:150
-    created_at: timestamp
-    updated_at: timestamp onupdate:current_timestamp
-    timestamps: false
+    departament_id: id unsigned foreign nullable
+    timestamps: true
+    relationships:
+      belongsToMany: Departament
+
+  Departament:
+    dep_name: string:150
+    timestamps: true
+    relationships:
+      hasMany: Team
 
   Customer:
-    name: string:150
+    cus_name: string:150
+    slug: string:150
     thumbnail: nullable string:255
-    descritpion: string
-    created_at: timestamp
-    updated_at: timestamp onupdate:current_timestamp
-    timestamps: false
+    since: nullable timestamp
+    content: longtext
+    results: longtext
+    url: string:150
+    timestamps: true
+    service_id: id unsigned foreign nullable
+    relationships:
+      hasMany: Project
+      belongsToMany: Service
+
+  Project:
+    title: string:150
+    description: string:255
+    slug: string:150
+    content: longtext
+    thumbnail: string:255
+    images: longtext
+    customer_id: id unsigned foreign nullable
+    service_id: id unsigned foreign
+    timestamps: true
+    relationships:
+      belongsTo: Customer
+      hasMany: Service
+
+  Service:
+    name: string:150
+    timestamps: true
+    relationships:
+      hasMany: Project, Customer

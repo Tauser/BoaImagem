@@ -2,56 +2,45 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Forms;
-use Filament\Tables;
-use App\Models\Customer;
-use Filament\Forms\Form;
-use Filament\Tables\Table;
-use Tables\Columns\TextColumn;
-use Filament\Resources\Resource;
-use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\CustomerResource\Pages;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\CustomerResource\RelationManagers;
+use App\Models\Customer;
+use Filament\Forms;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class CustomerResource extends Resource
 {
     protected static ?string $model = Customer::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-    protected static ?string $modelLabel = 'Clientes';
-    protected static ?string $navigationGroup = 'Clientes';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                    ->label('Nome')
+                Forms\Components\TextInput::make('cus_name')
                     ->required()
                     ->maxLength(150),
-                Forms\Components\Select::make('category_id')
-                    ->label('Categoria')
-                    ->relationship('category', 'name'),
-                Forms\Components\FileUpload::make('thumbnail')
-                    ->label('Thumb')
-                    ->directory('clientes')
-                    ->image(),
-                Forms\Components\DateTimePicker::make('since')
-                    ->label('Cliente desde'),
-                    Forms\Components\TextInput::make('url')
-                    ->label('URL')
+                Forms\Components\TextInput::make('slug')
+                    ->required()
                     ->maxLength(150),
-                Forms\Components\RichEditor::make('content')
-                    ->label('Descrição')
+                Forms\Components\TextInput::make('thumbnail')
+                    ->maxLength(255),
+                Forms\Components\DateTimePicker::make('since'),
+                Forms\Components\Textarea::make('content')
                     ->required()
-                    ->maxLength(65535)
                     ->columnSpanFull(),
-                Forms\Components\RichEditor::make('results')
-                    ->label('Resultados')
+                Forms\Components\Textarea::make('results')
                     ->required()
-                    ->maxLength(65535)
                     ->columnSpanFull(),
+                Forms\Components\TextInput::make('url')
+                    ->required()
+                    ->maxLength(150),
             ]);
     }
 
@@ -59,22 +48,22 @@ class CustomerResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('thumbnail')
-                    ->label('Thumb'),
-                Tables\Columns\TextColumn::make('name')
-                    ->label('Nome')
+                Tables\Columns\TextColumn::make('cus_name')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('slug')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('thumbnail')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('since')
+                    ->dateTime()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('url')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
-                    ->label('Criado')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('category.name')
-                    ->label('Categoria')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('updated_at')
-                    ->label('Editado')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),

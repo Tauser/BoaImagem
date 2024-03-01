@@ -5,10 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Customer extends Model
+class Project extends Model
 {
     use HasFactory;
 
@@ -18,13 +17,13 @@ class Customer extends Model
      * @var array
      */
     protected $fillable = [
-        'cus_name',
+        'title',
+        'description',
         'slug',
-        'thumbnail',
-        'since',
         'content',
-        'results',
-        'url',
+        'thumbnail',
+        'images',
+        'customer_id',
         'service_id',
     ];
 
@@ -35,22 +34,22 @@ class Customer extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'since' => 'timestamp',
+        'customer_id' => 'integer',
         'service_id' => 'integer',
     ];
 
-    public function projects(): HasMany
+    public function customer(): BelongsTo
     {
-        return $this->hasMany(Project::class);
-    }
-
-    public function services(): BelongsToMany
-    {
-        return $this->belongsToMany(Service::class);
+        return $this->belongsTo(Customer::class);
     }
 
     public function service(): BelongsTo
     {
         return $this->belongsTo(Service::class);
+    }
+
+    public function services(): HasMany
+    {
+        return $this->hasMany(Service::class);
     }
 }
