@@ -23,7 +23,7 @@ class CustomerResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('cus_name')
+                Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(150),
                 Forms\Components\TextInput::make('slug')

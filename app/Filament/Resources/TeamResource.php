@@ -24,8 +24,8 @@ class TeamResource extends Resource
         return $form
             ->schema([
                 Forms\Components\Select::make('departament_id')
-                    ->relationship('departament', 'dep_name'),
-                Forms\Components\TextInput::make('team_name')
+                    ->relationship('departament', 'name'),
+                Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(150),
                 Forms\Components\TextInput::make('thumbnail')

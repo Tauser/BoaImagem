@@ -23,7 +23,7 @@ class CategoryResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('cat_name')
+                Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(150),
                 Forms\Components\TextInput::make('slug')
@@ -36,7 +36,7 @@ class CategoryResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('cat_name')
+                Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
                     ->searchable(),

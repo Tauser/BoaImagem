@@ -1,5 +1,4 @@
 models:
-
   Post:
     title: string:100
     slug: string:150
@@ -14,14 +13,14 @@ models:
       hasMany: Category
 
   Category:
-    cat_name: string:150
+    name: string:150
     slug: string:150
     timestamps: true
     relationships:
       belongsToMany: Post
 
   Team:
-    team_name: string:150
+    name: string:150
     thumbnail: nullable string:255
     social1: nullable string:150
     social2: nullable string:150
@@ -32,13 +31,13 @@ models:
       belongsToMany: Departament
 
   Departament:
-    dep_name: string:150
+    name: string:150
     timestamps: true
     relationships:
       hasMany: Team
 
   Customer:
-    cus_name: string:150
+    name: string:150
     slug: string:150
     thumbnail: nullable string:255
     since: nullable timestamp
@@ -66,7 +65,7 @@ models:
       hasMany: Service
 
   Service:
-    name: string:150
+    title: string:150
     timestamps: true
     relationships:
       hasMany: Project, Customer

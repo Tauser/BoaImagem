@@ -24,7 +24,7 @@ class ProjectResource extends Resource
         return $form
             ->schema([
                 Forms\Components\Select::make('customer_id')
-                    ->relationship('customer', 'cus_name'),
+                    ->relationship('customer', 'name'),
                 Forms\Components\Select::make('service_id')
                     ->relationship('service', 'name')
                     ->required(),

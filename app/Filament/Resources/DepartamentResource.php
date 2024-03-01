@@ -23,7 +23,7 @@ class DepartamentResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('dep_name')
+                Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(150),
             ]);

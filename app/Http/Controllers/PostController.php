@@ -24,10 +24,11 @@ class PostController extends Controller
             ->paginate(10);
 
 
-         $categories = Category::query()
+        $categories = Category::query()
             ->groupBy([
                 'categories.id',
                 'categories.name',
+                'categories.slug',
                 'categories.created_at',
                 'categories.updated_at',
             ])
@@ -35,7 +36,7 @@ class PostController extends Controller
             ->get();
 
 
-        return view('post.index', compact('posts','categories'));
+        return view('post.index', compact('posts', 'categories'));
 
     }
 
