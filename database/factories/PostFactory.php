@@ -24,12 +24,13 @@ class PostFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence(4),
-            'slug' => $this->faker->slug(),
+            'slug' => $this->faker->slug(3),
             'content' => $this->faker->paragraphs(3, true),
-            'thumbnail' => $this->faker->regexify('[A-Za-z0-9]{255}'),
+            'thumbnail' => $this->faker->image(),
             'user_id' => User::factory(),
             'category_id' => Category::factory(),
             'published_at' => $this->faker->dateTime(),
+            'featured' => $this->faker->boolean()
         ];
     }
 }

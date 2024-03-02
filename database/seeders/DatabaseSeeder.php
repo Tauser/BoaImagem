@@ -20,18 +20,14 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void{
 
-        Post::factory(10)->create();
-        Service::factory(4)->create();
-        Customer::factory(10)->create();
-        Project::factory(10)->create();
-        Team::factory(10)->create();
+        $users = \App\Models\User::factory(10)->create();
+        $categories = \App\Models\Category::factory(10)->create();
+        $posts = \App\Models\Post::factory(30)
+            ->recycle($users)
+            ->recycle($categories)
+            ->create();
 
 
-        $adminUser = User::factory()->create([
-            'email' => 'tauser@gmail.com',
-            'name' => 'Admin',
-            'password' => bcrypt('admin123')
-        ]);
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',

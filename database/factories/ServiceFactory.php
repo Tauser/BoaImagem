@@ -20,8 +20,11 @@ class ServiceFactory extends Factory
      */
     public function definition(): array
     {
+        $faker = \Faker\Factory::create();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Commerce($faker));
+        $name = $faker->unique()->category;
         return [
-            'title' => $this->faker->sentence(4),
+            'title' => $name,
         ];
     }
 }

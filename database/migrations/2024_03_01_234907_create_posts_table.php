@@ -15,13 +15,14 @@ return new class extends Migration
 
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->string('title', 100);
-            $table->string('slug', 150);
+            $table->string('title');
+            $table->string('slug')->unique();
             $table->longText('content');
-            $table->string('thumbnail', 255)->nullable();
+            $table->string('thumbnail',)->nullable();
             $table->foreignId('user_id')->constrained();
             $table->foreignId('category_id')->constrained();
             $table->timestamp('published_at')->nullable();
+            $table->boolean('featured')->default(false);
             $table->timestamps();
         });
 
