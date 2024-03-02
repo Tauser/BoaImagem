@@ -22,7 +22,7 @@ class TeamFactory extends Factory
     public function definition(): array
     {
         return [
-            'team_name' => $this->faker->regexify('[A-Za-z0-9]{150}'),
+            'name' => $this->faker->name(),
             'thumbnail' => $this->faker->regexify('[A-Za-z0-9]{255}'),
             'social1' => $this->faker->regexify('[A-Za-z0-9]{150}'),
             'social2' => $this->faker->regexify('[A-Za-z0-9]{150}'),

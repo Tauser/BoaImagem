@@ -4,7 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      */
@@ -12,16 +13,14 @@ return new class extends Migration {
     {
         Schema::disableForeignKeyConstraints();
 
-        Schema::create('customers', function (Blueprint $table) {
+        Schema::create('teams', function (Blueprint $table) {
             $table->id();
             $table->string('name', 150);
-            $table->string('slug', 150);
             $table->string('thumbnail', 255)->nullable();
-            $table->timestamp('since')->nullable();
-            $table->longText('content');
-            $table->longText('results');
-            $table->string('url', 150);
-            $table->foreignId('service_id')->nullable()->constrained()->unsigned();
+            $table->string('social1', 150)->nullable();
+            $table->string('social2', 150)->nullable();
+            $table->string('social3', 150)->nullable();
+            $table->foreignId('departament_id')->nullable()->constrained()->unsigned();
             $table->timestamps();
         });
 
@@ -33,6 +32,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('teams');
     }
 };

@@ -6,16 +6,16 @@ created:
     - database/factories/CustomerFactory.php
     - database/factories/ProjectFactory.php
     - database/factories/ServiceFactory.php
-    - database/migrations/2024_02_20_150155_create_posts_table.php
-    - database/migrations/2024_02_20_150156_create_categories_table.php
-    - database/migrations/2024_02_20_150157_create_teams_table.php
-    - database/migrations/2024_02_20_150158_create_departaments_table.php
-    - database/migrations/2024_02_20_150159_create_customers_table.php
-    - database/migrations/2024_02_20_150200_create_projects_table.php
-    - database/migrations/2024_02_20_150201_create_services_table.php
-    - database/migrations/2024_02_20_150202_create_category_post_table.php
-    - database/migrations/2024_02_20_150203_create_departament_team_table.php
-    - database/migrations/2024_02_20_150204_create_customer_service_table.php
+    - database/migrations/2024_03_01_234907_create_posts_table.php
+    - database/migrations/2024_03_01_234908_create_categories_table.php
+    - database/migrations/2024_03_01_234909_create_teams_table.php
+    - database/migrations/2024_03_01_234910_create_departaments_table.php
+    - database/migrations/2024_03_01_234911_create_customers_table.php
+    - database/migrations/2024_03_01_234912_create_projects_table.php
+    - database/migrations/2024_03_01_234913_create_services_table.php
+    - database/migrations/2024_03_01_234914_create_category_post_table.php
+    - database/migrations/2024_03_01_234915_create_departament_team_table.php
+    - database/migrations/2024_03_01_234916_create_customer_service_table.php
     - app/Models/Post.php
     - app/Models/Category.php
     - app/Models/Team.php
@@ -26,9 +26,9 @@ created:
 models:
     User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
     Post: { title: 'string:100', slug: 'string:150', content: longtext, thumbnail: 'nullable string:255', user_id: 'id unsigned foreign nullable', category_id: 'id unsigned foreign nullable', published_at: 'nullable timestamp', timestamps: timestamps, relationships: { belongsTo: User, hasMany: Category } }
-    Category: { cat_name: 'string:150', slug: 'string:150', timestamps: timestamps, relationships: { belongsToMany: Post } }
-    Team: { team_name: 'string:150', thumbnail: 'nullable string:255', social1: 'nullable string:150', social2: 'nullable string:150', social3: 'nullable string:150', departament_id: 'id unsigned foreign nullable', timestamps: timestamps, relationships: { belongsToMany: Departament } }
-    Departament: { dep_name: 'string:150', timestamps: timestamps, relationships: { hasMany: Team } }
-    Customer: { cus_name: 'string:150', slug: 'string:150', thumbnail: 'nullable string:255', since: 'nullable timestamp', content: longtext, results: longtext, url: 'string:150', timestamps: timestamps, service_id: 'id unsigned foreign nullable', relationships: { hasMany: Project, belongsToMany: Service } }
+    Category: { name: 'string:150', slug: 'string:150', timestamps: timestamps, relationships: { belongsToMany: Post } }
+    Team: { name: 'string:150', thumbnail: 'nullable string:255', social1: 'nullable string:150', social2: 'nullable string:150', social3: 'nullable string:150', departament_id: 'id unsigned foreign nullable', timestamps: timestamps, relationships: { belongsToMany: Departament } }
+    Departament: { name: 'string:150', timestamps: timestamps, relationships: { hasMany: Team } }
+    Customer: { name: 'string:150', slug: 'string:150', thumbnail: 'nullable string:255', since: 'nullable timestamp', content: longtext, results: longtext, url: 'string:150', timestamps: timestamps, service_id: 'id unsigned foreign nullable', relationships: { hasMany: Project, belongsToMany: Service } }
     Project: { title: 'string:150', description: 'string:255', slug: 'string:150', content: longtext, thumbnail: 'string:255', images: longtext, customer_id: 'id unsigned foreign nullable', service_id: 'id unsigned foreign', timestamps: timestamps, relationships: { belongsTo: Customer, hasMany: Service } }
-    Service: { name: 'string:150', timestamps: timestamps, relationships: { hasMany: 'Project, Customer' } }
+    Service: { title: 'string:150', timestamps: timestamps, relationships: { hasMany: 'Project, Customer' } }

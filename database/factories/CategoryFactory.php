@@ -21,7 +21,7 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         return [
-            'cat_name' => $this->faker->regexify('[A-Za-z0-9]{150}'),
+            'name' => $this->faker->name(),
             'slug' => $this->faker->slug(),
         ];
     }

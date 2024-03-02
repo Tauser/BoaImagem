@@ -16,7 +16,7 @@ class Departament extends Model
      * @var array
      */
     protected $fillable = [
-        'dep_name',
+        'name',
     ];
 
     /**

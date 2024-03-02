@@ -22,7 +22,7 @@ class CustomerFactory extends Factory
     public function definition(): array
     {
         return [
-            'cus_name' => $this->faker->regexify('[A-Za-z0-9]{150}'),
+            'name' => $this->faker->name(),
             'slug' => $this->faker->slug(),
             'thumbnail' => $this->faker->regexify('[A-Za-z0-9]{255}'),
             'since' => $this->faker->dateTime(),

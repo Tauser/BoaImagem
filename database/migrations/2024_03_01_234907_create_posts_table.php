@@ -19,8 +19,8 @@ return new class extends Migration
             $table->string('slug', 150);
             $table->longText('content');
             $table->string('thumbnail', 255)->nullable();
-            $table->foreignId('user_id')->nullable()->constrained()->unsigned();
-            $table->foreignId('category_id')->nullable()->constrained()->unsigned();
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('category_id')->constrained();
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });

@@ -21,7 +21,7 @@ class DepartamentFactory extends Factory
     public function definition(): array
     {
         return [
-            'dep_name' => $this->faker->regexify('[A-Za-z0-9]{150}'),
+            'name' => $this->faker->name(),
         ];
     }
 }
