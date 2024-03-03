@@ -7,11 +7,13 @@ use App\Filament\Resources\ServiceResource\RelationManagers;
 use App\Models\Service;
 use Filament\Forms;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Str;
 
 class ServiceResource extends Resource
 {
@@ -25,7 +27,17 @@ class ServiceResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required()
-                    ->maxLength(150),
+                    ->live(onBlur:true)
+                    ->afterStateUpdated(function(string $operation, $state, Set $set){
+                        if($operation !== 'create'){
+                            return;
+                        }
+                        $set('slug', Str::slug($state));
+                    }),
+                Forms\Components\TextInput::make('slug')
+                    ->required()
+                    ->disabled()
+                    ->dehydrated(),
             ]);
     }
 

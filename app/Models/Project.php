@@ -36,6 +36,7 @@ class Project extends Model
         'id' => 'integer',
         'customer_id' => 'integer',
         'service_id' => 'integer',
+        'images' => 'array',
     ];
 
     public function customer(): BelongsTo
@@ -51,5 +52,13 @@ class Project extends Model
     public function services(): HasMany
     {
         return $this->hasMany(Service::class);
+    }
+
+    public function getThumbnail()
+    {
+        if (str_starts_with($this->thumbnail, 'http')) {
+            return $this->thumbnail;
+        }
+        return '/storage/' . $this->thumbnail;
     }
 }

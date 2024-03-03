@@ -22,9 +22,10 @@ class ServiceFactory extends Factory
     {
         $faker = \Faker\Factory::create();
         $faker->addProvider(new \Bezhanov\Faker\Provider\Commerce($faker));
-        $name = $faker->unique()->category;
+        $title = $faker->unique()->category;
         return [
-            'title' => $name,
+            'title' => $title,
+            'slug' => $this->faker->slug(2),
         ];
     }
 }

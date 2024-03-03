@@ -29,7 +29,7 @@ Route::get('/post/{post:slug}', [PostController::class, 'show'])->name('post.vie
 Route::get('/post/{category:slug}', [PostController::class, 'byCategory'])->name('post.category');
 Route::get('/cliente', [CustomerController::class, 'index'])->name('cliente.index');
 Route::get('/cliente/{customer:slug}', [CustomerController::class, 'show'])->name('cliente.view');
-// Route::get('/cliente/{category:id}', [ClienteController::class, 'byCategory'])->name('cliente.category');
+Route::get('/cliente/{category:id}', [CustomerController::class, 'byCategory'])->name('cliente.category');
 
 Route::get('/contato', [ContatoController::class, 'index'])->name('contato');
 Route::post('/contato', [ContatoController::class, 'send'])->name('contato.send');

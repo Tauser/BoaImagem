@@ -6,12 +6,16 @@ use App\Filament\Resources\CustomerResource\Pages;
 use App\Filament\Resources\CustomerResource\RelationManagers;
 use App\Models\Customer;
 use Filament\Forms;
+use Filament\Forms\Components\Group;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Illuminate\Support\Str;
 
 class CustomerResource extends Resource
 {
@@ -23,27 +27,45 @@ class CustomerResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('service_id')
-                    ->relationship('service', 'title'),
-                Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(150),
-                Forms\Components\TextInput::make('slug')
-                    ->required()
-                    ->maxLength(150),
-                Forms\Components\TextInput::make('thumbnail')
-                    ->maxLength(255),
-                Forms\Components\DateTimePicker::make('since'),
-                Forms\Components\Textarea::make('content')
-                    ->required()
-                    ->columnSpanFull(),
-                Forms\Components\Textarea::make('results')
-                    ->required()
-                    ->columnSpanFull(),
-                Forms\Components\TextInput::make('url')
-                    ->required()
-                    ->maxLength(150),
-            ]);
+                Group::make()->schema([
+                    Section::make('Conteudo')->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->required()
+                            ->live(onBlur:true)
+                            ->afterStateUpdated(function(string $operation, $state, Set $set){
+                                if($operation !== 'create'){
+                                    return;
+                                }
+                                $set('slug', Str::slug($state));
+                            }),
+                        Forms\Components\TextInput::make('slug')
+                            ->required()
+                            ->disabled()
+                            ->dehydrated(),
+                        Forms\Components\DatePicker::make('since'),
+                        Forms\Components\MarkdownEditor::make('content')
+                            ->required()
+                            ->fileAttachmentsDirectory('customers')
+                            ->columnSpanFull(),
+                        Forms\Components\MarkdownEditor::make('results')
+                            ->required()
+                            ->fileAttachmentsDirectory('customers')
+                            ->columnSpanFull(),
+                        Forms\Components\TextInput::make('url')
+                            ->required(),
+                    ])->columns(2),
+                    Section::make('Imagens')->schema([
+                        Forms\Components\FileUpload::make('thumbnail')
+                            ->directory('customers'),
+                    ])
+                ])->columnSpan(2),
+                Group::make()->schema([
+                    Section::make()->schema([
+                        Forms\Components\Select::make('service_id')
+                            ->relationship('service', 'title'),
+                    ])
+                ])->columnSpan(1)
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table
@@ -55,15 +77,8 @@ class CustomerResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('slug')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('thumbnail')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('since')
-                    ->dateTime()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('url')
-                    ->searchable(),
+                Tables\Columns\ImageColumn::make('thumbnail')
+                    ->circular(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

@@ -35,7 +35,7 @@ class Customer extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'since' => 'timestamp',
+        'since' => 'datetime',
         'service_id' => 'integer',
     ];
 
@@ -52,5 +52,33 @@ class Customer extends Model
     public function service(): BelongsTo
     {
         return $this->belongsTo(Service::class);
+    }
+
+    public function getThumbnail()
+    {
+        if (str_starts_with($this->thumbnail, 'http')) {
+            return $this->thumbnail;
+        }
+        return '/storage/' . $this->thumbnail;
+    }
+
+    public function getFormattedDate()
+    {
+        return $this->since->format('d/m/Y');
+    }
+
+    public function getFormattedDateYear()
+    {
+        return $this->since->format('Y');
+    }
+
+    public function getFormattedDateMonth()
+    {
+        return $this->since->format('m');
+    }
+
+    public function getFormattedDateDay()
+    {
+        return $this->since->format('d');
     }
 }

@@ -16,8 +16,14 @@ class CustomerController extends Controller
     {
         $customers = Customer::query()->paginate(9);
         $services = Service::all();
-        ds($customers);
         return view('cliente.index', compact('customers','services'));
+    }
+
+    public function byCategory(Service $service)
+    {
+        $customers = Customer::where('service_id', $service->id)->get()->paginate(9);
+        $services = Service::all();
+        return view('cliente.index', compact('customers', 'services'));
     }
 
     /**

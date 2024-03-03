@@ -26,25 +26,25 @@
                         <ul class="filterBTN_bare openHoverCursor">
 
                             @forelse ($services as $service)
-                            <li class="filterBTN" data-group="{{$service->name}}"><a href="javascript:void(0);">{{$service->name}}</a></li>
+                                <li class="filterBTN"><a href="javascript:void(0);">{{$service->title}}</a></li>
                             @empty
-                            <p>nada encontrado</p>
+                                <p>Nenhum Serviço encontrado !</p>
                             @endforelse
                     </div>
                 </div>
             </div>
             <div class="row shafull_container ">
                 @foreach ($customers as $customer)
-                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" data-groups=''>
-                    <div class="project_item projectItemView" data-firstline="Mais" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="1900" >
+                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item"  data-groups='["{{$customer->service->title}}"]' >
+                    <div class="project_item projectItemView" data-firstline="Mais" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="700" >
                         <div class="project_item_thumb">
-                            <img src="{{$customer->getThumbnail()}}" alt="{{$customer->cus_name}}">
+                            <img src="{{$customer->getThumbnail()}}" alt="{{$customer->name}}">
                         </div>
                         <a href="{{route('cliente.view', $customer)}}" class="project_item_dtls">
                             <div class="projectInfoContent">
                                 <i class="boozy-down-arrow strokeText"></i><br>
-                                <h3 class="ps_item_name">{{$customer->cus_name}}</h3><br>
-                                <h5 class="ps_auth_name">{{$customer->category->name}}</h5>
+                                <h3 class="ps_item_name">{{$customer->name}}</h3><br>
+                                <h5 class="ps_auth_name">{{$customer->service->title}}</h5>
                             </div>
                         </a>
                     </div>
@@ -54,11 +54,9 @@
             </div>
             {{$customers->links()}}
         </div>
+
     </section>
 
-    {{-- <customerList class="container text-center" style="display: block; margin: 0 auto; ">
 
-
-    </customerList> --}}
 
 </x-app-layout>

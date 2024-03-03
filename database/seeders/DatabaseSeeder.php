@@ -26,6 +26,10 @@ class DatabaseSeeder extends Seeder
             ->recycle($users)
             ->recycle($categories)
             ->create();
+        $services = \App\Models\Service::factory(10)->create();
+        $customers = \App\Models\Customer::factory(30)
+            ->recycle($services)
+            ->create();
 
 
 

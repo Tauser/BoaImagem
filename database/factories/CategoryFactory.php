@@ -26,7 +26,7 @@ class CategoryFactory extends Factory
         $name = $faker->unique()->category;
         return [
             'name' => $name,
-            'slug' => $this->faker->slug(),
+            'slug' => $this->faker->slug(2),
         ];
     }
 }

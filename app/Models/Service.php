@@ -10,6 +10,8 @@ class Service extends Model
 {
     use HasFactory;
 
+    public mixed $id;
+
     /**
      * The attributes that are mass assignable.
      *
@@ -17,6 +19,7 @@ class Service extends Model
      */
     protected $fillable = [
         'title',
+        'id'
     ];
 
     /**

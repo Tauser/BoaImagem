@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('social1', 150)->nullable();
             $table->string('social2', 150)->nullable();
             $table->string('social3', 150)->nullable();
-            $table->foreignId('departament_id')->nullable()->constrained()->unsigned();
+            $table->foreignId('departament_id')->nullable()->constrained('departaments')->unsigned();
             $table->timestamps();
         });
 
