@@ -234,9 +234,8 @@
                     <div class="serviceItem02" data-aos="fade-right" data-aos-duration="2000" >
                         <div class="serviceThumb02" >
                             <div class="serThumbIim">
-                                <img src="img/icon/cube.png" alt="cube">
+                                <img src="img/icon/exclamacao.png" alt="online">
                             </div>
-                            <span>01</span>
                         </div>
                         <div class="serviceContent02">
                             <h3><a href="service-single.html">Online</a></h3>
@@ -248,9 +247,8 @@
                     <div class="serviceItem02" data-aos="fade-up" data-aos-duration="2000">
                         <div class="serviceThumb02">
                             <div class="serThumbIim">
-                                <img src="img/icon/pyramid.png" alt="cube">
+                                <img src="img/icon/nuvem.png" alt="offline">
                             </div>
-                            <span>02</span>
                         </div>
                         <div class="serviceContent02">
                             <h3><a href="service-single.html">OFFLINE</a></h3>
@@ -262,9 +260,9 @@
                     <div class="serviceItem02" data-aos="fade-left" data-aos-duration="2000">
                         <div class="serviceThumb02">
                             <div class="serThumbIim">
-                                <img src="img/icon/3dAnimation.png" alt="cube">
+                                <img src="img/icon/estrategia.png" alt="Estrategias">
                             </div>
-                            <span>03</span>
+
                         </div>
                         <div class="serviceContent02">
                             <h3><a href="service-single.html">Estratégias</a></h3>
