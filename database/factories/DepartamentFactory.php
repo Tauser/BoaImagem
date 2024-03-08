@@ -20,6 +20,9 @@ class DepartamentFactory extends Factory
      */
     public function definition(): array
     {
+        $faker = \Faker\Factory::create();
+        $faker->addProvider(new \Bezhanov\Faker\Provider\Commerce($faker));
+        $name = $faker->unique()->departament;
         return [
             'name' => $this->faker->name(),
         ];

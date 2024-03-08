@@ -23,10 +23,10 @@ class TeamFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'thumbnail' => $this->faker->regexify('[A-Za-z0-9]{255}'),
-            'social1' => $this->faker->regexify('[A-Za-z0-9]{150}'),
-            'social2' => $this->faker->regexify('[A-Za-z0-9]{150}'),
-            'social3' => $this->faker->regexify('[A-Za-z0-9]{150}'),
+            'thumbnail' => 'https://randomuser.me/api/portraits/' . fake()->randomElement(['women', 'men']) . '/' . rand(1, 100) . '.jpg',
+            'social1' => $this->faker->url(),
+            'social2' => $this->faker->url(),
+            'social3' => $this->faker->url(),
             'departament_id' => Departament::factory(),
         ];
     }

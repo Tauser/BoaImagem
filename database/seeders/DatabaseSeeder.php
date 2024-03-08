@@ -20,16 +20,21 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void{
 
-        $users = \App\Models\User::factory(10)->create();
+        $users = \App\Models\User::factory(5)->create();
         $categories = \App\Models\Category::factory(10)->create();
         $posts = \App\Models\Post::factory(30)
             ->recycle($users)
             ->recycle($categories)
             ->create();
-        $services = \App\Models\Service::factory(10)->create();
+        $services = \App\Models\Service::factory(5)->create();
         $customers = \App\Models\Customer::factory(30)
             ->recycle($services)
             ->create();
+//        $projects = \App\Models\Project::factory(30)
+//            ->recycle($services)
+//            ->recycle($customers)
+//            ->create();
+//        $departaments = \App\Models\Departament::factory(5)->create();
 
 
 

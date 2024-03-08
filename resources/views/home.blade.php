@@ -86,7 +86,7 @@
                                 >Podemos ajudá-lo a canalizar o seu potencial implementando a sua ideia. Cuidamos de todas as suas necessidades, elaborando soluções específicas e direcionadas.
                             </div>
                         </li>
-                        {{-- <li class="defaultBg_overlay" data-index="rs-3052" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" >
+                        <li class="defaultBg_overlay" data-index="rs-3052" data-transition="random-premium" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="" data-param1="01" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" >
 
                             <video autoplay muted  loop preload="auto">
                                 <source src="img/slider/Black-And-White-Video.mp4" type="video/mp4">
@@ -188,7 +188,7 @@
                                 data-marginleft="['0','0','0','0']"
                                 >
                             </div>
-                        </li> --}}
+                        </li>
 
                     </ul>
                 </div>

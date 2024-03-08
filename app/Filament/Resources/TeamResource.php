@@ -6,6 +6,8 @@ use App\Filament\Resources\TeamResource\Pages;
 use App\Filament\Resources\TeamResource\RelationManagers;
 use App\Models\Team;
 use Filament\Forms;
+use Filament\Forms\Components\Group;
+use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -23,20 +25,33 @@ class TeamResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('departament_id')
-                    ->relationship('departament', 'name'),
-                Forms\Components\TextInput::make('name')
-                    ->required()
-                    ->maxLength(150),
-                Forms\Components\TextInput::make('thumbnail')
-                    ->maxLength(255),
-                Forms\Components\TextInput::make('social1')
-                    ->maxLength(150),
-                Forms\Components\TextInput::make('social2')
-                    ->maxLength(150),
-                Forms\Components\TextInput::make('social3')
-                    ->maxLength(150),
-            ]);
+                Group::make()->schema([
+                    Section::make('Dados do Colaborador')->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->required()
+                    ])->columns(2),
+                    Section::make('Foto')->schema([
+                        Forms\Components\FileUpload::make('thumbnail')
+                            ->directory('posts')
+                    ]),
+                    Section::make('Redes Sociais')->schema([
+                        Forms\Components\TextInput::make('social1')
+                            ->maxLength(150),
+                        Forms\Components\TextInput::make('social2')
+                            ->maxLength(150),
+                        Forms\Components\TextInput::make('social3')
+                            ->maxLength(150),
+                    ])->columnSpan(3),
+                ])->columnSpan(2),
+
+                Group::make()->schema([
+                    Section::make()->schema([
+                        Forms\Components\Select::make('departament_id')
+                            ->relationship('departament', 'name'),
+                    ])
+                ])->columnSpan(1)
+            ])->columns(3);
+
     }
 
     public static function table(Table $table): Table

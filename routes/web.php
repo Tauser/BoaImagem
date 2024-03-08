@@ -22,11 +22,11 @@ use App\Http\Controllers\CustomerController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/sobre', [SobreController::class, 'index'])->name('sobre');
-Route::get('/post', [PostController::class, 'index'])->name('post.index');
+Route::get('/sobre-nos', [SobreController::class, 'index'])->name('sobre');
+Route::get('/blog', [PostController::class, 'index'])->name('post.index');
 Route::get('/search', [PostController::class, 'search'])->name('post.search');
-Route::get('/post/{post:slug}', [PostController::class, 'show'])->name('post.view');
-Route::get('/post/{category:slug}', [PostController::class, 'byCategory'])->name('post.category');
+Route::get('/blog/{post:slug}', [PostController::class, 'show'])->name('post.view');
+Route::get('/blog/{category:slug}', [PostController::class, 'byCategory'])->name('post.category');
 Route::get('/cliente', [CustomerController::class, 'index'])->name('cliente.index');
 Route::get('/cliente/{customer:slug}', [CustomerController::class, 'show'])->name('cliente.view');
 Route::get('/cliente/{category:id}', [CustomerController::class, 'byCategory'])->name('cliente.category');

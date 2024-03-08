@@ -23,7 +23,7 @@ class CustomerFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'slug' => $this->faker->slug(3),
+            'slug' => $this->faker->slug(),
             'thumbnail' => $this->faker->imageUrl(),
             'since' => $this->faker->dateTime(),
             'content' => $this->faker->paragraphs(3, true),
