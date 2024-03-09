@@ -46,12 +46,12 @@ class Project extends Model
 
     public function service(): BelongsTo
     {
-        return $this->belongsTo(Service::class);
+        return $this->belongsTo(ServiceCategory::class);
     }
 
     public function services(): HasMany
     {
-        return $this->hasMany(Service::class);
+        return $this->hasMany(ServiceCategory::class);
     }
 
     public function getThumbnail()

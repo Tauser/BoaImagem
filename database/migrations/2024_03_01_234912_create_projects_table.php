@@ -24,7 +24,7 @@ return new class extends Migration
             $table->string('thumbnail');
             $table->json('images');
             $table->foreignIdFor(Customer::class, 'customer_id');
-            $table->foreignIdFor(Service::class, 'service_id');
+            $table->foreignIdFor(\App\Models\ServiceCategory::class, 'service_id');
             $table->timestamps();
         });
 

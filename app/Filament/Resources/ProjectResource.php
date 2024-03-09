@@ -21,7 +21,10 @@ class ProjectResource extends Resource
 {
     protected static ?string $model = Project::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-swatch';
+
+    protected static ?string $navigationGroup = 'Portfolio';
+    protected static ?string $modelLabel = 'Projeto';
 
     public static function form(Form $form): Form
     {
@@ -69,7 +72,7 @@ class ProjectResource extends Resource
                 Group::make()->schema([
                     Section::make()->schema([
                         Forms\Components\Select::make('service_id')
-                            ->relationship('service', 'title')
+                            ->relationship('service', 'name')
                             ->required(),
                         Forms\Components\Select::make('customer_id')
                             ->relationship('customer', 'name')

@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\ServiceCategory;
+use App\Models\ServiceSubcategory;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -17,6 +19,9 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('slug')->unique();
+            $table->longText('content');
+            $table->foreignIdFor(ServiceCategory::class, 'category_id');
+            $table->foreignIdFor(ServiceSubcategory::class, 'subcategory_id')->nullable();
             $table->timestamps();
         });
 

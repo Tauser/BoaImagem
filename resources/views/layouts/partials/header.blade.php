@@ -17,6 +17,9 @@
                                 <a data-title="Sobre" href="{{route('sobre')}}"><span>Sobre</span></a>
                             </li>
                             <li>
+                                <a data-title="Serviços" href="#"><span>Serviços</span></a>
+                            </li>
+                            <li>
                                 <a data-title="Blog" href="{{route('post.index')}}"><span>Blog</span></a>
                             </li>
                             <li>
