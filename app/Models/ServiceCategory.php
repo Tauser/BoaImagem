@@ -11,8 +11,17 @@ class ServiceCategory extends Model
 
     protected $fillable = ['name','slug'];
 
+    public function services()
+    {
+        return $this->hasMany(Service::class);
+    }
     public function subCategories()
     {
         return $this->hasMany(ServiceSubcategory::class);
+    }
+
+    static public function getCategoryMenu()
+    {
+        return self::select('service_categories.*')->get();
     }
 }

@@ -1,28 +1,3 @@
-
-
-
-/*==================================
-    [Table of contents]
-===================================
-    01. Home One
-    02. Home Two
-    03. Home Three
-    04. About Page
-    05. Service Page
-        05.1. Service Single Page
-    06. Career Page
-    07. Case Study Page
-    08. Blog Page
-        08.1. Blog Single Page
-    09. Portfolio 01 Page
-    10. Portfolio 02 Page
-    11. Contact Page
-    12. FOF/404 Page
-*/
-
-/*------------------------------------------------------
-/  01. Home One
-/------------------------------------------------------*/
 .header01,
 .header02,
 .header03{
@@ -131,7 +106,7 @@
     transform: translateY(0%);
     -moz-transform: translateY(0%);
     -webkit-transform: translateY(0%);
-    font-size: 20px;
+    font-size: 14px;
 }
 .mainMenu > ul > li > a:before{
     content: attr(data-title);
@@ -143,7 +118,7 @@
     transition: all ease 250ms;
     -moz-transition: all ease 250ms;
     -webkit-transition: all ease 250ms;
-    font-size: 20px;
+    font-size: 14px;
 
     transform: translateY(-110%);
     -moz-transform: translateY(-110%);
@@ -265,7 +240,7 @@ header.header01.isSticky.fixedHeader.animated.slideInDown .mainMenu > ul > li > 
 .mainMenu > ul > li > ul li a,
 .mainMenu > ul > li > ul li > ul li a{
     color: #FFF;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
     position: relative;

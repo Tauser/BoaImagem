@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
+use App\Models\ServiceCategory;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -9,10 +11,15 @@ class ServiceController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function category($slug)
     {
-        //
+        $category = ServiceCategory::where('slug', $slug)->firstOrFail();
+        $services = $category->services()->latest()->paginate(10);
+
+        return view('service.index', compact('category','services'));
+
     }
+
 
     /**
      * Show the form for creating a new resource.

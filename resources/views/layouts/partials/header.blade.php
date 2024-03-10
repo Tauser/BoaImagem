@@ -1,4 +1,8 @@
-  <header class="header01 isSticky">
+@php
+    $getCategoryHeader = App\Models\ServiceCategory::getCategoryMenu();
+    $getSubcategoryHeader = App\Models\ServiceSubcategory::getSubcategoryMenu();
+@endphp
+<header class="header01 isSticky">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -11,13 +15,25 @@
                     <nav class="mainMenu">
                         <ul>
                             <li>
-                                <a data-title="Clientes" href="{{route('cliente.index')}}"><span>Clientes</span></a>
+                                <a data-title="Quem somos" href="{{route('sobre')}}"><span>Quem Somos</span></a>
                             </li>
-                            <li>
-                                <a data-title="Sobre" href="{{route('sobre')}}"><span>Sobre</span></a>
+
+                            <li class="menu-item-has-children">
+                                <a data-title="Portfolio" href="javascript:void(0);"><span>Portfólio</span></a>
+                                <ul class="sub-menu">
+                                    <li><a href="javascript:void(0);">Cases</a></li>
+                                    <li><a href="javascript:void(0);">Clientes</a></li>
+                                    <li><a href="javascript:void(0);">Videos</a></li>
+                                    <li><a href="javascript:void(0);">Fotos 360</a></li>
+                                </ul>
                             </li>
-                            <li>
-                                <a data-title="Serviços" href="#"><span>Serviços</span></a>
+                            <li class="menu-item-has-children">
+                                <a data-title="Servicos" href="javascript:void(0);"><span>Serviços</span></a>
+                                <ul class="sub-menu">
+                                    @foreach($getCategoryHeader as $category)
+                                        <li><a href="{{ url("/servicos/{$category->slug}") }}">{{$category->name}}</a></li>
+                                    @endforeach
+                                </ul>
                             </li>
                             <li>
                                 <a data-title="Blog" href="{{route('post.index')}}"><span>Blog</span></a>

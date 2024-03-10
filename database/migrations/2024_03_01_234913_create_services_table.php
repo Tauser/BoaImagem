@@ -20,8 +20,8 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->longText('content');
-            $table->foreignIdFor(ServiceCategory::class, 'category_id');
-            $table->foreignIdFor(ServiceSubcategory::class, 'subcategory_id')->nullable();
+            $table->foreignIdFor(ServiceCategory::class, 'service_category_id');
+            $table->foreignIdFor(ServiceSubcategory::class, 'service_subcategory_id')->nullable();
             $table->timestamps();
         });
 

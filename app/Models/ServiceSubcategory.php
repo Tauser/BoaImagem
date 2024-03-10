@@ -22,4 +22,9 @@ class ServiceSubcategory extends Model
     {
         return $this->hasMany(Service::class);
     }
+
+    static public function getSubcategoryMenu()
+    {
+        return self::select('service_subcategories.*')->get();
+    }
 }
