@@ -11,12 +11,17 @@ class ServiceController extends Controller
     /**
      * Display a listing of the resource.
      */
+    public function index(){
+
+    }
+
+
     public function category($slug)
     {
         $category = ServiceCategory::where('slug', $slug)->firstOrFail();
         $services = $category->services()->latest()->paginate(10);
 
-        return view('service.index', compact('category','services'));
+        return view('services.index', compact('category','services'));
 
     }
 

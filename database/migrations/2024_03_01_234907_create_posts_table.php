@@ -22,7 +22,7 @@ return new class extends Migration
             $table->longText('content');
             $table->string('thumbnail',)->nullable();
             $table->foreignIdFor(User::class, 'user_id');
-            $table->foreignIdFor(Category::class, 'category_id');
+            $table->foreignIdFor(Category::class, 'category_id')->nullable();
             $table->timestamp('published_at')->nullable();
             $table->boolean('featured')->default(false);
             $table->timestamps();

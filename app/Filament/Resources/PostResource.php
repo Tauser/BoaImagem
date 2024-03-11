@@ -20,7 +20,6 @@ use App\Filament\Resources\PostResource\RelationManagers;
 class PostResource extends Resource
 {
     protected static ?string $model = Post::class;
-
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationGroup = 'Blog';
     protected static ?string $modelLabel = 'Post';
@@ -33,6 +32,7 @@ class PostResource extends Resource
                     Section::make('Conteudo Post')->schema([
                         Forms\Components\TextInput::make('title')
                             ->required()
+                            ->label('Titulo')
                             ->maxLength(100)
                             ->live(onBlur:true)
                             ->afterStateUpdated(function(string $operation, $state, Set $set){
@@ -48,12 +48,14 @@ class PostResource extends Resource
                             ->dehydrated(),
                         Forms\Components\MarkdownEditor::make('content')
                             ->required()
+                            ->label('Conteudo')
                             ->fileAttachmentsDirectory('posts')
                             ->columnSpanFull(),
                     ])->columns(2),
-                    Section::make('Imagens')->schema([
+                    Section::make('Imagem')->schema([
                         Forms\Components\FileUpload::make('thumbnail')
                             ->directory('posts')
+
                     ])
                 ])->columnSpan(2),
 
@@ -61,11 +63,13 @@ class PostResource extends Resource
                     Section::make()->schema([
                         Forms\Components\Select::make('user_id')
                             ->required()
+                            ->label('Autor')
                             ->relationship('user', 'name'),
                         Forms\Components\Select::make('category_id')
-                            ->required()
+                            ->label('Categoria')
                             ->relationship('category', 'name'),
-                        Forms\Components\DateTimePicker::make('published_at'),
+                        Forms\Components\DateTimePicker::make('published_at')
+                            ->label('Publicar em'),
                     ])
                 ])->columnSpan(1)
             ])->columns(3);
@@ -79,22 +83,16 @@ class PostResource extends Resource
                 Tables\Columns\ImageColumn::make('thumbnail')
                     ->circular(),
                 Tables\Columns\TextColumn::make('category.name')
+                    ->label('Categoria')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('title')
+                    ->label('Titulo')
                     ->searchable(),
-
                 Tables\Columns\TextColumn::make('published_at')
+                    ->label('Publicado em')
                     ->dateTime()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //

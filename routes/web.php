@@ -31,7 +31,7 @@ Route::get('/blog/{category:slug}', [PostController::class, 'byCategory'])->name
 Route::get('/cliente', [CustomerController::class, 'index'])->name('cliente.index');
 Route::get('/cliente/{customer:slug}', [CustomerController::class, 'show'])->name('cliente.view');
 Route::get('/cliente/{category:id}', [CustomerController::class, 'byCategory'])->name('cliente.category');
-Route::get('/servicos/{category:slug}', [ServiceController::class, 'category'])->name('service.category');
+Route::get('/servicos/{category:slug}', [ServiceController::class, 'category'])->name('services.category');
 
 
 Route::get('/contato', [ContatoController::class, 'index'])->name('contato');

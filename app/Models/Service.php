@@ -23,8 +23,8 @@ class Service extends Model
         'slug',
         'id',
         'content',
-        'category_id',
-        'subcategory_id',
+        'service_category_id',
+        'service_subcategory_id',
     ];
 
     /**
@@ -34,8 +34,8 @@ class Service extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'category_id' => 'integer',
-        'subcategory_id' => 'integer',
+        'service_category_id' => 'integer',
+        'service_subcategory_id' => 'integer',
     ];
 
     public function projects(): HasMany

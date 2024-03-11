@@ -34,12 +34,14 @@ class ServiceResource extends Resource
                 Group::make()->schema([
                     Section::make('Conteudo')->schema([
                         Forms\Components\TextInput::make('title')
+                            ->label('Titulo')
                             ->required()
                             ->maxLength(255),
                         Forms\Components\TextInput::make('slug')
                             ->required()
                             ->maxLength(255),
                         Forms\Components\MarkdownEditor::make('content')
+                            ->label('Conteúdo')
                             ->required()
                             ->fileAttachmentsDirectory('services')
                             ->columnSpanFull(),
@@ -49,13 +51,15 @@ class ServiceResource extends Resource
 
                 Group::make()->schema([
                     Section::make()->schema([
-                        Forms\Components\Select::make('category_id')
+                        Forms\Components\Select::make('service_category_id')
+                            ->label('Categoria')
                             ->options(ServiceCategory::query()->pluck('name', 'id'))
                             ->live()
                             ->required(),
-                        Forms\Components\Select::make('subcategory_id')
+                        Forms\Components\Select::make('service_subcategory_id')
+                            ->label('Subcategoria')
                             ->options(fn (Get $get): Collection => ServiceSubcategory::query()
-                                ->where('category_id', $get('category_id'))
+                                ->where('category_id', $get('service_category_id'))
                                 ->pluck('name', 'id')),
                     ])
                 ])->columnSpan(1)
@@ -68,23 +72,15 @@ class ServiceResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')
+                    ->label('Titulo')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('slug')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('category.name')
-                    ->numeric()
+                Tables\Columns\TextColumn::make('service_category.name')
+                    ->label('Categoria')
                     ->sortable(),
-                Tables\Columns\TextColumn::make('subcategory.name')
-                    ->numeric()
+                Tables\Columns\TextColumn::make('service_subcategory.name')
+                    ->label('Subcategoria')
                     ->sortable(),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+
             ])
             ->filters([
                 //
