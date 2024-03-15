@@ -24,18 +24,18 @@
                     </div>
                     <div class="projectCat_area">
                         <ul class="filterBTN_bare openHoverCursor">
-
-                            @forelse ($services as $service)
-                                <li class="filterBTN"><a href="javascript:void(0);">{{$service->title}}</a></li>
+                            @forelse ($categories as $category)
+                                <li class="filterBTN"><a href="javascript:void(0);">{{$category->name}}</a></li>
                             @empty
-                                <p>Nenhum Serviço encontrado !</p>
+                                <p>Nenhuma categoria encontrada !</p>
                             @endforelse
+                        </ul>
                     </div>
                 </div>
             </div>
             <div class="row shafull_container ">
-                @foreach ($customers as $customer)
-                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item"  data-groups='["{{$customer->service->title}}"]' >
+                @forelse ($customers as $customer)
+                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" >
                     <div class="project_item projectItemView" data-firstline="Mais" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="700" >
                         <div class="project_item_thumb">
                             <img src="{{$customer->getThumbnail()}}" alt="{{$customer->name}}">
@@ -44,12 +44,14 @@
                             <div class="projectInfoContent">
                                 <i class="boozy-down-arrow strokeText"></i><br>
                                 <h3 class="ps_item_name">{{$customer->name}}</h3><br>
-                                <h5 class="ps_auth_name">{{$customer->service->title}}</h5>
+{{--                                <h5 class="ps_auth_name">{{$customer->service->title}}</h5>--}}
                             </div>
                         </a>
                     </div>
                 </div>
-                @endforeach
+                @empty
+                    <p>Nenhum cliente encontrado !</p>
+                @endforelse
                 <div class="col-md-1 col-lg-1 col-xl-1 shaf_sizer"></div>
             </div>
             {{$customers->links()}}

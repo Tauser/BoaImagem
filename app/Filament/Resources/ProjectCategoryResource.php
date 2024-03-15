@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\ServiceSubcategoryResource\Pages;
-use App\Filament\Resources\ServiceSubcategoryResource\RelationManagers;
-use App\Models\ServiceSubcategory;
+use App\Filament\Resources\ProjectCategoryResource\Pages;
+use App\Filament\Resources\ProjectCategoryResource\RelationManagers;
+use App\Models\ProjectCategory;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,21 +13,18 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class ServiceSubcategoryResource extends Resource
+class ProjectCategoryResource extends Resource
 {
-    protected static ?string $model = ServiceSubcategory::class;
-    protected static ?string $navigationGroup = 'Serviços';
-    protected static ?string $modelLabel = 'Subcategoria';
+    protected static ?string $model = ProjectCategory::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Portfolio';
+    protected static ?string $modelLabel = 'Categoria';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('category_id')
-                    ->relationship('category', 'name')
-                    ->required(),
                 Forms\Components\TextInput::make('name')
                     ->required()
                     ->maxLength(255),
@@ -41,9 +38,6 @@ class ServiceSubcategoryResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('category.name')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('slug')
@@ -74,7 +68,7 @@ class ServiceSubcategoryResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ManageServiceSubcategories::route('/'),
+            'index' => Pages\ManageProjectCategories::route('/'),
         ];
     }
 }

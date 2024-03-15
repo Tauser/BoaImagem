@@ -19,10 +19,12 @@ class ServiceController extends Controller
     public function category($slug)
     {
         $category = ServiceCategory::where('slug', $slug)->firstOrFail();
-        $services = $category->services()->latest()->paginate(10);
-
+        //$services = $category->services()->latest()->paginate(10);
+        $services = Service::query()
+            ->where('category_id', '=', $category->id)
+            ->orderBy('id', 'asc')
+            ->paginate(10);
         return view('services.index', compact('category','services'));
-
     }
 
 
@@ -45,10 +47,13 @@ class ServiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($slug, $slugService)
     {
-        //
+        $service = Service::where('slug', $slugService)->firstOrFail();
+        return view('services.view', compact('service'));
     }
+
+
 
     /**
      * Show the form for editing the specified resource.

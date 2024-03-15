@@ -1,6 +1,5 @@
 @php
     $getCategoryHeader = App\Models\ServiceCategory::getCategoryMenu();
-    $getSubcategoryHeader = App\Models\ServiceSubcategory::getSubcategoryMenu();
 @endphp
 <header class="header01 isSticky">
     <div class="container">
@@ -18,14 +17,8 @@
                                 <a data-title="Quem somos" href="{{route('sobre')}}"><span>Quem Somos</span></a>
                             </li>
 
-                            <li class="menu-item-has-children">
-                                <a data-title="Portfolio" href="javascript:void(0);"><span>Portfólio</span></a>
-                                <ul class="sub-menu">
-                                    <li><a href="javascript:void(0);">Cases</a></li>
-                                    <li><a href="javascript:void(0);">Clientes</a></li>
-                                    <li><a href="javascript:void(0);">Videos</a></li>
-                                    <li><a href="javascript:void(0);">Fotos 360</a></li>
-                                </ul>
+                            <li>
+                                <a data-title="Clientes" href="{{route('cliente.index')}}"><span>Clientes</span></a>
                             </li>
                             <li class="menu-item-has-children">
                                 <a data-title="Servicos" href="javascript:void(0);"><span>Serviços</span></a>

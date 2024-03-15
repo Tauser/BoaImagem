@@ -71,11 +71,11 @@ class ProjectResource extends Resource
                 ])->columnSpan(2),
                 Group::make()->schema([
                     Section::make()->schema([
-                        Forms\Components\Select::make('service_id')
-                            ->relationship('service', 'name')
-                            ->required(),
                         Forms\Components\Select::make('customer_id')
                             ->relationship('customer', 'name')
+                            ->required(),
+                        Forms\Components\Select::make('project_category_id')
+                            ->relationship('projectcategory', 'name')
                             ->required(),
                     ])
                 ])->columnSpan(1)
@@ -87,9 +87,6 @@ class ProjectResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('customer.name')
-                    ->numeric()
-                    ->sortable(),
-                Tables\Columns\TextColumn::make('service.title')
                     ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('title')

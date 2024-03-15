@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\ServiceCategory;
+use App\Models\ServiceSubcategory;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,11 +13,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('service_subcategories', function (Blueprint $table) {
+        Schema::create('services', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id')->constrained('service_categories');
-            $table->string('name');
+            $table->string('title');
             $table->string('slug')->unique();
+            $table->string('description');
+            $table->json('content');
+            $table->foreignIdFor(ServiceCategory::class, 'category_id');
             $table->timestamps();
         });
     }
@@ -25,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('service_subcategories');
+        Schema::dropIfExists('services');
     }
 };

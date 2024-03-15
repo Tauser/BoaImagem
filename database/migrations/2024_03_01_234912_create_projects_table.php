@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Customer;
+use App\Models\ProjectCategory;
 use App\Models\Service;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -24,7 +25,7 @@ return new class extends Migration
             $table->string('thumbnail');
             $table->json('images');
             $table->foreignIdFor(Customer::class, 'customer_id');
-            $table->foreignIdFor(\App\Models\ServiceCategory::class, 'service_id');
+            $table->foreignIdFor(ProjectCategory::class, 'project_category_id');
             $table->timestamps();
         });
 

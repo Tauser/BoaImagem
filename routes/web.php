@@ -1,12 +1,10 @@
 <?php
 
 use App\Http\Controllers\ServiceController;
-use App\Models\Customer;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\SobreController;
-use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\ContatoController;
 use App\Http\Controllers\CustomerController;
 
@@ -32,6 +30,7 @@ Route::get('/cliente', [CustomerController::class, 'index'])->name('cliente.inde
 Route::get('/cliente/{customer:slug}', [CustomerController::class, 'show'])->name('cliente.view');
 Route::get('/cliente/{category:id}', [CustomerController::class, 'byCategory'])->name('cliente.category');
 Route::get('/servicos/{category:slug}', [ServiceController::class, 'category'])->name('services.category');
+Route::get('/servicos/{category:slug}/{service:slug}', [ServiceController::class, 'show'])->name('services.view');
 
 
 Route::get('/contato', [ContatoController::class, 'index'])->name('contato');

@@ -46,7 +46,7 @@ class PostResource extends Resource
                             ->maxLength(150)
                             ->disabled()
                             ->dehydrated(),
-                        Forms\Components\MarkdownEditor::make('content')
+                        Forms\Components\RichEditor::make('content')
                             ->required()
                             ->label('Conteudo')
                             ->fileAttachmentsDirectory('posts')

@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ServiceCategory extends Model
 {
@@ -11,11 +13,12 @@ class ServiceCategory extends Model
 
     protected $fillable = ['name','slug'];
 
-    public function services()
+    public function services():HasMany
     {
         return $this->hasMany(Service::class);
     }
-    public function subCategories()
+
+    public function subCategories():HasMany
     {
         return $this->hasMany(ServiceSubcategory::class);
     }

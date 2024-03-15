@@ -32,6 +32,7 @@ class CustomerResource extends Resource
                 Group::make()->schema([
                     Section::make('Conteudo')->schema([
                         Forms\Components\TextInput::make('name')
+                            ->label('Nome')
                             ->required()
                             ->live(onBlur:true)
                             ->afterStateUpdated(function(string $operation, $state, Set $set){
@@ -44,29 +45,26 @@ class CustomerResource extends Resource
                             ->required()
                             ->disabled()
                             ->dehydrated(),
-                        Forms\Components\DatePicker::make('since'),
+                        Forms\Components\DatePicker::make('since')->label('Cliente desde'),
                         Forms\Components\MarkdownEditor::make('content')
+                            ->label('Conteudo')
                             ->required()
                             ->fileAttachmentsDirectory('customers')
                             ->columnSpanFull(),
-                        Forms\Components\MarkdownEditor::make('results')
+                        Forms\Components\RichEditor::make('results')
+                            ->label('Resultados')
                             ->required()
                             ->fileAttachmentsDirectory('customers')
                             ->columnSpanFull(),
                         Forms\Components\TextInput::make('url')
                             ->required(),
                     ])->columns(2),
-                    Section::make('Imagens')->schema([
+                    Section::make('Imagem')->schema([
                         Forms\Components\FileUpload::make('thumbnail')
+                            ->label('Imagem')
                             ->directory('customers'),
                     ])
-                ])->columnSpan(2),
-                Group::make()->schema([
-                    Section::make()->schema([
-                        Forms\Components\Select::make('service_id')
-                            ->relationship('service', 'title'),
-                    ])
-                ])->columnSpan(1)
+                ])->columnSpan(3),
             ])->columns(3);
     }
 
@@ -74,21 +72,12 @@ class CustomerResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('service.title')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('name')
+                    ->label('Nome')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('thumbnail')
+                    ->label('Imagem')
                     ->circular(),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //

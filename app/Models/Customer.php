@@ -25,7 +25,6 @@ class Customer extends Model
         'content',
         'results',
         'url',
-        'service_id',
     ];
 
     /**
@@ -36,17 +35,11 @@ class Customer extends Model
     protected $casts = [
         'id' => 'integer',
         'since' => 'datetime',
-        'service_id' => 'integer',
     ];
 
     public function projects(): HasMany
     {
         return $this->hasMany(Project::class);
-    }
-
-    public function services(): BelongsToMany
-    {
-        return $this->belongsToMany(Service::class);
     }
 
     public function service(): BelongsTo

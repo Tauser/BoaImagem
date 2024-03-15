@@ -6,18 +6,16 @@ use App\Filament\Resources\ServiceResource\Pages;
 use App\Filament\Resources\ServiceResource\RelationManagers;
 use App\Models\Service;
 use App\Models\ServiceCategory;
-use App\Models\ServiceSubcategory;
 use Filament\Forms;
 use Filament\Forms\Components\Group;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Form;
 use Filament\Forms\Get;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Collection;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+
 
 class ServiceResource extends Resource
 {
@@ -35,36 +33,40 @@ class ServiceResource extends Resource
                     Section::make('Conteudo')->schema([
                         Forms\Components\TextInput::make('title')
                             ->label('Titulo')
-                            ->required()
-                            ->maxLength(255),
+                            ->required(),
                         Forms\Components\TextInput::make('slug')
+                            ->required(),
+                        Forms\Components\TextInput::make('description')
+                            ->label('Descrição')
                             ->required()
-                            ->maxLength(255),
-                        Forms\Components\MarkdownEditor::make('content')
-                            ->label('Conteúdo')
-                            ->required()
-                            ->fileAttachmentsDirectory('services')
                             ->columnSpanFull(),
                     ])->columns(2),
+                    Section::make()->schema([
+                        Repeater::make('content')
+                            ->label('Conteúdo')
+                            ->schema([
+                                Forms\Components\TextInput::make('title_content')
+                                    ->label('Titulo')
+                                    ->required(),
+                                Forms\Components\TextInput::make('text_content')
+                                    ->label('Texto')
+                                    ->required(),
+                                Forms\Components\FileUpload::make('image_content')
+                                    ->directory('services')
+                            ])
+                            ->reorderableWithButtons()
+                            ->columnSpanFull(),
+                    ]),
                 ])->columnSpan(2),
-
-
                 Group::make()->schema([
                     Section::make()->schema([
-                        Forms\Components\Select::make('service_category_id')
+                        Forms\Components\Select::make('category_id')
                             ->label('Categoria')
                             ->options(ServiceCategory::query()->pluck('name', 'id'))
-                            ->live()
                             ->required(),
-                        Forms\Components\Select::make('service_subcategory_id')
-                            ->label('Subcategoria')
-                            ->options(fn (Get $get): Collection => ServiceSubcategory::query()
-                                ->where('category_id', $get('service_category_id'))
-                                ->pluck('name', 'id')),
                     ])
                 ])->columnSpan(1)
             ])->columns(3);
-
     }
 
     public static function table(Table $table): Table
@@ -74,19 +76,17 @@ class ServiceResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                     ->label('Titulo')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('service_category.name')
+                Tables\Columns\TextColumn::make('category.name')
                     ->label('Categoria')
+                    ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('service_subcategory.name')
-                    ->label('Subcategoria')
-                    ->sortable(),
-
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

@@ -17,8 +17,7 @@ class DepartamentResource extends Resource
 {
     protected static ?string $model = Departament::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-user-group';
-
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
     protected static ?string $navigationGroup = 'Empresa';
     protected static ?string $modelLabel = 'Departamento';
 
@@ -27,8 +26,9 @@ class DepartamentResource extends Resource
         return $form
             ->schema([
                 Forms\Components\TextInput::make('name')
+                    ->label('Nome')
                     ->required()
-                    ->maxLength(150),
+                    ->maxLength(255),
             ]);
     }
 
@@ -37,21 +37,15 @@ class DepartamentResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
+                    ->label('Nome')
                     ->searchable(),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
                 //
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -60,19 +54,10 @@ class DepartamentResource extends Resource
             ]);
     }
 
-    public static function getRelations(): array
-    {
-        return [
-            //
-        ];
-    }
-
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListDepartaments::route('/'),
-            'create' => Pages\CreateDepartament::route('/create'),
-            'edit' => Pages\EditDepartament::route('/{record}/edit'),
+            'index' => Pages\ManageDepartaments::route('/'),
         ];
     }
 }

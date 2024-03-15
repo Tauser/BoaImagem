@@ -25,12 +25,12 @@
                         <p>{{$customer->name}}</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 col-sm-6">
-                    <div class="caseStudyInfoItem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
-                        <h3>Tipo</h3>
-                        <p>{{$customer->service->title}}</p>
-                    </div>
-                </div>
+{{--                <div class="col-md-6 col-lg-3 col-sm-6">--}}
+{{--                    <div class="caseStudyInfoItem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">--}}
+{{--                        <h3>Tipo</h3>--}}
+{{--                        <p>{{$customer->service->title}}</p>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <div class="col-md-6 col-lg-3 col-sm-6">
                     <div class="caseStudyInfoItem" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="650">
                         <h3>Desde</h3>
@@ -65,7 +65,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="csStuInfoContent">
                         <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">Um pouco sobre nosso cliente</h2>
-                        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">{{$customer->content}}</p>
+                        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">{!!$customer->content!!}</p>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="csStuInfoContent">
                         <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">resultados</h2>
-                        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">{{$customer->results}}</p>
+                        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">{!!$customer->results!!}</p>
                     </div>
                 </div>
             </div>

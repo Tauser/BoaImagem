@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customer;
+use App\Models\ProjectCategory;
 use Illuminate\Http\Request;
 use App\Models\CustomerCategory;
 use App\Models\Service;
@@ -15,8 +16,8 @@ class CustomerController extends Controller
     public function index()
     {
         $customers = Customer::query()->paginate(9);
-        $services = Service::all();
-        return view('cliente.index', compact('customers','services'));
+        $categories = ProjectCategory::all();
+        return view('cliente.index', compact('customers','categories'));
     }
 
     public function byCategory(Service $service)

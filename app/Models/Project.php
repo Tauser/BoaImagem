@@ -24,7 +24,7 @@ class Project extends Model
         'thumbnail',
         'images',
         'customer_id',
-        'service_id',
+        'category_id',
     ];
 
     /**
@@ -35,7 +35,7 @@ class Project extends Model
     protected $casts = [
         'id' => 'integer',
         'customer_id' => 'integer',
-        'service_id' => 'integer',
+        'category_id' => 'integer',
         'images' => 'array',
     ];
 
@@ -44,14 +44,9 @@ class Project extends Model
         return $this->belongsTo(Customer::class);
     }
 
-    public function service(): BelongsTo
+    public function category(): BelongsTo
     {
-        return $this->belongsTo(ServiceCategory::class);
-    }
-
-    public function services(): HasMany
-    {
-        return $this->hasMany(ServiceCategory::class);
+        return $this->belongsTo(ProjectCategory::class);
     }
 
     public function getThumbnail()

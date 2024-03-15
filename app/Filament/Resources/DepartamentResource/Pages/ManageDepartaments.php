@@ -4,9 +4,9 @@ namespace App\Filament\Resources\DepartamentResource\Pages;
 
 use App\Filament\Resources\DepartamentResource;
 use Filament\Actions;
-use Filament\Resources\Pages\ListRecords;
+use Filament\Resources\Pages\ManageRecords;
 
-class ListDepartaments extends ListRecords
+class ManageDepartaments extends ManageRecords
 {
     protected static string $resource = DepartamentResource::class;
 
