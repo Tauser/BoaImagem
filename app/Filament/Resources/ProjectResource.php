@@ -34,6 +34,7 @@ class ProjectResource extends Resource
                     Section::make('Conteudo')->schema([
 
                         Forms\Components\TextInput::make('title')
+                            ->label('Titulo')
                             ->required()
                             ->live(onBlur:true)
                             ->afterStateUpdated(function(string $operation, $state, Set $set){
@@ -47,6 +48,7 @@ class ProjectResource extends Resource
                             ->disabled()
                             ->dehydrated(),
                         Forms\Components\MarkdownEditor::make('description')
+                            ->label('Descrição')
                             ->required()
                             ->fileAttachmentsDirectory('projects')
                             ->columnSpanFull(),
@@ -58,9 +60,11 @@ class ProjectResource extends Resource
                     ])->columns(2),
                     Section::make('Imagens')->schema([
                         Forms\Components\FileUpload::make('thumbnail')
+                            ->label('Capa')
                             ->required()
                             ->directory('projects'),
                         Forms\Components\FileUpload::make('images')
+                            ->label('Imagens do projeto')
                             ->required()
                             ->multiple()
                             ->directory('projects')

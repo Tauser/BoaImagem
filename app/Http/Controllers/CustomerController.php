@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customer;
+use App\Models\Project;
 use App\Models\ProjectCategory;
 use Illuminate\Http\Request;
 use App\Models\CustomerCategory;
@@ -48,7 +49,8 @@ class CustomerController extends Controller
      */
     public function show(Customer $customer)
     {
-        return view('cliente.view', compact('customer'));
+        $projects = Project::where('customer_id', $customer->id)->get();
+        return view('cliente.view', compact('customer', 'projects'));
     }
 
     /**

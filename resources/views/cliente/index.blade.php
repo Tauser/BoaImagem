@@ -38,7 +38,7 @@
                 <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" >
                     <div class="project_item projectItemView" data-firstline="Mais" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="700" >
                         <div class="project_item_thumb">
-                            <img src="{{$customer->getThumbnail()}}" alt="{{$customer->name}}">
+                            <img src="{{$customer->getCover()}}" alt="{{$customer->name}}">
                         </div>
                         <a href="{{route('cliente.view', $customer)}}" class="project_item_dtls">
                             <div class="projectInfoContent">

@@ -46,19 +46,6 @@
             </div>
         </div>
     </section>
-
-    <section class="caseStudyInfoThumbSec">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="csStuInfoThumb animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600" data-bs-popper="{{$customer->name}}">
-                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->name}}">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="caseStudyInfoContetnsec">
         <div class="container">
             <div class="row">
@@ -72,22 +59,36 @@
         </div>
     </section>
 
-    {{-- <section class="csStudyThumbItemsSEC">
+    <section class="caseStudyInfoThumbSec">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="csStuThumbItem animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
-                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->cus_name}}">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="csStuThumbItem animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-                        <img src="{{$customer->getThumbnail()}}" alt="{{$customer->cus_name}}">
+                <div class="col-md-12">
+                    <div class="csStuInfoThumb animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600" data-bs-popper="{{$customer->name}}">
+                        <img src="{{$customer->getBanner()}}" alt="{{$customer->name}}">
                     </div>
                 </div>
             </div>
         </div>
-    </section> --}}
+    </section>
+
+
+        <section class="csStudyThumbItemsSEC">
+            <div class="container">
+                <div class="row">
+                    @forelse ($projects as $project)
+                        <div class="col-md-6">
+                            <div class="csStuThumbItem animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+                                <img src="{{$project->getThumbnail()}}" alt="{{$project->title}}">
+                            </div>
+                        </div>
+                    @empty
+                        <p>Nenhum projeto encontrado!</p>
+                    @endforelse
+                </div>
+            </div>
+        </section>
+
+
 
     <section class="caseStudyInfoContetnsec02">
         <div class="container">

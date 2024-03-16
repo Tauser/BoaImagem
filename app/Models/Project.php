@@ -35,7 +35,7 @@ class Project extends Model
     protected $casts = [
         'id' => 'integer',
         'customer_id' => 'integer',
-        'category_id' => 'integer',
+        'project_category_id' => 'integer',
         'images' => 'array',
     ];
 
@@ -55,5 +55,13 @@ class Project extends Model
             return $this->thumbnail;
         }
         return '/storage/' . $this->thumbnail;
+    }
+
+    public function getCover()
+    {
+        if (str_starts_with($this->cover, 'http')) {
+            return $this->cover;
+        }
+        return '/storage/' . $this->cover;
     }
 }

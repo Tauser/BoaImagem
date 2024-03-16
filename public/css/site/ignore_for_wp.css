@@ -416,7 +416,7 @@
     background: #111111;
 }
 .caseStudyInfo{
-    padding: 126px 0 123px;
+    padding: 126px 0 20px;
     background: #111111;
 }
 .caseStudyInfoThumbSec{
@@ -426,7 +426,7 @@
 }
 .caseStudyInfoContetnsec{
     background: #111111;
-    padding: 128px 0 134px;
+    padding: 80px 0 34px;
 }
 .csStuInfoContent h2{
     margin: 0 0 38px !important;
@@ -634,7 +634,7 @@ aside.widget.post_category_widget {
         padding: 120px 0 161px;
     }
     .caseStudyInfoContetnsec02 {
-        padding: 120px 0 120px;
+        padding: 30px 0 30px;
     }
     .footerInfor04 .fInfoCopyright4,
     .footerInfor04 .col-md-6{

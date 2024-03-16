@@ -20,7 +20,8 @@ class Customer extends Model
     protected $fillable = [
         'name',
         'slug',
-        'thumbnail',
+        'cover',
+        'banner',
         'since',
         'content',
         'results',
@@ -47,13 +48,23 @@ class Customer extends Model
         return $this->belongsTo(Service::class);
     }
 
-    public function getThumbnail()
+    public function getCover()
     {
-        if (str_starts_with($this->thumbnail, 'http')) {
-            return $this->thumbnail;
+        if (str_starts_with($this->cover, 'http')) {
+            return $this->cover;
         }
-        return '/storage/' . $this->thumbnail;
+        return '/storage/' . $this->cover;
     }
+
+    public function getBanner()
+    {
+        if (str_starts_with($this->banner, 'http')) {
+            return $this->banner;
+        }
+        return '/storage/' . $this->banner;
+    }
+
+
 
     public function getFormattedDate()
     {

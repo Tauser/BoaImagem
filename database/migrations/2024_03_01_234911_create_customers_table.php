@@ -18,7 +18,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->string('thumbnail')->nullable();
+            $table->string('cover')->nullable();
+            $table->string('banner')->nullable();
             $table->timestamp('since')->nullable();
             $table->longText('content');
             $table->longText('results');

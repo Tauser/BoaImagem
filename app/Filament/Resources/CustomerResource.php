@@ -59,9 +59,12 @@ class CustomerResource extends Resource
                         Forms\Components\TextInput::make('url')
                             ->required(),
                     ])->columns(2),
-                    Section::make('Imagem')->schema([
-                        Forms\Components\FileUpload::make('thumbnail')
-                            ->label('Imagem')
+                    Section::make('Imagems')->schema([
+                        Forms\Components\FileUpload::make('cover')
+                            ->label('Capa')
+                            ->directory('customers'),
+                        Forms\Components\FileUpload::make('banner')
+                            ->label('Banner')
                             ->directory('customers'),
                     ])
                 ])->columnSpan(3),
