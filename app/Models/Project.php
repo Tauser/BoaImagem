@@ -24,7 +24,7 @@ class Project extends Model
         'thumbnail',
         'images',
         'customer_id',
-        'category_id',
+        'project_category_id',
     ];
 
     /**

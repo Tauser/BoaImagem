@@ -75,7 +75,7 @@ class ProjectResource extends Resource
                             ->relationship('customer', 'name')
                             ->required(),
                         Forms\Components\Select::make('project_category_id')
-                            ->relationship('projectcategory', 'name')
+                            ->relationship('category', 'name')
                             ->required(),
                     ])
                 ])->columnSpan(1)
