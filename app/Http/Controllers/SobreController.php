@@ -16,7 +16,7 @@ class SobreController extends Controller
     {
         $team = Team::query()
             ->orderBy('id', 'desc')
-            ->paginate(10);
+            ->paginate(1);
 
         return view('sobre', compact('team'));
     }

@@ -44,7 +44,7 @@ class Project extends Model
         return $this->belongsTo(Customer::class);
     }
 
-    public function category(): BelongsTo
+    public function project_category(): BelongsTo
     {
         return $this->belongsTo(ProjectCategory::class);
     }

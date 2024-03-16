@@ -71,25 +71,6 @@
         </div>
     </section>
 
-
-        <section class="csStudyThumbItemsSEC">
-            <div class="container">
-                <div class="row">
-                    @forelse ($projects as $project)
-                        <div class="col-md-6">
-                            <div class="csStuThumbItem animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
-                                <img src="{{$project->getThumbnail()}}" alt="{{$project->title}}">
-                            </div>
-                        </div>
-                    @empty
-                        <p>Nenhum projeto encontrado!</p>
-                    @endforelse
-                </div>
-            </div>
-        </section>
-
-
-
     <section class="caseStudyInfoContetnsec02">
         <div class="container">
             <div class="row">
@@ -102,5 +83,38 @@
             </div>
         </div>
     </section>
-    <!-- BEGIN: Case Studyinfo Content -->
+
+
+    <!-- BEGIN: Project Section  -->
+    <section class="projectSection02">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="secHeading" id="projectHeading">
+                        <h3>Projetos recentes</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row shafull_container ">
+                @foreach($projects as $project)
+                    <div class="col-md-6 col-lg-6 col-xl-4 shaf_item">
+                        <div class="project_item projectItemView" data-firstline="Ver" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="1900" >
+                            <div class="project_item_thumb">
+                                <img src="{{$project->getThumbnail()}}" alt="project">
+                            </div>
+                            <a href="#" class="project_item_dtls">
+                                <div class="projectInfoContent">
+                                    <i class="boozy-down-arrow strokeText"></i><br>
+                                    <h3 class="ps_item_name">{{ $project->title }}</h3><br>
+                                    <h4 class="ps_auth_name">{{ $project->project_category->name }}</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+    <!-- END: Project Section  -->
+
 </x-app-layout>
