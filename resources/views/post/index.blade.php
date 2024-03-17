@@ -54,7 +54,9 @@
                                                 <div class="blogContent02">
                                                     <div class="blogMata no-cursor" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">
                                                         <span class="blogCcat ">
-                                                            <a href="#">{{$post->category->name}}</a>
+                                                            @isset($post->category)
+                                                                {{$post->category->name}}
+                                                            @endisset
                                                         </span>
                                                         <span class="blogAuth">por&nbsp;<a href="javascript:void(0);">{{$post->user->name}}</a></span>
                                                         <span class="blogAuth">&nbsp;{{$post->published_at->diffForHumans() }}</span>

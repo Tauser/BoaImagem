@@ -30,9 +30,11 @@
                             </span>
                         </div>
                         <div class="postMeta" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+                            @isset($post->category)
                             <div class="post_cat">
-                                <a href="#">{{$post->category->name}}</a>
+                                    {{$post->category->name}}
                             </div>
+                            @endisset
                             <div class="postAuthor">
                                 por&nbsp;<a href="javascript:void(0);">{{$post->user->name}}</a>
                             </div>

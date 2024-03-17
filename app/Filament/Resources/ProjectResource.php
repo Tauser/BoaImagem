@@ -54,6 +54,7 @@ class ProjectResource extends Resource
                             ->columnSpanFull(),
 
                         Forms\Components\MarkdownEditor::make('content')
+                            ->label('Conteúdo')
                             ->required()
                             ->fileAttachmentsDirectory('projects')
                             ->columnSpanFull(),
@@ -76,10 +77,12 @@ class ProjectResource extends Resource
                 Group::make()->schema([
                     Section::make()->schema([
                         Forms\Components\Select::make('customer_id')
+                            ->label('Cliente')
                             ->relationship('customer', 'name')
                             ->required(),
                         Forms\Components\Select::make('project_category_id')
-                            ->relationship('category', 'name')
+                            ->label('Categoria')
+                            ->relationship('project_category', 'name')
                             ->required(),
                     ])
                 ])->columnSpan(1)
@@ -90,21 +93,18 @@ class ProjectResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('customer.name')
+                Tables\Columns\TextColumn::make('title')
+                    ->label('Titulo')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('project_category.name')
+                    ->label('Categoria')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('title')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('description')
-                    ->searchable(),
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
+                Tables\Columns\TextColumn::make('customer.name')
+                    ->label('Cliente')
+                    ->numeric()
+                    ->sortable(),
+
             ])
             ->filters([
                 //

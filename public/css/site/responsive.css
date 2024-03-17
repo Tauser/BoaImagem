@@ -1691,6 +1691,7 @@
     .blogoSec01 .secHeading,
     .teamSection .secHeading {
         padding: 0 0 25px;
+        margin-bottom: 50px
     }
 
     .banner02 .banner_content h1 {

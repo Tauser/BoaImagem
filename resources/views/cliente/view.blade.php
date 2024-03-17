@@ -60,9 +60,9 @@
     </section>
 
     <section class="caseStudyInfoThumbSec">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12">
                     <div class="csStuInfoThumb animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600" data-bs-popper="{{$customer->name}}">
                         <img src="{{$customer->getBanner()}}" alt="{{$customer->name}}">
                     </div>
@@ -89,7 +89,7 @@
     <section class="projectSection02">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-lg-12">
                     <div class="secHeading" id="projectHeading">
                         <h3>Projetos recentes</h3>
                     </div>
@@ -102,7 +102,7 @@
                             <div class="project_item_thumb">
                                 <img src="{{$project->getThumbnail()}}" alt="project">
                             </div>
-                            <a href="#" class="project_item_dtls">
+                            <a href="{{route('projects.view', [$project->project_category->slug ,$project->slug])}}" class="project_item_dtls">
                                 <div class="projectInfoContent">
                                     <i class="boozy-down-arrow strokeText"></i><br>
                                     <h3 class="ps_item_name">{{ $project->title }}</h3><br>
