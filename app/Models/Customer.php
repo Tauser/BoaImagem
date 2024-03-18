@@ -43,11 +43,6 @@ class Customer extends Model
         return $this->hasMany(Project::class);
     }
 
-    public function service(): BelongsTo
-    {
-        return $this->belongsTo(Service::class);
-    }
-
     public function getCover()
     {
         if (str_starts_with($this->cover, 'http')) {

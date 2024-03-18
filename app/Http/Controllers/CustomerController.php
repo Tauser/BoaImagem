@@ -21,11 +21,14 @@ class CustomerController extends Controller
         return view('cliente.index', compact('customers','categories'));
     }
 
-    public function byCategory(Service $service)
+    public function byCategory(ProjectCategory $category)
     {
-        $customers = Customer::where('service_id', $service->id)->get()->paginate(9);
-        $services = Service::all();
-        return view('cliente.index', compact('customers', 'services'));
+        $customers = Customer::whereHas('projects', function ($query) use ($category) {
+            $query->where('project_category_id', $category->id);
+        })->get();
+
+        $categories = ProjectCategory::all();
+        return view('cliente.index', compact('customers', 'categories'));
     }
 
     /**

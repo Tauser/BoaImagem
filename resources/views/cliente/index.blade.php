@@ -25,7 +25,7 @@
                     <div class="projectCat_area">
                         <ul class="filterBTN_bare openHoverCursor">
                             @forelse ($categories as $category)
-                                <li class="filterBTN"><a href="javascript:void(0);">{{$category->name}}</a></li>
+                                <li class="filterBTN"><a href="{{route('cliente.category', $category)}}">{{$category->name}}</a></li>
                             @empty
                                 <p>Nenhuma categoria encontrada !</p>
                             @endforelse
@@ -34,9 +34,9 @@
                 </div>
             </div>
             <div class="row shafull_container ">
-                @forelse ($customers as $customer)
+                @foreach($customers as $customer)
                 <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" >
-                    <div class="project_item projectItemView" data-firstline="Mais" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="700" >
+                    <div class="project_item projectItemView" data-firstline="Mais" data-secondline="Detalhes" data-aos="fade-up" data-aos-duration="400" >
                         <div class="project_item_thumb">
                             <img src="{{$customer->getCover()}}" alt="{{$customer->name}}">
                         </div>
@@ -49,12 +49,10 @@
                         </a>
                     </div>
                 </div>
-                @empty
-                    <p>Nenhum cliente encontrado !</p>
-                @endforelse
+                @endforeach
                 <div class="col-md-1 col-lg-1 col-xl-1 shaf_sizer"></div>
             </div>
-            {{$customers->links()}}
+
         </div>
 
     </section>

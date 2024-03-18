@@ -51,8 +51,8 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <div class="csStuInfoContent">
-                        <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700">Um pouco sobre nosso cliente</h2>
-                        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600">{!!$customer->content!!}</p>
+                        <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="400">Um pouco sobre nosso cliente</h2>
+                        <p data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400">{!!$customer->content!!}</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
     <section class="caseStudyInfoThumbSec">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <div class="csStuInfoThumb animateThumb" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600" data-bs-popper="{{$customer->name}}">
                         <img src="{{$customer->getBanner()}}" alt="{{$customer->name}}">
                     </div>
@@ -89,7 +89,7 @@
     <section class="projectSection02">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-md-8">
                     <div class="secHeading" id="projectHeading">
                         <h3>Projetos recentes</h3>
                     </div>
