@@ -46,30 +46,27 @@
             </div>
         </div>
     </section>
-    <section >
 
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="projectSection secHeading" id="projectHeading">
-                    <h3>Projetos recentes</h3>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            @forelse ($project->images as $image)
-                <div class="col-md-6 col-lg-6 col-xl-4 shaf_item" >
-                    <div class="project_item " >
-                        <div class="project_item_thumb">
-                            <img src="/storage/{{$image}}" alt="{{$project['title']}}" style="width: 100%; height: auto;" >
-                        </div>
+    <section class="projectSection02">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="secHeading" id="projectHeading">
+                        <h3>Detalhes</h3>
                     </div>
                 </div>
-            @empty
-                <p>Nenhum cliente encontrado !</p>
-            @endforelse
-            <div class="col-md-1 col-lg-1 col-xl-1 shaf_sizer"></div>
-        </div>
-        <div class="container">
+            </div>
+            <div class="row shafull_container ">
+                @foreach($project->images as $image)
+                    <div class="col-md-6 col-lg-6 col-xl-4 shaf_item">
+                        <div class="project_item" data-aos="fade-up" data-aos-duration="400" >
+                            <div class="project_item_thumb">
+                                <img src="/storage/{{$image}}" alt="{{$project['title']}}" style="width: 100%; height: auto;" >
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </section>
 

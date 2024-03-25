@@ -84,8 +84,6 @@
         </div>
     </section>
 
-
-    <!-- BEGIN: Project Section  -->
     <section class="projectSection02">
         <div class="container">
             <div class="row">
@@ -115,6 +113,6 @@
             </div>
         </div>
     </section>
-    <!-- END: Project Section  -->
+
 
 </x-app-layout>
